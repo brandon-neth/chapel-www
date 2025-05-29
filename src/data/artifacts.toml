@@ -39,6 +39,7 @@
 [gtc2025]
   title = "GPU-Based Monte Carlo Simulation of Light Transport in Tissue: A Chapel Implementation"
   authors = "Engin Kayraklioglu, Hui Wang"
+  venue = "NVIDIA GTC 2025"
   date = "March 17, 2025"
   url = "gtc.pdf"
   description = "This poster summarizes how Chapel assists biomedical research using Monte Carlo simulations on GPUs."
@@ -110,6 +111,7 @@
   date = "November 17, 2024"
   url = "Eric_SC_2024.pdf"
   description = "This keynote talk introduces CHAMPS, a multiphysics solver developed at Polytechnique Montreal for aerodynamics research."
+  type = ["presentation"]
 
 [sc24demo]
   title= "Interactive Exploratory Data Analytics (EDA) on Petabytes with Python and Arkouda, Powered by Chapel"
@@ -227,6 +229,7 @@
 
 [iccs2024]
   title = "PGAS Data Structure for Unbalanced Tree-Based Algorithms at Scale"
+  authors = "Guillaume Helbecque, Tiago Carneiro, Nouredine Melab, Jan Gmys, and Pascal Bouvry"
   venue = "International Conference on Computational Science (ICCS 2024)"
   date = "July 2–4, 2024"
   url = "https://www.iccs-meeting.org/archive/iccs2024/papers/148340097.pdf"
@@ -270,6 +273,7 @@
   venue = "Heterogeneity in Computing Workshop (HCW 2024) at IPDPS 2024"
   date = "May 27, 2024"
   url = "https://milthorpe.org/pubs/performance-portability-of-the-chapel-language-on-heterogeneous-architectures/"
+  description = "This paper uses mini-applications to compare the performance portability of Chapel with OpenMP, Kokkos, CUDA, and HIP across a wide range of CPU and GPU platforms."
   type = ["paper"]
 
 [bader]
@@ -605,7 +609,7 @@
   description = "A description and demo of Arkouda extensions permitting it to serve as a back-end for XArray."
   url = "Jeremiah-Pangeo-Showcase.pdf"
   video = "https://www.youtube.com/watch?v=v8p0T-RJTCU"
-  type = ["presentation", "demo"]
+  type = ["presentation"]
 
 [paw-atm23-bachman]
   title = "High-Performance Programming and Execution of a Coral Biodiversity Mapping Algorithm Using Chapel"
