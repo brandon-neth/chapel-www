@@ -18,7 +18,7 @@
     <item>
       <title>10 Myths About Scalable Parallel Programming Languages (Redux)</title>
       <link>https://chapel-lang.org/blog/series/10-myths-about-scalable-parallel-programming-languages-redux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/series/10-myths-about-scalable-parallel-programming-languages-redux/</guid>
       <description>&lt;p&gt;A series published on the IEEE TCSC blog in 2012, revisited from a&#xA;2025 perspective.&lt;/p&gt;</description>
     </item>
@@ -42,13 +42,6 @@
       <pubDate>Tue, 20 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/series/advent-of-code-2022/</guid>
       <description>&lt;p&gt;This series is an introduction to the Chapel language through solutions to&#xA;the first twelve days of Advent of Code 2022.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>10 Myths About Scalable Parallel Programming Languages (Redux)</title>
-      <link>https://chapel-lang.org/blog/series/10-myths-about-scalable-parallel-programming-languages-redux/</link>
-      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/series/10-myths-about-scalable-parallel-programming-languages-redux/</guid>
-      <description></description>
     </item>
     <item>
       <title>7 Questions for Chapel Users</title>
