@@ -8,15 +8,17 @@ keywords = ["TODO"]
 {{<publication-list "featuredPublications" "Featured Publications">}}
   {{<artifact-listing "hpec24-vf2-ps">}}
   {{<artifact-listing "ipdps2024">}}
+  {{<artifact-listing "europar24">}}
   {{<artifact-listing "ccpe23">}}
   {{<artifact-listing "ems23">}}
-  {{<artifact-listing "hpcs20">}}
   {{<artifact-listing "aiaa21">}}
 {{</publication-list>}}
 
 {{<publication-list "recentPublications" "Recent Publications">}}
+  {{<artifact-listing "helbecque-thesis">}}
   {{<artifact-listing "hpec24-deploy">}}
-  {{<artifact-listing "europar24">}}
+  {{<artifact-listing "iccs2024">}}
+  {{<artifact-listing "pdco24">}}
   {{<artifact-listing "pdco22">}}
   {{<artifact-listing "cug22">}}
   {{<artifact-listing "pmam22">}}
@@ -44,6 +46,7 @@ keywords = ["TODO"]
   {{<artifact-listing "sec20">}}
   {{<artifact-listing "waw20">}}
   {{<artifact-listing "fgcs20">}}
+  {{<artifact-listing "hpcs20">}}
   {{<artifact-listing "hpec19">}}
 {{</publication-list>}}
 

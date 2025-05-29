@@ -73,6 +73,15 @@
   description = "A technical overview of Chapel for PL types covering language features, apps, optimizations, GPU features, and more"
   type = ["presentation"]
 
+[helbecque-thesis]
+  title = "PGAS-based Parallel Branch-and-Bound for Ultra-Scale GPU-powered Supercomputers"
+  authors = "Guillaume Helbecque"
+  venue = "PhD thesis, University of Luxembourg / University of Lille"
+  date = "January 10, 2025"
+  url = "https://hal.science/tel-04902137v1"
+  description = "This thesis explores a PGAS-based approach to designing scalable and portable parallel Branch-and-Bound algorithms for exascale systems, with contributions spanning multi-level work-stealing and multi-GPU acceleration, implemented in Chapel."
+  type = ["paper"]
+
 [hpsfapp]
   title = "HPSF Project Proposal: The Chapel Programming Language"
   authors = "The Chapel Team"
@@ -216,6 +225,15 @@
   description = "This paper investigates the viability of using Chapel as a tool to achieve both code and performance portability in large-scale tree-based search for solving permutation combinatorial problems. Extensive experiments using up to 512 NVIDIA GPUs and 1024 AMD GPUs show that it is possible to scale on the two different systems using the same tree-based search written in Chapel."
   type = ["paper", "presentation"]
 
+[iccs2024]
+  title = "PGAS Data Structure for Unbalanced Tree-Based Algorithms at Scale"
+  venue = "International Conference on Computational Science (ICCS 2024)"
+  date = "July 2–4, 2024"
+  url = "https://www.iccs-meeting.org/archive/iccs2024/papers/148340097.pdf"
+  slides = "ICCS_2024-slides.pdf"
+  description = "This paper introduces a PGAS-based data structure and work-stealing mechanism for parallel depth-first traversal of unbalanced trees, implemented as the Chapel DistributedBag module."
+  type = ["paper", "presentation"]
+
 [amd2024]
   title = "Making Parallel Programming and GPUs More Accessible with Chapel"
   authors = "Engin Kayraklioglu"
@@ -225,12 +243,15 @@
   description = "This is an in-depth talk about Chapel's GPU programming where concepts of parallelism and locality are covered extensively."
   type = ["presentation"]
 
-[pdco2024]
-  title = "GPU-Accelerated Tree-Search in Chapel: Comparing Against CUDA and HIP on Nvidia and AMD GPUs"
-  authors = "Guillaume Helbecque"
+[pdco24]
+  title = "GPU-Accelerated Tree-Search in Chapel versus CUDA and HIP"
+  authors = "Guillaume Helbecque, Ezhilmathi Krishnasamy, Nouredine Melab, Pascal Bouvry"
   venue = "PDCO 2024 at IPDPS 2024"
   date = "May 31, 2024"
-  type = ["paper"]
+  url = "https://ieeexplore.ieee.org/document/10596398"
+  slides = "PDCO2024-slides.pdf"
+  description = "This paper presents a proof-of-concept GPU-accelerated tree search algorithm in Chapel, showcasing a portable PGAS-based approach to parallel backtracking on both Nvidia and AMD GPU architectures."
+  type = ["paper", "presentation"]
 
 [ipdps2024]
   title = "Adaptive Prefetching for Fine-grain Communication in PGAS Programs"
@@ -268,6 +289,7 @@
   url = "https://onlinelibrary.wiley.com/doi/10.1002/cpe.7874"
   extraLink = "https://hal.science/hal-04165491"
   extraLinkText = "Preprint"
+  description = "This paper presents P3D-DFS, a framework for parallel distributed tree search algorithms implemented in Chapel using the distBag data structure, demonstrating Chapel's viability as a productive and performant alternative to OpenMP and MPI+X in exascale computing."
   type = ["paper"]
 
 [ems23]
@@ -418,7 +440,7 @@
 [sec20]
   title = "A Comparative Study of High-Productivity High-Performance Programming Languages for Parallel Metaheuristics"
   authors = "Jan Gmys, Tiago Carneiro, Nouredine Melab, El-Ghazali Talbi, Daniel Tuyttens"
-  venue = "Swarm and Evolutionary Computation, volume 57. September 2020"
+  venue = "Swarm and Evolutionary Computation, volume 57"
   date = "September 2020"
   description = "This paper compares Chapel with Julia, Python/Numba, and C+OpenMP in terms of performance, scalability and productivity. Two parallel metaheuristics are implemented for solving the 3D Quadratic Assignment Problem (Q3AP), using thread-based parallelism on a multi-core shared-memory computer. The paper also evaluates and compares the performance of the languages for a parallel fitness evaluation loop, using four different test functions with different computational characteristics. The authors provide feedback on the implementation and parallelization process in each language."
   url = "https://www.sciencedirect.com/science/article/abs/pii/S2210650220303734"
