@@ -6,20 +6,34 @@
     <description>Recent content in Tags on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Archival Posts / Reprints</title>
       <link>https://chapel-lang.org/blog/tags/archival-posts-/-reprints/</link>
-      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/tags/archival-posts-/-reprints/</guid>
       <description></description>
     </item>
     <item>
       <title>Editorial</title>
       <link>https://chapel-lang.org/blog/tags/editorial/</link>
-      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/tags/editorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPU Programming</title>
+      <link>https://chapel-lang.org/blog/tags/gpu-programming/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/tags/gpu-programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sparse Arrays</title>
+      <link>https://chapel-lang.org/blog/tags/sparse-arrays/</link>
+      <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/tags/sparse-arrays/</guid>
       <description></description>
     </item>
     <item>
@@ -153,20 +167,6 @@
       <link>https://chapel-lang.org/blog/tags/trip-reports/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/tags/trip-reports/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>GPU Programming</title>
-      <link>https://chapel-lang.org/blog/tags/gpu-programming/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/tags/gpu-programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sparse Arrays</title>
-      <link>https://chapel-lang.org/blog/tags/sparse-arrays/</link>
-      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/tags/sparse-arrays/</guid>
       <description></description>
     </item>
     <item>

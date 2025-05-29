@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Editorial on Chapel Language Blog</title>
-    <link>https://chapel-lang.org/blog/tags/editorial/</link>
-    <description>Recent content in Editorial on Chapel Language Blog</description>
+    <title>10 Myths About Scalable Parallel Programming Languages (Redux) on Chapel Language Blog</title>
+    <link>https://chapel-lang.org/blog/series/10-myths-about-scalable-parallel-programming-languages-redux/</link>
+    <description>Recent content in 10 Myths About Scalable Parallel Programming Languages (Redux) on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/editorial/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/series/10-myths-about-scalable-parallel-programming-languages-redux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>10 Myths About Scalable Parallel Programming Languages (Redux),  Part 2: Past Failures and Future Attempts</title>
       <link>https://chapel-lang.org/blog/posts/10myths-part2/</link>
