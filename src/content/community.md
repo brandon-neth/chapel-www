@@ -13,8 +13,12 @@ keywords = ["TODO"]
   url="https://chapel.discourse.group/"
 [[WrittenConversation.categories]]
   name="Announcements"
-  description="notable news items"
+  description="announcements for the community"
   url="https://chapel.discourse.group/c/announcements"
+[[WrittenConversation.categories]]
+  name="Newsletters"
+  description="quarterly newsletters about Chapel happenings"
+  url="https://chapel.discourse.group/c/newsletters"
 [[WrittenConversation.categories]]
   name="Users"
   description="for questions and discussions from a Chapel user perspective"
@@ -23,24 +27,20 @@ keywords = ["TODO"]
   name="Developers"
   description="for those working on improving Chapel's implementation"
   url="https://chapel.discourse.group/c/developers"
-[[WrittenConversation.categories]]
-  name="Notifications"
-  description="for auto-generated notifications about commits, issues, etc."
-  url="https://chapel.discourse.group/c/notifications"
 
 [[WrittenConversation]]
   name="Discord"
-  description="A newer place for general chat about Chapel"
+  description="A place for general chat about Chapel"
   url="https://discord.gg/xu2xg45yqH"
 
 [[WrittenConversation]]
   name="Gitter"
-  description="A place for live Matrix chat about Chapel"
+  description="Another place for chatting about Chapel"
   url="https://gitter.im/chapel-lang/chapel"
 
 [[WrittenConversation]]
   name="GitHub Issues"
-  description="The place to file bug reports, feature requests, and other things that require action"
+  description="The place to file bug reports, feature requests, and other things that deserve action"
   url="https://github.com/chapel-lang/chapel/issues"
 
 [[LiveEvents]]
@@ -49,14 +49,14 @@ keywords = ["TODO"]
   url="https://github.com/chapel-lang/chapel/discussions/categories/weekly-meeting-topics?discussions_q="
 
 [[LiveEvents]]
-  name="Demo Sessions"
-  description="A live monthly demo introducing Chapel features"
-  url="https://outlook.office365.com/calendar/published/cfd54391a94d41648a8c15e1ccf5d870@hpe.com/1eb05c67756a4576b540c8946faba28915354704168464865139/calendar.html"
+  name="Chapel deep-dives and demos"
+  description="A weekly meeting slot supporting in-depth discussions and demos"
+  url="https://github.com/chapel-lang/chapel/discussions/27247"
 
 [[LiveEvents]]
   name="ChapelCon (formerly CHIUW)"
   description="An annual event featuring Chapel-related talks, tutorials, and other sesions"
-  url="/ChapelCon24.html"
+  url="/ChapelCon.html"
 
 
 +++
