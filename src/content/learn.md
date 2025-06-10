@@ -21,7 +21,7 @@ keywords = ["FAQ","How do I","questions","what if"]
 
 [[talks]]
   title=""""I don't have much time and would like to watch a short introduction to Chapel.""""
-  description="""This pair of talks from [**PNW PLSE 2024**](https://www.youtube.com/watch?v=ydsM51T7Pts) and [**2023**](https://www.youtube.com/watch?v=uZQlheDo28Y) and are short and sweet."""
+  description="""This pair of talks from [**PNW PLSE 2024**](https://www.youtube.com/watch?v=ydsM51T7Pts) and [**2023**](https://www.youtube.com/watch?v=uZQlheDo28Y) are short and sweet."""
 
 [[talks]]
   title=""""I'd like to watch an introductory Chapel talk.""""
