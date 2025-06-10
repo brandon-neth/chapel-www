@@ -15,6 +15,8 @@ preview: clean $(ACTIVATE)
 	hugo build
 # link to all other website content to avoid broken links to it (e.g., blog)
 	-ln -s $(WEBSITE_DIR)/* $(PUBLIC_DIR)/ >& /dev/null
+	-ln -s $(WEBSITE_DIR)/presentations/* $(PUBLIC_DIR)/presentations/ >& /dev/null
+	-ln -s $(WEBSITE_DIR)/papers/* $(PUBLIC_DIR)/papers/ >& /dev/null
 # have hugo serve result (will also re-build)
 	hugo serve
 
