@@ -22,22 +22,27 @@ keywords = ["TODO"]
   {{<artifact-listing "ipdps2024">}}
 {{</publication-list>}}
 
-{{<publication-list "overviews" "Chapel Overviews">}}
+{{<publication-list "overviews" "Chapel Overviews and History">}}
   {{<artifact-listing "pmfpc15">}}
-  {{<artifact-listing "hpca07">}}
-{{</publication-list>}}
-
-{{<publication-list "project" "Chapel Project Updates">}}
   {{<artifact-listing "cug18">}}
   {{<artifact-listing "cug13">}}
+  {{<artifact-listing "hpca07">}}
+  {{<artifact-listing "hips04">}}
 {{</publication-list>}}
 
-{{<publication-list "opt-impl" "Chapel Optimizations and Implementation">}}
+{{<publication-list "impl-opt" "Chapel Implementation and Optimizations">}}
+  {{<artifact-listing "waccpd24">}}
   {{<artifact-listing "lcpc22">}}
   {{<artifact-listing "lcpc21">}}
   {{<artifact-listing "tpds21">}}
   {{<artifact-listing "llvm-hpc15">}}
   {{<artifact-listing "pgas15">}}
+{{</publication-list>}}
+
+{{<publication-list "multiResolutionPapers" "Multiresolution Chapel Features">}}
+  {{<artifact-listing "pgas11">}}
+  {{<artifact-listing "cug11">}}
+  {{<artifact-listing "hotpar10">}}
 {{</publication-list>}}
 
 {{<publication-list "applicationPapers" "Applications of Chapel">}}
@@ -50,12 +55,6 @@ keywords = ["TODO"]
   {{<artifact-listing "hpec19">}}
 {{</publication-list>}}
 
-{{<publication-list "multiResolutionPapers" "Multiresolution Chapel Features">}}
-  {{<artifact-listing "pgas11">}}
-  {{<artifact-listing "cug11">}}
-  {{<artifact-listing "hotpar10">}}
-{{</publication-list>}}
-
 {{<publication-list "tools" "Chapel Tools">}}
   {{<artifact-listing "ics18">}}
   {{<artifact-listing "cf18">}}
@@ -65,8 +64,4 @@ keywords = ["TODO"]
   {{<artifact-listing "cug22">}}
   {{<artifact-listing "taco18">}}
   {{<artifact-listing "ics15">}}
-{{</publication-list>}}
-
-{{<publication-list "historical" "Chapel Historical Papers">}}
-  {{<artifact-listing "hips04">}}
 {{</publication-list>}}

@@ -68,7 +68,6 @@ keywords = ["TODO"]
 {{</publication-list>}}
 
 {{<publication-list "gpus" "GPU Computing in Chapel">}}
-  {{<artifact-listing "waccpd24">}}
   {{<artifact-listing "amd2024">}}
   {{<artifact-listing "cug24">}}
   {{<artifact-listing "linuxcon24">}}
