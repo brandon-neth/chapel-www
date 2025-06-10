@@ -135,12 +135,13 @@
 
 [waccpd24]
   title = "Productive, Vendor-Neutral GPU Programming Using Chapel"
-  authors = "Engin Kayraklioglu"
+  authors = "Engin Kayraklioglu, Andy Stone"
   venue = "WACCPD at SC24"
   date = "November 18, 2024"
-  url = "EnginWACCPD-SC24.pdf"
-  description = "This lightning talk introduces Chapel's GPU support using simple examples. It also provides several pointers to other resources."
-  type = ["presentation"]
+  url = "https://ieeexplore.ieee.org/document/10820777"
+  slides = "/presentations/EnginWACCPD-SC24.pdf"
+  description = "This paper introduces Chapel's GPU support. It provides a brief background on Chapel's parallelism and locality concepts, as well as how they relate to GPU programming. A real-world application with results from Frontier is also covered. However, the main focus of the paper is how the GPU support is implemented in the compiler, runtime and internal modules."
+  type = ["paper", "presentation"]
 
 [eduhpc24]
   title = "Consider an Applications-First Approach for PDC"
