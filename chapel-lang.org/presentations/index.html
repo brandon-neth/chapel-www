@@ -186,11 +186,11 @@
                         
                         <ul class="dropdown-menu">
                             
-                            <li><a href="../tutorials">Tutorials</a></li>
+                            <li><a href="../presentations">Presentations</a></li>
                             
                             <li><a href="../papers">Papers</a></li>
                             
-                            <li><a href="../presentations">Presentations</a></li>
+                            <li><a href="../tutorials">Tutorials</a></li>
                             
                             <li><a href="../examples">Examples</a></li>
                             
@@ -277,7 +277,7 @@
 
 
 <details>
-  <summary id="featuredPresentations"><h4>Featured Presentations </h4>	</summary>
+  <summary id="featured"><h4>Featured Chapel Presentations </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -285,13 +285,13 @@
   
   
     <div class="publication">
-       <a href="../presentations/ChapelForLinuxCon-presented.pdf"> 
-      <b>Introducing Chapel: A Programming Language for Productive Parallel Computing from Laptops to Supercomputers</b>
+       <a href="ChapelForKAUST-presented.pdf"> 
+      <b>Chapel: Accessible Parallel Programming from the Desktop to the Supercomputer</b>
        </a> 
   
       
         [
-         <a href="https://www.youtube.com/watch?v=UxXqo8lYsI4">Video</a> 
+         <a href="https://youtu.be/9rL7H8V9qxk?feature=shared&amp;t=420">Video</a> 
         
         
         
@@ -302,13 +302,38 @@
       <br>
   
       Brad Chamberlain,
-       <i>LinuxCon / Open Source Summit North America 2023, Vancouver BC</i>, 
-      May 11, 2023
+       <i>KAUST/KSL seminar</i>, 
+      May 13, 2025
   
       
   
       <div class="publication-description">
-        <p>This introduction to Chapel provides the language&#39;s motivation and brief comparisons with familiar languages and HPC programming models. It then introduces some of Chapel&#39;s core features for parallelism and locality, showing how they have recently been extended to also support GPUs. It wraps up by providing a peek into some of the flagship applications that are using Chapel.</p>
+        <p>A gentle introduction to Chapel for a general scientific computing audience, covering motivation, apps, performance, and resources.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="ChamberlainHIPS2025-presented.pdf"> 
+      <b>Reflections on 30 Years of HPC Programming: So many hardware advances, so little adoption of new languages</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Brad Chamberlain,
+       <i>HIPS 2025 keynote at IPDPS 2025</i>, 
+      June 3, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>This keynote uses the 30th instance of HIPS as an opportunity to reflect on the past 30 years of HPC programming language design and adoption (or lack thereof)</p>
       </div>
     </div>
   
@@ -351,63 +376,30 @@
   
   
     <div class="publication">
-       <a href="../presentations/ChapelForPNWPLSE2024-unabridged.pdf"> 
-      <b>The Value of Languages in Parallel Computing</b>
+       <a href="jhu-apl-2024.pdf"> 
+      <b>Productive Parallel Programming with the Chapel Language</b>
        </a> 
   
       
         [
-         <a href="https://www.youtube.com/watch?v=ydsM51T7Pts&amp;list=PLuqM5RJ2KYFin_PkkaAJWJF1KjcVGnagh&amp;index=4">Video</a> 
+         <a href="https://www.youtube.com/watch?v=SuZckfFF_pE">Video</a> 
         
         
         
         
-        ]
-      
-  
-      <br>
-  
-      Brad Chamberlain,
-       <i>PNW PLSE 2024, Seattle WA</i>, 
-      May 7, 2024
-  
-      
-  
-      <div class="publication-description">
-        <p>This lightning talk illustrates Chapel implementing several variants of Bale IndexGather—a random access computation: serially, for multicore processors, for GPUs, and on supercomputers. It touts the benefits of parallel languages in making such computations straightforward, yet fast and scalable.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="../presentations/chapel-open-source-connector.pdf"> 
-      <b>Chapel and Open Productive Parallel Computing at Scale</b>
-       </a> 
-  
-      
-        [
-         <a href="https://www.youtube.com/watch?v=gwrbBQiP5HQ">Video</a> 
-        
-        
-         | 
-         <a href="https://youtu.be/gwrbBQiP5HQ?si=CFd_KHB_JG560lXH&amp;t=1380"> Live Demo </a> 
         ]
       
   
       <br>
   
       Michael Ferguson,
-       <i>Open Source Connector, Burlington VT (presented remotely)</i>, 
-      February 7, 2024
+       <i>Johns Hopkins Applied Physics Laboratory</i>, 
+      October 11, 2024
   
       
   
       <div class="publication-description">
-        <p>This talk demonstrates how, as a parallel language, Chapel&#39;s standard library can easily support parallel implementations, permitting codes that are as succinct as other popular languages to outperform them by 10x–400x. It is also unique among the talks here in that it includes a live demo of programming using Chapel and Arkouda.</p>
+        <p>An overview of what makes the Chapel programming language unique and how users have benefited from its productivity, speed, and scalability.</p>
       </div>
     </div>
   
@@ -420,9 +412,100 @@
 
 
 <details>
-  <summary id="userPresentations"><h4>Featured Presentations by Chapel Users </h4>	</summary>
+  <summary id="featured-apps"><h4>Featured Presentations of Chapel Applications </h4>	</summary>
   <div class="toggle-list-contents">
     
+  
+  
+  
+  
+    <div class="publication">
+       <a href="gtc.pdf"> 
+      <b>GPU-Based Monte Carlo Simulation of Light Transport in Tissue: A Chapel Implementation</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Engin Kayraklioglu, Hui Wang,
+       <i>NVIDIA GTC 2025</i>, 
+      March 17, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>This poster summarizes how Chapel assists biomedical research using Monte Carlo simulations on GPUs.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="Chapel-CHAMPS-NASA2025.pdf"> 
+      <b>High-Performance, Productive Programming using Chapel with Examples from the CFD Solver CHAMPS</b>
+       </a> 
+  
+      
+        [
+         <a href="https://www.nas.nasa.gov/pubs/ams/2025/02-20-25.html">Video</a> 
+        
+        
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Engin Kayraklioglu, Éric Laurendeau, Karim Zayni,
+       <i>NASA Ames Research Center</i>, 
+      February 20, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>This joint talk introduces Chapel and CHAMPS, a multiphysics solver developed at Polytechnique Montreal for aerodynamics research.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="Jeremiah-Pangeo-Showcase.pdf"> 
+      <b>Arkouda and XArray: A new backend for working with Distributed Arrays</b>
+       </a> 
+  
+      
+        [
+         <a href="https://www.youtube.com/watch?v=v8p0T-RJTCU">Video</a> 
+        
+        
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Jeremiah Corrado,
+       <i>Pangeo Showcase</i>, 
+      November 20, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>A description and demo of Arkouda extensions permitting it to serve as a back-end for XArray.</p>
+      </div>
+    </div>
+  
+
   
   
   
@@ -497,7 +580,7 @@
 
 
 <details>
-  <summary id="recentPresentations"><h4>Other Recent Presentations </h4>	</summary>
+  <summary id="lightning-talks"><h4>Chapel Lightning Talks </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -505,13 +588,46 @@
   
   
     <div class="publication">
-       <a href="../presentations/vendor-neutral-gpu-programming-in-chapel.pdf"> 
-      <b>Vendor-Neutral GPU Programming in Chapel</b>
+       <a href="../presentations/ChapelForPNWPLSE2024-unabridged.pdf"> 
+      <b>The Value of Languages in Parallel Computing</b>
        </a> 
   
       
         [
-         <a href="https://youtu.be/5-jLdKduaJE?si=ezaz5mDORvmTjgRL">Video</a> 
+         <a href="https://www.youtube.com/watch?v=ydsM51T7Pts&amp;list=PLuqM5RJ2KYFin_PkkaAJWJF1KjcVGnagh&amp;index=4">Video</a> 
+        
+        
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Brad Chamberlain,
+       <i>PNW PLSE 2024, Seattle WA</i>, 
+      May 7, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>A lightning talk illustrating Chapel through several variants of a simple computation: serially, multicore, for GPUs, and on supercomputers.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="pnw-plse2025.pdf"> 
+      <b>The Secret Sauce of Vendor-Neutral GPU Programming (in Chapel)</b>
+       </a> 
+  
+      
+        [
+         <a href="https://youtu.be/7yBVQeRKKrI?si=dSGPRq2DNUIP1SaL">Video</a> 
         
         
         
@@ -522,13 +638,13 @@
       <br>
   
       Jade Abraham,
-       <i>LinuxCon / Open Source Summit North America 2024, Seattle WA</i>, 
-      April 16, 2024
+       <i>PNW PLSE 2025</i>, 
+      May 7, 2025
   
       
   
       <div class="publication-description">
-        <p>This talk gives an introduction to Chapel&#39;s support for GPU programming, including live demos on AMD and NVIDIA GPUs.</p>
+        <p>A lightning talk introducing Chapel&#39;s support for vendor-neutral GPU programming and how it is implemented</p>
       </div>
     </div>
   
@@ -538,72 +654,30 @@
   
   
     <div class="publication">
-       <a href="../presentations/CUG2024.pdf"> 
-      <b>Portable Support for GPUs and Distributed-Memory Parallelism in Chapel</b>
+       <a href="../presentations/ChapelForPNWPLSE2023-presented.pdf"> 
+      <b>Parallel Programming with Chapel (or: Performance at any Cost? HPC and 24h of Le Mans)</b>
        </a> 
   
+      
+        [
+         <a href="https://www.youtube.com/watch?v=uZQlheDo28Y&amp;feature=youtu.be">Video</a> 
+        
+        
+        
+        
+        ]
       
   
       <br>
   
-      Andrew Stone,
-       <i>CUG 2024, Perth Australia</i>, 
-      May 9, 2024
+      Brad Chamberlain,
+       <i>PNW PLSE 2023, Seattle, WA</i>, 
+      May 9, 2023
   
       
   
       <div class="publication-description">
-        <p>This talk introduces Chapel&#39;s support for GPU programming through user codes making use of it today and sample code segments.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="../presentations/EnginTechTalk2024-static-public.pdf"> 
-      <b>High-level, Vendor-Neutral GPU Programming Using Chapel</b>
-       </a> 
-  
-      
-  
-      <br>
-  
-      Engin Kayraklioglu,
-       <i>internal HPE talk (edited for public consumption)</i>, 
-      January 9, 2024
-  
-      
-  
-      <div class="publication-description">
-        <p>This talk provides an in-depth introduction to Chapel&#39;s support for GPU programming from motivation to key concepts, applications, implementation approach, and ongoing work.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="../presentations/Arkouda-talk-slides.pdf"> 
-      <b>Arkouda: A High-Performance Data Analytics Framework</b>
-       </a> 
-  
-      
-  
-      <br>
-  
-      Michelle Strout,
-       <i>CUG 2023, Helsinki, Finland</i>, 
-      May 10, 2023
-  
-      
-  
-      <div class="publication-description">
-        <p>This is an introduction to the motivation, capabilities, and performance of Arkouda, supporting interactive data science for Python users at massive scales.</p>
+        <p>This 10-minute talk provides a very brief introduction to Chapel, highlighting recent advances such as support for GPUs and user applications.</p>
       </div>
     </div>
   
@@ -616,7 +690,386 @@
 
 
 <details>
-  <summary id="timelessTalks"><h4>Timeless Talks </h4>	</summary>
+  <summary id="recent"><h4>Other Recent Chapel Presentations </h4>	</summary>
+  <div class="toggle-list-contents">
+    
+  
+  
+  
+  
+    <div class="publication">
+       <a href="ChapelHPSFCon2025.pdf"> 
+      <b>HPSF Project Update: The Chapel Programming Language</b>
+       </a> 
+  
+      
+        [
+         <a href="https://youtu.be/r4Ayf6Zt8O8?si=-TZi8xTfLtp1m_Se">Video</a> 
+        
+        
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Michael Ferguson and Shreyas Khandekar,
+       <i>HPSFCon 2025</i>, 
+      May 5, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>A quick introduction to Chapel and its synergies with the goals of the High Performance Software Foundation.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="2025-02-12-runtime.pdf"> 
+      <b>Chapel Runtime Overview</b>
+       </a> 
+  
+      
+        [
+         <a href="https://youtu.be/rC4Oz654bsU?si=8ODtKy__JdFde8g5">Video</a> 
+        
+        
+        
+        
+        ]
+      
+  
+      <br>
+  
+      John H. Hartman,
+       <i>Chapel monthly demo series</i>, 
+      February 12, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>This presentation describes the basic functionality of the Chapel runtime, and what goes on behind the scenes when a Chapel program runs.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="ChapelHPSFApplication-presented.pdf"> 
+      <b>HPSF Project Proposal: The Chapel Programming Language</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      The Chapel Team,
+       <i>HPSF Technical Advisory Council meeting</i>, 
+      January 9, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>The presentation of our application to HPSF covering Chapel&#39;s motivation and synergies with HPSF along with a summary of our development process</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="SC24-demo.pdf"> 
+      <b>Interactive Exploratory Data Analytics (EDA) on Petabytes with Python and Arkouda, Powered by Chapel</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Michelle Strout, Michael Ferguson, Engin Kayraklioglu, Ben McDonald,
+       <i>SC24</i>, 
+      November 18–21, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>These are slides that we used for our demo station for Arkouda and Chapel in the HPE Booth at SC24</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="ChapelForCLSAC2024-presented.pdf"> 
+      <b>Arkouda and Chapel: Updates I&#39;d Want Mike to Know (Highlights Since CLSAC 2022)</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Brad Chamberlain,
+       <i>CLSAC 2024</i>, 
+      November 6, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>A run-down of highlights from the Arkouda and Chapel projects since CLSAC 2022, the last time I talked to Arkouda PI Mike Merrill before his passing.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="Michelle-Engin-EduHPC2024.pdf"> 
+      <b>Consider an Applications-First Approach for PDC</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Michelle Mills Strout, Engin Kayraklioglu,
+       <i>EduHPC at SC24</i>, 
+      November 17, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk proposes an application-first approach for teaching parallel computing and shares some experiences based on Chapel.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="nasa-2024.pdf"> 
+      <b>Productive Parallel Programming with the Chapel Language</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Michael Ferguson,
+       <i>NASA Goddard, Heliophysics division</i>, 
+      October 31, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>An overview of what makes the Chapel programming language unique and how users have benefited from its productivity, speed, and scalability.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="EnginJadeInnerSourcing2024-public.pdf"> 
+      <b>The Chapel Parallel Programming Language and its Ecosystem</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Engin Kayraklioglu, Jade Abraham,
+       <i>HPE Inner Sourcing Summit II</i>, 
+      October 4, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk introduces many ways in which developers and enthusiasts can contribute to the open-source Chapel project.</p>
+      </div>
+    </div>
+  
+
+
+  </div>
+</details>
+
+
+
+
+<details>
+  <summary id="recent-apps"><h4>Other Recent Presentations of Chapel Applications </h4>	</summary>
+  <div class="toggle-list-contents">
+    
+  
+  
+  
+  
+    <div class="publication">
+       <a href="MARBLChapel-CUG-May-2025.pdf"> 
+      <b>MARBLChapel: Fortran-Chapel Interoperability in an Ocean Simulation</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Brandon Neth, Scott Bachman, Michelle Mills Strout,
+       <i>CUG 2025</i>, 
+      May 6, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>A report on a collaboration between HPE and [C]Worthy in support of studying ocean Carbon Dioxide Removal (CDR) leveraging Chapel and its interoperability with Fortran.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="SC24-arkouda-hppss.pdf"> 
+      <b>Exploring Data at Scale with Arkouda: A Practical Introduction to Scalable Data Science</b>
+       </a> 
+  
+      
+        [
+         <a href="https://www.youtube.com/watch?v=eSuyl9ogDfI">Video</a> 
+        
+        
+         | 
+         <a href="arkouda-demo-hppss.pdf"> Extended Abstract </a> 
+        ]
+      
+  
+      <br>
+  
+      Ben McDonald,
+       <i>HPPSS at SC24</i>, 
+      November 18, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>An introduction to, and interactive demo of, interactively driving HPC systems at scale using Python and Jupyter using Arkouda.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="Eric_SC_2024.pdf"> 
+      <b>A Case Study For Using Chapel Within The Global Aerospace Industry</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Éric Laurendeau, Karim Mohamad Zayni,
+       <i>PAW-ATM 2024 (featured speaker) at SC24</i>, 
+      November 17, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This keynote talk introduces CHAMPS, a multiphysics solver developed at Polytechnique Montreal for aerodynamics research.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="paw-atm-2024-suffix-arrays.pdf"> 
+      <b>Exploring Suffix Array Algorithms in Chapel</b>
+       </a> 
+  
+      
+        [
+        
+        
+        
+        
+         <a href="https://github.com/sourceryinstitute/PAW/raw/gh-pages/PAW-ATM24/extendedAbstracts/PAW-ATM2024_abstract2.pdf"> Extended Abstract </a> 
+        ]
+      
+  
+      <br>
+  
+      Michael P. Ferguson, Bonnie Hurwitz, Shreyas Khandekar,
+       <i>PAW-ATM 2024 at SC24</i>, 
+      November 17, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>A short talk describing early work towards suffix array construction in Chapel with applications to strain detection in metagenomics.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="mstrout-ccdsc.pdf"> 
+      <b>Real Applications, Real Fast in Chapel</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Michelle Mills Strout,
+       <i>Clusters, Clouds, and Data for Scientific Computing (CCDSC)</i>, 
+      September 5, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk demonstrates how Chapel enables developing parallel, scalable real-world applications.</p>
+      </div>
+    </div>
+  
+
+
+  </div>
+</details>
+
+
+
+
+<details>
+  <summary id="timeless"><h4>Timeless Talks </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -759,7 +1212,7 @@
 
 
 <details>
-  <summary id="overviewPresentations"><h4>Chapel Overviews </h4>	</summary>
+  <summary id="overviews"><h4>Other Chapel Overviews </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -767,13 +1220,71 @@
   
   
     <div class="publication">
-       <a href="../presentations/ChapelForPNWPLSE2023-presented.pdf"> 
-      <b>Parallel Programming with Chapel (or: Performance at any Cost? HPC and 24h of Le Mans)</b>
+       <a href="ChapelArkoudaForUWPLSELunch-unabridged.pdf"> 
+      <b>Parallel Programmability from Laptops to HPCs with Chapel and Arkouda</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Brad Chamberlain,
+       <i>UW CSE PLSE lunch</i>, 
+      January 28, 2025
+  
+      
+  
+      <div class="publication-description">
+        <p>A technical overview of Chapel for PL types covering language features, apps, optimizations, GPU features, and more</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../presentations/chapel-open-source-connector.pdf"> 
+      <b>Chapel and Open Productive Parallel Computing at Scale</b>
        </a> 
   
       
         [
-         <a href="https://www.youtube.com/watch?v=uZQlheDo28Y&amp;feature=youtu.be">Video</a> 
+         <a href="https://www.youtube.com/watch?v=gwrbBQiP5HQ">Video</a> 
+        
+        
+         | 
+         <a href="https://youtu.be/gwrbBQiP5HQ?si=CFd_KHB_JG560lXH&amp;t=1380"> Live Demo </a> 
+        ]
+      
+  
+      <br>
+  
+      Michael Ferguson,
+       <i>Open Source Connector, Burlington VT (presented remotely)</i>, 
+      February 7, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk and demo show how Chapel&#39;s standard library easily supports parallel implementations, permitting succinct codes to outperform popular languages by 10x–400x.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../presentations/ChapelForLinuxCon-presented.pdf"> 
+      <b>Introducing Chapel: A Programming Language for Productive Parallel Computing from Laptops to Supercomputers</b>
+       </a> 
+  
+      
+        [
+         <a href="https://www.youtube.com/watch?v=UxXqo8lYsI4">Video</a> 
         
         
         
@@ -784,13 +1295,13 @@
       <br>
   
       Brad Chamberlain,
-       <i>PNW PLSE 2023, Seattle, WA</i>, 
-      May 9, 2023
+       <i>LinuxCon / Open Source Summit North America 2023, Vancouver BC</i>, 
+      May 11, 2023
   
       
   
       <div class="publication-description">
-        <p>This 10-minute talk provides a very brief introduction to Chapel, highlighting recent advances such as support for GPUs and user applications.</p>
+        <p>This introduction to Chapel provides the language&#39;s motivation and brief comparisons with familiar languages and HPC programming models. It then introduces some of Chapel&#39;s core features for parallelism and locality, showing how they have recently been extended to also support GPUs. It wraps up by providing a peek into some of the flagship applications that are using Chapel.</p>
       </div>
     </div>
   
@@ -804,6 +1315,14 @@
       <b>Making Parallel Computing as Easy as Py(thon), from Laptops to Supercomputers</b>
        </a> 
   
+      
+        [
+         <a href="https://youtu.be/7Qk8T7_bevo?si=pQjrpQQSAS6P870-">Video</a> 
+        
+        
+        
+        
+        ]
       
   
       <br>
@@ -828,7 +1347,7 @@
 
 
 <details>
-  <summary id="applicationPresentations"><h4>Applications of Chapel </h4>	</summary>
+  <summary id="other-apps"><h4>Other Applications of Chapel </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -836,22 +1355,47 @@
   
   
     <div class="publication">
-       <a href="../presentations/ChapelForPASC2023-presented.pdf"> 
-      <b>Practical Examples of Productivity and Performance in Chapel</b>
+       <a href="Bader-Charm&#43;&#43;Keynote.pdf"> 
+      <b>Arachne: An Open-Source Framework for Interactive Massive-Scale Graph Analytics</b>
        </a> 
   
       
   
       <br>
   
-      Brad Chamberlain,
-       <i>PASC&#39;23, Davos, Switzerland (presented remotely)</i>, 
-      June 26, 2023
+      David Bader,
+       <i>Charm&#43;&#43; Workshop 2024 keynote talk</i>, 
+      April 26, 2024
   
       
   
       <div class="publication-description">
-        <p>This talk summarizes Chapel&#39;s use in CHAMPS and Arkouda, including some recent scaling results, and summarizes the use of traditional Chapel features to target GPUs in a vendor-neutral manner.</p>
+        <p>This keynote introduces Arachne, an open-source framework that enhances massive-scale graph analytics powered by Chapel and Arkouda.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../presentations/Arkouda-talk-slides.pdf"> 
+      <b>Arkouda: A High-Performance Data Analytics Framework</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Michelle Strout,
+       <i>CUG 2023, Helsinki, Finland</i>, 
+      May 10, 2023
+  
+      
+  
+      <div class="publication-description">
+        <p>This is an introduction to the motivation, capabilities, and performance of Arkouda, supporting interactive data science for Python users at massive scales.</p>
       </div>
     </div>
   
@@ -884,7 +1428,7 @@
       
   
       <div class="publication-description">
-        <p>This keynote demonstrates how Chapel&#39;s support for task-parallelism is being used to express a wide variety of computations while also generating good performance and scalability.</p>
+        <p>This keynote demonstrates Chapel&#39;s support for task-parallelism and its use to express a wide variety of computations while generating good performance and scalability.</p>
       </div>
     </div>
   
@@ -963,9 +1507,117 @@
 
 
 <details>
-  <summary id="gpuPresentations"><h4>GPU Computing in Chapel </h4>	</summary>
+  <summary id="gpus"><h4>GPU Computing in Chapel </h4>	</summary>
   <div class="toggle-list-contents">
     
+  
+  
+  
+  
+    <div class="publication">
+       <a href="EnginAMD2024-static-public.pdf"> 
+      <b>Making Parallel Programming and GPUs More Accessible with Chapel</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Engin Kayraklioglu,
+       <i>AMD</i>, 
+      May 31, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This is an in-depth talk about Chapel&#39;s GPU programming where concepts of parallelism and locality are covered extensively.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../presentations/CUG2024.pdf"> 
+      <b>Portable Support for GPUs and Distributed-Memory Parallelism in Chapel</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Andrew Stone,
+       <i>CUG 2024, Perth Australia</i>, 
+      May 9, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk introduces Chapel&#39;s support for GPU programming through user codes making use of it today and sample code segments.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../presentations/vendor-neutral-gpu-programming-in-chapel.pdf"> 
+      <b>Vendor-Neutral GPU Programming in Chapel</b>
+       </a> 
+  
+      
+        [
+         <a href="https://youtu.be/5-jLdKduaJE?si=ezaz5mDORvmTjgRL">Video</a> 
+        
+        
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Jade Abraham,
+       <i>LinuxCon / Open Source Summit North America 2024, Seattle WA</i>, 
+      April 16, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk gives an introduction to Chapel&#39;s support for GPU programming, including live demos on AMD and NVIDIA GPUs.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../presentations/EnginTechTalk2024-static-public.pdf"> 
+      <b>High-level, Vendor-Neutral GPU Programming Using Chapel</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Engin Kayraklioglu,
+       <i>internal HPE talk (edited for public consumption)</i>, 
+      January 9, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This talk provides an in-depth introduction to Chapel&#39;s support for GPU programming from motivation to key concepts, applications, implementation, and ongoing work.</p>
+      </div>
+    </div>
+  
+
   
   
   
@@ -999,7 +1651,7 @@
 
 
 <details>
-  <summary id="implementingPresentations"><h4>Implementing and Optimizing Chapel </h4>	</summary>
+  <summary id="implementation"><h4>Implementing and Optimizing Chapel </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -1143,7 +1795,7 @@
 
 
 <details>
-  <summary id="designPresentations"><h4>Chapel Design and Philosophy </h4>	</summary>
+  <summary id="design"><h4>Chapel Design and Philosophy </h4>	</summary>
   <div class="toggle-list-contents">
     
   

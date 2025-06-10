@@ -186,11 +186,11 @@
                         
                         <ul class="dropdown-menu">
                             
-                            <li><a href="../tutorials">Tutorials</a></li>
+                            <li><a href="../presentations">Presentations</a></li>
                             
                             <li><a href="../papers">Papers</a></li>
                             
-                            <li><a href="../presentations">Presentations</a></li>
+                            <li><a href="../tutorials">Tutorials</a></li>
                             
                             <li><a href="../examples">Examples</a></li>
                             
@@ -277,9 +277,141 @@
 
 
 <details>
-  <summary id="featuredPublications"><h4>Featured Publications </h4>	</summary>
+  <summary id="featured"><h4>Featured Publications </h4>	</summary>
   <div class="toggle-list-contents">
     
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://davidbader.net/publication/2024-drbpdb/"> 
+      <b>VF2-PS: Parallel and Scalable Subgraph Monomorphism in Arachne</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="HPEC2024-VF2-PAR.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Mohammad Dindoost, Oliver Alvarado Rodriguez, Sounak Bagchi, Palina Pauliuchenka, Zhihui Du, David Bader,
+       <i>IEEE HPEC 2024</i>, 
+      September 24, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper introduces VF2-PS, a parallel and scalable implementation of the VF2 algorithm for subgraph monomorphism, developed in Chapel and integrated into the Arachne framework, demonstrating speedups of up to 97.0× on 128 cores compared to existing sequential Python-based tools.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://milthorpe.org/pubs/performance-portability-of-the-chapel-language-on-heterogeneous-architectures/"> 
+      <b>Performance Portability of the Chapel Language on Heterogeneous Architectures</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../presentations/Milthorpe_HCW2024_Perf_Portability.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Josh Milthorpe, Xianghao Wang, Ahmad Azizi,
+       <i>Heterogeneity in Computing Workshop (HCW 2024) at IPDPS 2024</i>, 
+      May 27, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper uses mini-applications to compare the performance portability of Chapel with OpenMP, Kokkos, CUDA, and HIP across a wide range of CPU and GPU platforms.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://link.springer.com/chapter/10.1007/978-3-031-69583-4_27"> 
+      <b>Investigating Portability in Chapel for Tree-based Optimization on GPU-powered Clusters</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="Europar2024.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Tiago Carneiro, Engin Kayraklioglu, Guillaume Helbecque, Nouredine Melab,
+       <i>Euro-PAR 2024</i>, 
+      August 28, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper investigates the viability of using Chapel as a tool to achieve both code and performance portability in large-scale tree-based search for solving permutation combinatorial problems. Extensive experiments using up to 512 NVIDIA GPUs and 1024 AMD GPUs show that it is possible to scale on the two different systems using the same tree-based search written in Chapel.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://onlinelibrary.wiley.com/doi/10.1002/cpe.7874"> 
+      <b>Parallel distributed productivity-aware tree-search using Chapel</b>
+       </a> 
+  
+      
+        [
+        
+        
+        
+        
+         <a href="https://hal.science/hal-04165491"> Preprint </a> 
+        ]
+      
+  
+      <br>
+  
+      Guillaume Helbecque, Jan Gmys, Nouredine Melab, Tiago Carneiro, and Pascal Bouvry,
+       <i>Concurrency and Computation: Practice and Experience</i>, 
+      July 19, 2023
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper presents P3D-DFS, a framework for parallel distributed tree search algorithms implemented in Chapel using the distBag data structure, demonstrating Chapel&#39;s viability as a productive and performant alternative to OpenMP and MPI&#43;X in exascale computing.</p>
+      </div>
+    </div>
+  
+
   
   
   
@@ -295,78 +427,12 @@
   
       Marjan Asgari, Wanhong Yang, John Lindsay, Hui Shao, Yongbo Liu, Rodrigo De Queiroga Miranda, and Maryam Mehri Dehnavi,
        <i>Environmental Modelling &amp; Software, volume 164</i>, 
-      2023
+      June 2023
   
       
   
       <div class="publication-description">
         <p>This paper uses Chapel in a novel knowledge-sharing setting to support a general parallel framework for calibrating distributed hydrologic models. The approach is unique due to the use of a novel search algorithm as well as its interoperability with C#, fault tolerance, parallelism, and reliability.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="https://arxiv.org/pdf/2303.13954.pdf"> 
-      <b>Compiler Optimization for Irregular Memory Access Patterns in PGAS Programs</b>
-       </a> 
-  
-      
-        [
-        
-        
-         <a href="../presentations/LCPC_2022_Rolinger.pdf">Slides</a> 
-        
-        
-        ]
-      
-  
-      <br>
-  
-      Thomas B. Rolinger, Christopher D. Krieger, Alan Sussman,
-       <i>LCPC 2022</i>, 
-      October 13, 2022
-  
-      
-  
-      <div class="publication-description">
-        <p>This paper presents a compiler optimization that targets irregular memory accesses patterns in Chapel programs. Specifically, it uses static analysis to identify irregular memory accesses to distributed arrays in parallel loops and employs code transformations to generate an inspector and executor to perform selective data replication at runtime.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="https://hal.archives-ouvertes.fr/hal-03149394/document"> 
-      <b>Towards Chapel-based Exascale Tree Search Algorithms: dealing with multiple GPU accelerators</b>
-       </a> 
-  
-      
-        [
-        
-        
-         <a href="../papers/Carneiro_et_al_GPU_slidesHPCS2020.pdf">Slides</a> 
-        
-        
-        ]
-      
-  
-      <br>
-  
-      Tiago Carneiro, Nouredine Melab, Akihiro Hayashi, Vivek Sarkar,
-       <i>HPCS 2020, Outstanding Paper Award winner</i>, 
-      March 22–27, 2021
-  
-      
-  
-      <div class="publication-description">
-        <p>This paper revisits the design and implementation of tree search algorithms dealing with multiple GPUs, in addition to scalability and productivity-awareness using Chapel. The proposed algorithm exploits Chapel&#39;s distributed iterators by combining a partial search strategy with pre-compiled CUDA kernels for more efficient exploitation of the intra-node parallelism.</p>
       </div>
     </div>
   
@@ -412,7 +478,7 @@
 
 
 <details>
-  <summary id="recentPublications"><h4>Recent Publications </h4>	</summary>
+  <summary id="recent"><h4>Other Recent Publications </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -420,22 +486,30 @@
   
   
     <div class="publication">
-       <a href="https://hal.archives-ouvertes.fr/hal-03619760/"> 
-      <b>A Local Search for Automatic Parameterization of Distributed Tree Search Algorithms</b>
+       <a href="https://hal.science/tel-04902137v1"> 
+      <b>PGAS-based Parallel Branch-and-Bound for Ultra-Scale GPU-powered Supercomputers</b>
        </a> 
   
+      
+        [
+        
+        
+         <a href="../presentations/Helbecque-defense.pdf">Slides</a> 
+        
+        
+        ]
       
   
       <br>
   
-      Tiago Carneiro, Loizos Koutsantonis, Nouredine Melab, Emmanuel Kieffer, Pascal Bouvry,
-       <i>12th IEEE Workshop Parallel / Distributed Combinatorics and Optimization (PDCO 2022)</i>, 
-      June 3, 2022
+      Guillaume Helbecque,
+       <i>PhD thesis, University of Luxembourg / University of Lille</i>, 
+      January 10, 2025
   
       
   
       <div class="publication-description">
-        <p>This work presents a local search for automatic parameterization of ChapelBB, a distributed tree search application for solving combinatorial optimization problems written in Chapel. The main objective of the proposed heuristic is to overcome the limitation of manual parameterization, which covers a limited feasible space.</p>
+        <p>This thesis explores a PGAS-based approach to designing scalable and portable parallel Branch-and-Bound algorithms for exascale systems, with contributions spanning multi-level work-stealing and multi-GPU acceleration, implemented in Chapel.</p>
       </div>
     </div>
   
@@ -445,15 +519,15 @@
   
   
     <div class="publication">
-       <a href="../CHIUW/2022/C.pdf"> 
-      <b>Extending Chapel to support fabric-attached memory</b>
+       <a href="https://davidbader.net/publication/2024-gdb/"> 
+      <b>A Deployment Tool for Large Scale Graph Analytics Framework Arachne</b>
        </a> 
   
       
         [
         
         
-         <a href="../papers/CUG_2022.pdf">Slides</a> 
+         <a href="HPEC2024-DeployArachne.pdf">Slides</a> 
         
         
         ]
@@ -461,14 +535,14 @@
   
       <br>
   
-      Amitha C, Bradford L. Chamberlain, Clarete Riana Crasta, and Sharad Singhal,
-       <i>CUG 2022, Monterey CA</i>, 
-      May 4, 2022
+      Garrett Gonzalez-Rivas, Zhihui Du, David Bader,
+       <i>IEEE HPEC 2024</i>, 
+      September 24, 2024
   
       
   
       <div class="publication-description">
-        <p>This paper describes an implementation of Chapel&#39;s arrays that leverages the language&#39;s support for user-defined data distributions to implement the array using fabric-attached memory (FAM) rather than simply local DRAM.</p>
+        <p>The paper presents a deployment tool designed to simplify the installation process for Arachne, a large-scale, Arkouda-based graph analytics framework, reducing setup time from over a week to a significantly shorter period while improving efficiency for both users and developers.</p>
       </div>
     </div>
   
@@ -478,15 +552,81 @@
   
   
     <div class="publication">
-       <a href="https://hal.archives-ouvertes.fr/hal-03629798"> 
-      <b>A performance-oriented comparative study of the Chapel high-productivity language to conventional programming environments</b>
+       <a href="https://www.iccs-meeting.org/archive/iccs2024/papers/148340097.pdf"> 
+      <b>PGAS Data Structure for Unbalanced Tree-Based Algorithms at Scale</b>
        </a> 
   
       
         [
         
         
-         <a href="../papers/pmam2022.pdf">Slides</a> 
+         <a href="ICCS_2024-slides.pdf">Slides</a> 
+         | 
+         <a href="https://hal.science/hal-04636184v1"> Preprint </a> 
+        ]
+      
+  
+      <br>
+  
+      Guillaume Helbecque, Tiago Carneiro, Nouredine Melab, Jan Gmys, and Pascal Bouvry,
+       <i>International Conference on Computational Science (ICCS 2024)</i>, 
+      July 2–4, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper introduces a PGAS-based data structure and work-stealing mechanism for parallel depth-first traversal of unbalanced trees, implemented as the Chapel DistributedBag module.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://ieeexplore.ieee.org/document/10596398"> 
+      <b>GPU-Accelerated Tree-Search in Chapel versus CUDA and HIP</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="PDCO2024-slides.pdf">Slides</a> 
+         | 
+         <a href="https://hal.science/hal-04551856v1"> Preprint </a> 
+        ]
+      
+  
+      <br>
+  
+      Guillaume Helbecque, Ezhilmathi Krishnasamy, Nouredine Melab, Pascal Bouvry,
+       <i>PDCO 2024 at IPDPS 2024</i>, 
+      May 31, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper presents a proof-of-concept GPU-accelerated tree search algorithm in Chapel, showcasing a portable PGAS-based approach to parallel backtracking on both Nvidia and AMD GPU architectures.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://ieeexplore.ieee.org/document/10579264"> 
+      <b>Adaptive Prefetching for Fine-grain Communication in PGAS Programs</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../papers/IPDPS_2024_Rolinger_v2.pdf">Slides</a> 
         
         
         ]
@@ -494,14 +634,14 @@
   
       <br>
   
-      Guillaume Helbecque, Jan Gmys, Tiago Carneiro, Nouredine Melab, Pascal Bouvry,
-       <i>13th International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM 2022), Seoul, South Korea</i>, 
-      April 2, 2022
+      Thomas B. Rolinger, Alan Sussman,
+       <i>IPDPS 2024</i>, 
+      May 30, 2024
   
       
   
       <div class="publication-description">
-        <p>This work compares the performance of a Chapel-based fractal generation on shared- and distributed-memory platforms with corresponding OpenMP and MPI&#43;X implementations.</p>
+        <p>This paper presents a compiler optimization that targets irregular memory access patterns in Chapel programs. The optimization employs prefetching into Chapel&#39;s remote data cache for irregular memory access patterns and will dynamically adjust the prefetching behavior as the program executes.</p>
       </div>
     </div>
   
@@ -514,7 +654,7 @@
 
 
 <details>
-  <summary id="chapelOverviews"><h4>Chapel Overviews </h4>	</summary>
+  <summary id="overviews"><h4>Chapel Overviews and History </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -542,42 +682,6 @@
     </div>
   
 
-  
-  
-  
-  
-    <div class="publication">
-       <a href="http://hpc.sagepub.com/content/21/3/291.abstract"> 
-      <b>Parallel Programmability and the Chapel Language</b>
-       </a> 
-  
-      
-  
-      <br>
-  
-      Bradford L. Chamberlain, David Callahan, Hans P. Zima,
-       <i>International Journal of High Performance Computing Applications, August 2007, 21(3): 291-312</i>, 
-      August 2007
-  
-      
-  
-      <div class="publication-description">
-        <p>This is an early overview of Chapel&#39;s themes and main language concepts.</p>
-      </div>
-    </div>
-  
-
-
-  </div>
-</details>
-
-
-
-
-<details>
-  <summary id="projectUpdates"><h4>Chapel Project Updates </h4>	</summary>
-  <div class="toggle-list-contents">
-    
   
   
   
@@ -644,6 +748,64 @@
     </div>
   
 
+  
+  
+  
+  
+    <div class="publication">
+       <a href="http://hpc.sagepub.com/content/21/3/291.abstract"> 
+      <b>Parallel Programmability and the Chapel Language</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Bradford L. Chamberlain, David Callahan, Hans P. Zima,
+       <i>International Journal of High Performance Computing Applications, August 2007, 21(3): 291-312</i>, 
+      August 2007
+  
+      
+  
+      <div class="publication-description">
+        <p>This is an early overview of Chapel&#39;s themes and main language concepts.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../publications/hips04.pdf"> 
+      <b>The Cascade High Productivity Language</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../publications/hips04-slides.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      David Callahan, Bradford L. Chamberlain, Hans P. Zima,
+       <i>In 9th International Workshop on High-Level Parallel Programming Models and Supportive Environments (HIPS 2004), pages 52-60. IEEE Computer Society</i>, 
+      April 2004
+  
+      
+  
+      <div class="publication-description">
+        <p>This is the original Chapel paper which lays out some of our motivation and foundations for exploring the language. Note that the language has evolved significantly since this paper was published, but it remains an interesting historical artifact.</p>
+      </div>
+    </div>
+  
+
 
   </div>
 </details>
@@ -652,9 +814,75 @@
 
 
 <details>
-  <summary id="optimizationPapers"><h4>Chapel Optimizations </h4>	</summary>
+  <summary id="impl-opt"><h4>Chapel Implementation and Optimizations </h4>	</summary>
   <div class="toggle-list-contents">
     
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://ieeexplore.ieee.org/document/10820777"> 
+      <b>Productive, Vendor-Neutral GPU Programming Using Chapel</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../presentations/EnginWACCPD-SC24.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Engin Kayraklioglu, Andy Stone,
+       <i>WACCPD at SC24</i>, 
+      November 18, 2024
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper introduces Chapel&#39;s GPU support. It provides a brief background on Chapel&#39;s parallelism and locality concepts, as well as how they relate to GPU programming. A real-world application with results from Frontier is also covered. However, the main focus of the paper is how the GPU support is implemented in the compiler, runtime and internal modules.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://arxiv.org/pdf/2303.13954.pdf"> 
+      <b>Compiler Optimization for Irregular Memory Access Patterns in PGAS Programs</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../presentations/LCPC_2022_Rolinger.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Thomas B. Rolinger, Christopher D. Krieger, Alan Sussman,
+       <i>LCPC 2022</i>, 
+      October 13, 2022
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper presents a compiler optimization that targets irregular memory accesses patterns in Chapel programs. Specifically, it uses static analysis to identify irregular memory accesses to distributed arrays in parallel loops and employs code transformations to generate an inspector and executor to perform selective data replication at runtime.</p>
+      </div>
+    </div>
+  
+
   
   
   
@@ -779,125 +1007,6 @@
 
 
 <details>
-  <summary id="applicationPapers"><h4>Applications of Chapel </h4>	</summary>
-  <div class="toggle-list-contents">
-    
-  
-  
-  
-  
-    <div class="publication">
-       <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210650220303734"> 
-      <b>A Comparative Study of High-Productivity High-Performance Programming Languages for Parallel Metaheuristics</b>
-       </a> 
-  
-      
-        [
-        
-        
-        
-        
-         <a href="https://hal.inria.fr/hal-02879767/document"> PDF </a> 
-        ]
-      
-  
-      <br>
-  
-      Jan Gmys, Tiago Carneiro, Nouredine Melab, El-Ghazali Talbi, Daniel Tuyttens,
-       <i>Swarm and Evolutionary Computation, volume 57. September 2020</i>, 
-      September 2020
-  
-      
-  
-      <div class="publication-description">
-        <p>This paper compares Chapel with Julia, Python/Numba, and C&#43;OpenMP in terms of performance, scalability and productivity. Two parallel metaheuristics are implemented for solving the 3D Quadratic Assignment Problem (Q3AP), using thread-based parallelism on a multi-core shared-memory computer. The paper also evaluates and compares the performance of the languages for a parallel fitness evaluation loop, using four different test functions with different computational characteristics. The authors provide feedback on the implementation and parallelization process in each language.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="https://louisjenkinscs.github.io/publications/WAW_2020.pdf"> 
-      <b>Hypergraph Analytics of Domain Name System Relationships</b>
-       </a> 
-  
-      
-  
-      <br>
-  
-      Cliff A Joslyn, Sinan Aksoy, Dustin Arendt, Jesun Firoz, Louis Jenkins, Brenda Praggastis, Emilie Purvine, Marcin Zalewski,
-       <i>17th Workshop on Algorithms and Models for the Web Graph (WAW 2020)</i>, 
-      September 21–24, 2020
-  
-      
-  
-      <div class="publication-description">
-        <p>This paper applies hypergraph analytics over a gigascale DNS data using CHGL, performing compute-intensive calculations for data reduction and segmentation. Identified portions are then sent to HNX for both exploratory analysis and knowledge discovery targeting known tactics, techniques, and procedures.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X1930946X"> 
-      <b>Towards ultra-scale Branch-and-Bound using a high-productivity language</b>
-       </a> 
-  
-      
-  
-      <br>
-  
-      Tiago Carneiro, Jan Gmys, Nouredine Melab, and Daniel Tuyttens,
-       <i>Future Generation Computer Systems, volume 105, pages 196-209</i>, 
-      April 2020
-  
-      
-  
-      <div class="publication-description">
-        <p>This paper uses Chapel to study the design and implementation of distributed Branch-and-Bound algorithms for solving large combinatorial optimization problems. Experiments on the proposed algorithms are performed using the Flow-shop scheduling problem as a test-case. The Chapel-based application is compared to a state-of-the-art MPI&#43;Pthreads-based counterpart in terms of performance, scalability, and productivity.</p>
-      </div>
-    </div>
-  
-
-  
-  
-  
-  
-    <div class="publication">
-       <a href="https://louisjenkinscs.github.io/publications/HPEC.pdf"> 
-      <b>Graph Algorithms in PGAS: Chapel and UPC&#43;&#43;</b>
-       </a> 
-  
-      
-  
-      <br>
-  
-      Louis Jenkins, Jesun Sahariar Firoz, Marcin Zalewski, Cliff Joslyn, Mark Raugas,
-       <i>2019 IEEE High Performance Extreme Computing Conference (HPEC ‘19)</i>, 
-      September 24–26, 2019
-  
-      
-  
-      <div class="publication-description">
-        <p>This paper compares implementations of Breadth-First Search and Triangle Counting in Chapel and UPC&#43;&#43;</p>
-      </div>
-    </div>
-  
-
-
-  </div>
-</details>
-
-
-
-
-<details>
   <summary id="multiResolutionPapers"><h4>Multiresolution Chapel Features </h4>	</summary>
   <div class="toggle-list-contents">
     
@@ -1008,7 +1117,217 @@
 
 
 <details>
-  <summary id="toolPapers"><h4>Chapel Tools </h4>	</summary>
+  <summary id="applicationPapers"><h4>Applications of Chapel </h4>	</summary>
+  <div class="toggle-list-contents">
+    
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://hal.archives-ouvertes.fr/hal-03619760/"> 
+      <b>A Local Search for Automatic Parameterization of Distributed Tree Search Algorithms</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Tiago Carneiro, Loizos Koutsantonis, Nouredine Melab, Emmanuel Kieffer, Pascal Bouvry,
+       <i>12th IEEE Workshop Parallel / Distributed Combinatorics and Optimization (PDCO 2022)</i>, 
+      June 3, 2022
+  
+      
+  
+      <div class="publication-description">
+        <p>This work presents a local search for automatic parameterization of ChapelBB, a distributed tree search application for solving combinatorial optimization problems written in Chapel. The main objective of the proposed heuristic is to overcome the limitation of manual parameterization, which covers a limited feasible space.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://hal.archives-ouvertes.fr/hal-03629798"> 
+      <b>A performance-oriented comparative study of the Chapel high-productivity language to conventional programming environments</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../papers/pmam2022.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Guillaume Helbecque, Jan Gmys, Tiago Carneiro, Nouredine Melab, Pascal Bouvry,
+       <i>13th International Workshop on Programming Models and Applications for Multicores and Manycores (PMAM 2022), Seoul, South Korea</i>, 
+      April 2, 2022
+  
+      
+  
+      <div class="publication-description">
+        <p>This work compares the performance of a Chapel-based fractal generation on shared- and distributed-memory platforms with corresponding OpenMP and MPI&#43;X implementations.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://www.sciencedirect.com/science/article/abs/pii/S2210650220303734"> 
+      <b>A Comparative Study of High-Productivity High-Performance Programming Languages for Parallel Metaheuristics</b>
+       </a> 
+  
+      
+        [
+        
+        
+        
+        
+         <a href="https://hal.inria.fr/hal-02879767/document"> PDF </a> 
+        ]
+      
+  
+      <br>
+  
+      Jan Gmys, Tiago Carneiro, Nouredine Melab, El-Ghazali Talbi, Daniel Tuyttens,
+       <i>Swarm and Evolutionary Computation, volume 57</i>, 
+      September 2020
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper compares Chapel with Julia, Python/Numba, and C&#43;OpenMP in terms of performance, scalability and productivity. Two parallel metaheuristics are implemented for solving the 3D Quadratic Assignment Problem (Q3AP), using thread-based parallelism on a multi-core shared-memory computer. The paper also evaluates and compares the performance of the languages for a parallel fitness evaluation loop, using four different test functions with different computational characteristics. The authors provide feedback on the implementation and parallelization process in each language.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://louisjenkinscs.github.io/publications/WAW_2020.pdf"> 
+      <b>Hypergraph Analytics of Domain Name System Relationships</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Cliff A Joslyn, Sinan Aksoy, Dustin Arendt, Jesun Firoz, Louis Jenkins, Brenda Praggastis, Emilie Purvine, Marcin Zalewski,
+       <i>17th Workshop on Algorithms and Models for the Web Graph (WAW 2020)</i>, 
+      September 21–24, 2020
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper applies hypergraph analytics over a gigascale DNS data using CHGL, performing compute-intensive calculations for data reduction and segmentation. Identified portions are then sent to HNX for both exploratory analysis and knowledge discovery targeting known tactics, techniques, and procedures.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167739X1930946X"> 
+      <b>Towards ultra-scale Branch-and-Bound using a high-productivity language</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Tiago Carneiro, Jan Gmys, Nouredine Melab, and Daniel Tuyttens,
+       <i>Future Generation Computer Systems, volume 105, pages 196-209</i>, 
+      April 2020
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper uses Chapel to study the design and implementation of distributed Branch-and-Bound algorithms for solving large combinatorial optimization problems. Experiments on the proposed algorithms are performed using the Flow-shop scheduling problem as a test-case. The Chapel-based application is compared to a state-of-the-art MPI&#43;Pthreads-based counterpart in terms of performance, scalability, and productivity.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://hal.archives-ouvertes.fr/hal-03149394/document"> 
+      <b>Towards Chapel-based Exascale Tree Search Algorithms: dealing with multiple GPU accelerators</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../papers/Carneiro_et_al_GPU_slidesHPCS2020.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Tiago Carneiro, Nouredine Melab, Akihiro Hayashi, Vivek Sarkar,
+       <i>HPCS 2020, Outstanding Paper Award winner</i>, 
+      March 22–27, 2021
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper revisits the design and implementation of tree search algorithms dealing with multiple GPUs, in addition to scalability and productivity-awareness using Chapel. The proposed algorithm exploits Chapel&#39;s distributed iterators by combining a partial search strategy with pre-compiled CUDA kernels for more efficient exploitation of the intra-node parallelism.</p>
+      </div>
+    </div>
+  
+
+  
+  
+  
+  
+    <div class="publication">
+       <a href="https://louisjenkinscs.github.io/publications/HPEC.pdf"> 
+      <b>Graph Algorithms in PGAS: Chapel and UPC&#43;&#43;</b>
+       </a> 
+  
+      
+  
+      <br>
+  
+      Louis Jenkins, Jesun Sahariar Firoz, Marcin Zalewski, Cliff Joslyn, Mark Raugas,
+       <i>2019 IEEE High Performance Extreme Computing Conference (HPEC ‘19)</i>, 
+      September 24–26, 2019
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper compares implementations of Breadth-First Search and Triangle Counting in Chapel and UPC&#43;&#43;</p>
+      </div>
+    </div>
+  
+
+
+  </div>
+</details>
+
+
+
+
+<details>
+  <summary id="tools"><h4>Chapel Tools </h4>	</summary>
   <div class="toggle-list-contents">
     
   
@@ -1077,9 +1396,42 @@
 
 
 <details>
-  <summary id="explorationPapers"><h4>Chapel Explorations </h4>	</summary>
+  <summary id="exploration"><h4>Chapel Explorations </h4>	</summary>
   <div class="toggle-list-contents">
     
+  
+  
+  
+  
+    <div class="publication">
+       <a href="../CHIUW/2022/C.pdf"> 
+      <b>Extending Chapel to support fabric-attached memory</b>
+       </a> 
+  
+      
+        [
+        
+        
+         <a href="../papers/CUG_2022.pdf">Slides</a> 
+        
+        
+        ]
+      
+  
+      <br>
+  
+      Amitha C, Bradford L. Chamberlain, Clarete Riana Crasta, and Sharad Singhal,
+       <i>CUG 2022, Monterey CA</i>, 
+      May 4, 2022
+  
+      
+  
+      <div class="publication-description">
+        <p>This paper describes an implementation of Chapel&#39;s arrays that leverages the language&#39;s support for user-defined data distributions to implement the array using fabric-attached memory (FAM) rather than simply local DRAM.</p>
+      </div>
+    </div>
+  
+
   
   
   
@@ -1134,50 +1486,6 @@
   
       <div class="publication-description">
         <p>This paper explores the expression of parameterized diamond-shaped time-space tilings in Chapel, demonstrating competitive performance with C&#43;OpenMP along with significant software engineering benefits due to Chapel&#39;s support for parallel iterators.</p>
-      </div>
-    </div>
-  
-
-
-  </div>
-</details>
-
-
-
-
-<details>
-  <summary id="historicalPapers"><h4>Chapel Historical Papers </h4>	</summary>
-  <div class="toggle-list-contents">
-    
-  
-  
-  
-  
-    <div class="publication">
-       <a href="../publications/hips04.pdf"> 
-      <b>The Cascade High Productivity Language</b>
-       </a> 
-  
-      
-        [
-        
-        
-         <a href="../publications/hips04-slides.pdf">Slides</a> 
-        
-        
-        ]
-      
-  
-      <br>
-  
-      David Callahan, Bradford L. Chamberlain, Hans P. Zima,
-       <i>In 9th International Workshop on High-Level Parallel Programming Models and Supportive Environments (HIPS 2004), pages 52-60. IEEE Computer Society</i>, 
-      April 2004
-  
-      
-  
-      <div class="publication-description">
-        <p>This is the original Chapel paper which lays out some of our motivation and foundations for exploring the language. Note that the language has evolved significantly since this paper was published, but it remains an interesting historical artifact.</p>
       </div>
     </div>
   
