@@ -1,5 +1,38 @@
 [
   {
+    "title": "Announcing Chapel 2.5!",
+    "date": "2025-06-12 00:00:00+00:00",
+    "url": "https://chapel-lang.org/blog/posts/announcing-chapel-2.5/",
+    "description": "Highlights from the June 2025 release of Chapel 2.5",
+    "authors": [
+      {
+        "name": "Brad Chamberlain",
+        "url": "https://chapel-lang.org/blog/authors/brad-chamberlain"
+      },
+      {
+        "name": "Michael Ferguson",
+        "url": "https://chapel-lang.org/blog/authors/michael-ferguson"
+      },
+      {
+        "name": "Lydia Duncan",
+        "url": "https://chapel-lang.org/blog/authors/lydia-duncan"
+      },
+      {
+        "name": "Jade Abraham",
+        "url": "https://chapel-lang.org/blog/authors/jade-abraham"
+      },
+      {
+        "name": "Ben Harshbarger",
+        "url": "https://chapel-lang.org/blog/authors/ben-harshbarger"
+      },
+      {
+        "name": "Daniel Fedorin",
+        "url": "https://chapel-lang.org/blog/authors/daniel-fedorin"
+      }
+    ],
+    "image": "img/news/v2.5.jpg"
+  },
+  {
     "title": "10 Myths About Scalable Parallel Programming Languages (Redux),  Part 2: Past Failures and Future Attempts",
     "date": "2025-05-28 00:00:00+00:00",
     "url": "https://chapel-lang.org/blog/posts/10myths-part2/",
@@ -10,19 +43,6 @@
         "url": "https://chapel-lang.org/blog/authors/brad-chamberlain"
       }
     ]
-  },
-  {
-    "title": "10 Myths About Scalable Parallel Programming Languages (Redux),  Part 1: Productivity and Performance",
-    "date": "2025-04-30 00:00:00+00:00",
-    "url": "https://chapel-lang.org/blog/posts/10myths-part1/",
-    "description": "An archival post from the IEEE TCSC blog in 2012 with a current reflection on it",
-    "authors": [
-      {
-        "name": "Brad Chamberlain",
-        "url": "https://chapel-lang.org/blog/authors/brad-chamberlain"
-      }
-    ],
-      "image": "img/news/myth1.jpg"
   },
   {
     "title": "Chapel/Fortran Interop in an Ocean Model: Introduction",
