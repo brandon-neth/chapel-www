@@ -133,8 +133,8 @@ disableKinds = ['taxonomy', 'term']
 
 
 [params]
-    version="2.4"
-    versionURL="blog/posts/announcing-chapel-2.4/"
+    version="2.5"
+    versionURL="blog/posts/announcing-chapel-2.5/"
     mainSections = ["blog"]
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
