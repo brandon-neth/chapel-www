@@ -115,18 +115,14 @@ learning applications that can have their performance limited by the interface
 between the GPU and vRAM. The STREAM Triad benchmark will help you understand how the
 actual bandwidth of your GPU compares to its maximum theoretical bandwidth.</p>
 <p>To follow along on your own with this demonstration, you’ll need access to what I’m
-going to daringly call a <span class="sidenote"><label class="sidenote-label" for="sidenote-0">“typical” gaming computer</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -15.5rem"><span class="sidenote-delimiter">[note:</span>
-<a href="https://store.steampowered.com/hwsurvey/">Steam hardware surveys</a>
+going to daringly call a <span class="sidenote"><label class="sidenote-label" for="sidenote-0">“typical” gaming computer</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -15.5rem"><span class="sidenote-delimiter">[note:</span><a href="https://store.steampowered.com/hwsurvey/" rel="noopener" target="_blank">Steam hardware surveys</a>
 over the previous 18 months report a pretty consistent 90–95% market dominance by
 Windows 10 and 11. According to the same surveys, NVIDIA GPUs are the most popular
 in gaming systems, accounting for around 70–75% of systems with dedicated graphic
-processing units.
-<span class="sidenote-delimiter">]</span></span></span> — that is, one
-that runs Windows and has a GPU from <span class="sidenote"><label class="sidenote-label" for="sidenote-1">NVIDIA</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -0.5rem"><span class="sidenote-delimiter">[note:</span>
-Note that Chapel's GPU support enables Chapel code to run on GPUs from both AMD and
-NVIDIA. It's just that AMD does not support accessing your card from WSL at the time of
-this writing.
-<span class="sidenote-delimiter">]</span></span></span>.</p>
+processing units.<span class="sidenote-delimiter">]</span></span></span> — that is, one
+that runs Windows and has a GPU from <span class="sidenote"><label class="sidenote-label" for="sidenote-1">NVIDIA</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -0.5rem"><span class="sidenote-delimiter">[note:</span>Note that Chapel’s GPU support enables Chapel code to run on GPUs from both AMD and
+NVIDIA. It’s just that AMD does not support accessing your card from WSL at the time of
+this writing.<span class="sidenote-delimiter">]</span></span></span>.</p>
 <p>To start, let’s review the setup. I’ll assume you have a Windows 10- or 11-based
 PC and a GPU from NVIDIA’s 10XX series or newer. You’ll also need several GB of
 free disk space, the amount varying depending on what you might already have installed.
@@ -214,12 +210,9 @@ contains <code>nvidia-smi</code>. You may need to close and restart WSL.</p>
 <p>To compile CUDA programs, we are going to need the CUDA Toolkit installed in WSL.
 To avoid the additional complexity of getting a more recent version of LLVM on our
 Ubuntu distribution, we are going to use CUDA version 11.8, as using a newer
-version requires us to perform some <span class="sidenote"><label class="sidenote-label" for="sidenote-2">additional steps.</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -5.5rem"><span class="sidenote-delimiter">[note:</span>
-  We'd need to have LLVM &gt; 15 available for CUDA 12. If you're feeling up to the
-  task, installing LLVM &gt;= 16 will allow for CUDA 12. You can read more about the
-  requirements from <a href="https://chapel-lang.org/docs/technotes/gpu.html#setup"> Chapel's
-  GPU setup notes</a>
-<span class="sidenote-delimiter">]</span></span></span></p>
+version requires us to perform some <span class="sidenote"><label class="sidenote-label" for="sidenote-2">additional steps.</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -5.5rem"><span class="sidenote-delimiter">[note:</span>We’d need to have LLVM &gt; 15 available for CUDA 12. If you’re feeling up to the
+task, installing LLVM &gt;= 16 will allow for CUDA 12. You can read more about the
+requirements from <a href="https://chapel-lang.org/docs/technotes/gpu.html#setup" rel="noopener" target="_blank">Chapel’s GPU setup notes</a><span class="sidenote-delimiter">]</span></span></span></p>
 <p>There are several ways to get the CUDA Toolkit; in this demonstration, we’ll use
 the <a href="https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;Distribution=WSL-Ubuntu&amp;target_version=2.0&amp;target_type=runfile_local" rel="noopener" target="_blank">runfile published by NVIDIA</a>.
 The installation instructions are reproduced here for convenience:</p>
@@ -753,25 +746,21 @@ and build Chapel.</p>
 <div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">source</span> util/setchplenv.bash
 </span></span></code></pre></div><p>This will set up the <code>CHPL_HOME</code> directory and add the output <code>bin</code> directory to
 the system <code>PATH</code>. This ensures the Chapel compiler <code>chpl</code> is available without
-having to know the full path when we want to <span class="sidenote"><label class="sidenote-label" for="sidenote-3">use it later</label><input class="sidenote-checkbox" id="sidenote-3" type="checkbox"/><span class="sidenote-content sidenote-left"><span class="sidenote-delimiter">[note:</span>
-Note that each <code>export</code> or <code>source</code> command only affects the current terminal,
+having to know the full path when we want to <span class="sidenote"><label class="sidenote-label" for="sidenote-3">use it later</label><input class="sidenote-checkbox" id="sidenote-3" type="checkbox"/><span class="sidenote-content sidenote-left"><span class="sidenote-delimiter">[note:</span>Note that each <code>export</code> or <code>source</code> command only affects the current terminal,
 so as with setting the environment variables for CUDA before, you can either perform
 these steps each time you open a new terminal, or configure the system to do that
 for you by placing these lines in your <code>.bashrc</code> file, typically located at <code>~/.bashrc</code>.
 See the <code>chapel-wsl-demo.txt</code> file at the end of this post for a list of all the
-commands used to set up this demo.
-<span class="sidenote-delimiter">]</span></span></span>.
+commands used to set up this demo.<span class="sidenote-delimiter">]</span></span></span>.
 Because we want to build Chapel with GPU support, we need to set a few other
 environment variables to configure the Chapel compiler and runtime.</p>
 <div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CHPL_LLVM</span><span class="o">=</span>system
 </span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">CHPL_LOCALE_MODEL</span><span class="o">=</span>gpu
 </span></span></code></pre></div><p>The first line tells Chapel to use the LLVM we installed earlier as the code
 generation backend. LLVM is required when building Chapel with GPU support.
-Setting the <span class="sidenote"><label class="sidenote-label" for="sidenote-4">locale model</label><input class="sidenote-checkbox" id="sidenote-4" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-  The locale model is an abstraction for how a computer's processors and memory
-  are exposed to a Chapel program, and it is a defining feature of Chapel. Other blog posts that discuss locales are <a href="../../posts/aoc2022-day13-wrap-up/#chapels-locales-and-their-role-in-supporting-distributed-parallelism">Advent of Code 2022</a>
-  and <a href="../../posts/intro-to-gpus/#locales-and-on-statements-the-foundation-of-chapel">Intro to GPUs</a>.
-  <span class="sidenote-delimiter">]</span></span></span>
+Setting the <span class="sidenote"><label class="sidenote-label" for="sidenote-4">locale model</label><input class="sidenote-checkbox" id="sidenote-4" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>The locale model is an abstraction for how a computer’s processors and memory
+are exposed to a Chapel program, and it is a defining feature of Chapel. Other blog posts that discuss locales are <a href="../../posts/aoc2022-day13-wrap-up/#chapels-locales-and-their-role-in-supporting-distributed-parallelism">Advent of Code 2022</a>
+and <a href="../../posts/intro-to-gpus/#locales-and-on-statements-the-foundation-of-chapel">Intro to GPUs</a>.<span class="sidenote-delimiter">]</span></span></span>
 to <code>gpu</code> is essentially the big switch that tells Chapel to use the GPU for eligible
 portions of your Chapel code. See the <a href="https://chapel-lang.org/docs/technotes/gpu.html#overview" rel="noopener" target="_blank">documentation</a>
 for more information about loop structures that are eligible for GPU locales.</p>

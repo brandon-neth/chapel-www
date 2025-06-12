@@ -378,19 +378,17 @@ kernel launch — independently of one another. Depending on the capabilities of
 your particular hardware and available resources, the
 underlying GPU can overlap data transfer and execution from
 distinct tasks, leading to
-<span class="sidenote"><label class="sidenote-label" for="sidenote-0">better performance</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -11.5rem"><span class="sidenote-delimiter">[note:</span>
-Admittedly, overlap is an optimization which can be a hard to fine-tune; the
+<span class="sidenote"><label class="sidenote-label" for="sidenote-0">better performance</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -11.5rem"><span class="sidenote-delimiter">[note:</span>Admittedly, overlap is an optimization which can be a hard to fine-tune; the
 balance between transfer performance (bandwidth and latency) and computational
 intensity should be handled delicately. Furthermore, fine-tuning overlap is
 typically specific to the hardware and application characteristics. For example,
 in our very simple case of launching a kernel to increment each element of
-the array by one, I don't expect any gain from overlap. This application has
+the array by one, I don’t expect any gain from overlap. This application has
 almost no computation, and the execution time will be dominated by data transfer,
 diminishing any chance to overlap. However, for more realistic and
 computationally intensive applications, the benefits can be significant.  We
 plan to revisit overlap with a
-more realistic example in a future article.
-<span class="sidenote-delimiter">]</span></span></span>.</p>
+more realistic example in a future article.<span class="sidenote-delimiter">]</span></span></span>.</p>
 <details>
 <summary><strong>Tell me more about how this works before we move on</strong></summary>
 <div style="padding-left: 2vw; padding-right: 2vw; padding-bottom: 2ch;">

@@ -717,14 +717,12 @@ information, which would be very hard to replicate in a standalone tool.</p>
 read a Chapel program, find all references to standard variables and types,
 and print out links to their documentation on the Chapel website. We start
 out as before, except that this time, I configure <code>context</code>’s search paths.
-<span class="sidenote"><label class="sidenote-label" for="sidenote-0">This enables it to find the standard library modules.</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -9.5rem"><span class="sidenote-delimiter">[note:</span>
-When using semantic information, it's important to enable Dyno to access
+<span class="sidenote"><label class="sidenote-label" for="sidenote-0">This enables it to find the standard library modules.</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -9.5rem"><span class="sidenote-delimiter">[note:</span>When using semantic information, it’s important to enable Dyno to access
 the standard modules. This is true in part because the standard modules define
 a number of essential Chapel procedures (e.g., <code>writeln</code>).
 More importantly, many Chapel features (ranges,
 arrays, tuples) are defined using module code. When querying type information
-in particular, these features will be inscrutable without the standard modules.
-<span class="sidenote-delimiter">]</span></span></span>
+in particular, these features will be inscrutable without the standard modules.<span class="sidenote-delimiter">]</span></span></span>
 The empty lists I use as arguments indicate that I am not overriding any
 of the default search paths.</p>
 <div data-code-path="code/docbot.py" data-code-section="first" data-code-type="main" data-start-line="1">
@@ -750,18 +748,14 @@ of the default search paths.</p>
 <p>For this program, the “secret ingredient” will be the <a href="https://chapel-lang.org/docs/tools/chapel-py/chapel-py.html#chapel.Identifier.to_node" rel="noopener" target="_blank"><code>to_node</code></a>
 method. This method, defined on <code>Identifier</code> and <code>Dot</code> nodes (which represent
 something like <code>x.y</code>),
-<span class="sidenote"><label class="sidenote-label" for="sidenote-1">finds what the node refers to</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-One caveat to using <code>to_node</code> is that it does not perform call resolution.
-Chapel supports <a href="https://chapel-lang.org/docs/language/spec/procedures.html#function-and-operator-overloading">function overloading</a>, which means that without type information,
-it's not always possible to determine what the <code>foo</code> in
+<span class="sidenote"><label class="sidenote-label" for="sidenote-1">finds what the node refers to</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>One caveat to using <code>to_node</code> is that it does not perform call resolution.
+Chapel supports <a href="https://chapel-lang.org/docs/language/spec/procedures.html#function-and-operator-overloading" rel="noopener" target="_blank">function overloading</a>, which means that without type information,
+it’s not always possible to determine what the <code>foo</code> in
 <code>foo(x)</code> refers to. Type checking is far more complicated than
 name resolution (hence, slower), and is still an active area of work within
-Dyno.<br/>
-<br/>
-It's possible to use type resolution to retrieve refers-to information,
+Dyno.<br/><br/>It’s possible to use type resolution to retrieve refers-to information,
 but this is not done by <code>to_node</code>, and doing so is prone
-to running into limitations of Dyno's current implementation.
-<span class="sidenote-delimiter">]</span></span></span> and returns the AST
+to running into limitations of Dyno’s current implementation.<span class="sidenote-delimiter">]</span></span></span> and returns the AST
 node of that definition. The following Chapel program is commented with
 some examples:</p>
 <div class="highlight"><div class="chroma">

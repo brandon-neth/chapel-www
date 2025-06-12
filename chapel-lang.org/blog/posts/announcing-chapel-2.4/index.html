@@ -410,10 +410,9 @@ in Chapel 2.3:</p>
 </div><p>In this week’s release, this computation can now be expressed much
 more succinctly and with less overhead.  Rather than importing a
 piece of Python code from a standalone module, we can now
-<span class="sidenote"><label class="sidenote-label" for="sidenote-0">directly load a string to create a new Python module:</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-Chapel 2.4 can also directly pull in Python bytecode as
-a module or a <a href="https://docs.python.org/3/library/pickle.html">pickle object</a> as
-a value. <span class="sidenote-delimiter">]</span></span></span></p>
+<span class="sidenote"><label class="sidenote-label" for="sidenote-0">directly load a string to create a new Python module:</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Chapel 2.4 can also directly pull in Python bytecode as
+a module or a <a href="https://docs.python.org/3/library/pickle.html" rel="noopener" target="_blank">pickle object</a> as
+a value.<span class="sidenote-delimiter">]</span></span></span></p>
 <div class="highlight" data-code-path="code/announcing-chapel-2.4.chpl" data-code-section="middle" data-code-type="main" data-start-line="72"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma" tabindex="0"><code><span class="lnt">72
@@ -488,10 +487,10 @@ ergonomic and powerful interface to the Python ecosystem.</p>
 </h4>
 <p>Chapel 2.4 also expands the Chapel types that the <code>Python</code> module
 understands, specifically adding the new Chapel types <code>PyList</code>,
-<code>PySet</code>, <code>PyDict</code>, and <span class="sidenote"><label class="sidenote-label" for="sidenote-1"><code>PyArray</code></label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span> Python
+<code>PySet</code>, <code>PyDict</code>, and <span class="sidenote"><label class="sidenote-label" for="sidenote-1"><code>PyArray</code></label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Python
 provides a low-level <code>array</code> type that the Chapel
 <code>PyArray</code> type represents. This type can also refer to other
-array-like things in Python, such as NumPy arrays. <span class="sidenote-delimiter">]</span></span></span>.
+array-like things in Python, such as NumPy arrays.<span class="sidenote-delimiter">]</span></span></span>.
 Values of these types are handles to Python objects that provide
 specialization over an abstract <code>Value</code> type.</p>
 <p>For example, the following code creates a Python set, and then adds
@@ -732,9 +731,8 @@ filename. The following program demonstrates the use of these:</p>
 </p>
 <p>All of the code presented in this section began resolving in Dyno
 for the first time in Chapel 2.4, and this doesn’t even remotely
-cover <span class="sidenote"><label class="sidenote-label" for="sidenote-2">all the improvements that have been made</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-Over 27 PRs have been merged into the Dyno library since
-the December release.  <span class="sidenote-delimiter">]</span></span></span> since version 2.3. With
+cover <span class="sidenote"><label class="sidenote-label" for="sidenote-2">all the improvements that have been made</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Over 27 PRs have been merged into the Dyno library since
+the December release.<span class="sidenote-delimiter">]</span></span></span> since version 2.3. With
 each release, Dyno draws nearer to feature parity with the
 production compiler.</p>
 <p>Since Dyno is still a work-in-progress, the editor features showcased

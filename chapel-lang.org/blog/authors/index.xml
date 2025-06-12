@@ -6,14 +6,49 @@
     <description>Recent content in Authors on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ben Harshbarger</title>
+      <link>https://chapel-lang.org/blog/authors/ben-harshbarger/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/authors/ben-harshbarger/</guid>
+      <description>Jade is a member of the Chapel team at HPE.</description>
+    </item>
     <item>
       <title>Brad Chamberlain</title>
       <link>https://chapel-lang.org/blog/authors/brad-chamberlain/</link>
-      <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/authors/brad-chamberlain/</guid>
       <description>Brad is the technical lead of the Chapel project and the editor of the Chapel blog.</description>
+    </item>
+    <item>
+      <title>Daniel Fedorin</title>
+      <link>https://chapel-lang.org/blog/authors/daniel-fedorin/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/authors/daniel-fedorin/</guid>
+      <description>Daniel is a compiler developer on the Chapel team who also does web development for this blog.</description>
+    </item>
+    <item>
+      <title>Jade Abraham</title>
+      <link>https://chapel-lang.org/blog/authors/jade-abraham/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/authors/jade-abraham/</guid>
+      <description>Jade is a member of the Chapel team at HPE.</description>
+    </item>
+    <item>
+      <title>Lydia Duncan</title>
+      <link>https://chapel-lang.org/blog/authors/lydia-duncan/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/authors/lydia-duncan/</guid>
+      <description>Lydia is a member of the Chapel team at HPE and currently leads the stabilization subteam.</description>
+    </item>
+    <item>
+      <title>Michael Ferguson</title>
+      <link>https://chapel-lang.org/blog/authors/michael-ferguson/</link>
+      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/authors/michael-ferguson/</guid>
+      <description>Michael is a member of the Chapel team at HPE and currently leads the compiler rework subteam.</description>
     </item>
     <item>
       <title>Brandon Neth</title>
@@ -28,27 +63,6 @@
       <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/authors/michelle-strout/</guid>
       <description>Michelle is the senior engineering manager of the Chapel project.</description>
-    </item>
-    <item>
-      <title>Michael Ferguson</title>
-      <link>https://chapel-lang.org/blog/authors/michael-ferguson/</link>
-      <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/authors/michael-ferguson/</guid>
-      <description>Michael is a member of the Chapel team at HPE and currently leads the compiler rework subteam.</description>
-    </item>
-    <item>
-      <title>Daniel Fedorin</title>
-      <link>https://chapel-lang.org/blog/authors/daniel-fedorin/</link>
-      <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/authors/daniel-fedorin/</guid>
-      <description>Daniel is a compiler developer on the Chapel team who also does web development for this blog.</description>
-    </item>
-    <item>
-      <title>Jade Abraham</title>
-      <link>https://chapel-lang.org/blog/authors/jade-abraham/</link>
-      <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/authors/jade-abraham/</guid>
-      <description>Jade is a member of the Chapel team at HPE.</description>
     </item>
     <item>
       <title>Engin Kayraklioglu</title>
@@ -70,13 +84,6 @@
       <pubDate>Thu, 14 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/authors/jeremiah-corrado/</guid>
       <description>Jeremiah is a member of the Chapel team at HPE focused on language stabilization.</description>
-    </item>
-    <item>
-      <title>Lydia Duncan</title>
-      <link>https://chapel-lang.org/blog/authors/lydia-duncan/</link>
-      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/authors/lydia-duncan/</guid>
-      <description>Lydia is a member of the Chapel team at HPE and currently leads the stabilization subteam.</description>
     </item>
     <item>
       <title>Ahmad Rezaii</title>

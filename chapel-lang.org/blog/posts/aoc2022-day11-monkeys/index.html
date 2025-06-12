@@ -557,10 +557,10 @@ here.  Whatever mapping is used, some key properties include:</p>
 multitasking</em></a>.
 This means that a task keeps running on its thread and core until it
 <span class="sidenote"><label class="sidenote-label" for="sidenote-0">yields</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Note that
-this is a different use of the term 'yield' than we've seen
-previously in this series.  Iterators use the `yield` statement to
+this is a different use of the term ‘yield’ than we’ve seen
+previously in this series.  Iterators use the <code>yield</code> statement to
 return one or more values back to their callsites.  This use of
-'yield' differs, referring to having a task get out of the way so
+‘yield’ differs, referring to having a task get out of the way so
 that another task can use its processor.<span class="sidenote-delimiter">]</span></span></span> those
 resources, permitting another task to take a turn with them.  This
 is done for performance reasons, since switching between tasks too

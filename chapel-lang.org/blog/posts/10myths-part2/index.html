@@ -115,8 +115,7 @@ this series, please refer to <a href="../../posts/10myths-part1/#the-original-ar
 within the HPC community (and one that still comes up today with
 surprising frequency) was “How can your language possibly succeed when
 HPF failed?” Another popular variation is: “How can it possibly succeed when I can name
-<span class="sidenote"><label class="sidenote-label" for="sidenote-1">dozens (hundreds?) of parallel languages</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -13.5rem"><span class="sidenote-delimiter">[note:</span>
-These days, HPF doesn't come up very frequently, as the HPC community
+<span class="sidenote"><label class="sidenote-label" for="sidenote-1">dozens (hundreds?) of parallel languages</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -13.5rem"><span class="sidenote-delimiter">[note:</span>These days, HPF doesn’t come up very frequently, as the HPC community
 has largely gotten over it by now.  However, this second, more
 general, question still comes up from time to time, and some people
 seem to enjoy enumerating failed parallel languages to rationalize not
@@ -138,7 +137,7 @@ rockets into space meant those feats were impossible.
 </div>
 </blockquote>
 <p>For the young <span class="sidenote"><label class="sidenote-label" for="sidenote-2">and the forgetful</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>On reflection,
-that seems a bit rude, 2012-era Brad...  Maybe it felt more obviously
+that seems a bit rude, 2012-era Brad…  Maybe it felt more obviously
 humorous at the time since HPF was recent enough that it was unlikely
 to have been forgotten?  🤔<span class="sidenote-delimiter">]</span></span></span>: HPF (High Performance
 Fortran) is a language in which a significant amount of funding,
@@ -195,8 +194,7 @@ believe that if there had been a brighter light at the end of the
 tunnel, the community would have worked through its impatience.  In
 our work on Chapel, we share a similar threat of losing potential
 users’ interest
-<span class="sidenote"><label class="sidenote-label" for="sidenote-4">by not achieving the performance they ultimately want</label><input class="sidenote-checkbox" id="sidenote-4" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -10.5rem"><span class="sidenote-delimiter">[note:</span>
-This definitely was a challenge for us in the years
+<span class="sidenote"><label class="sidenote-label" for="sidenote-4">by not achieving the performance they ultimately want</label><input class="sidenote-checkbox" id="sidenote-4" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -10.5rem"><span class="sidenote-delimiter">[note:</span>This definitely was a challenge for us in the years
 since this article was published.  While current Chapel performance
 typically competes with or beats Fortran or C++ with MPI, many who
 tried it prior to ~2019 formed negative impressions of it that have
@@ -205,13 +203,12 @@ Chapel themselves.<span class="sidenote-delimiter">]</span></span></span> quickl
 we encourage users to reason about whether there are features in Chapel
 that will inherently prevent it from achieving good performance
 (instead of simply
-<span class="sidenote"><label class="sidenote-label" for="sidenote-5">taking a stopwatch to its current performance</label><input class="sidenote-checkbox" id="sidenote-5" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 5.5rem"><span class="sidenote-delimiter">[note:</span>
-Happily, unlike 2012, we no longer have to ask people to reason about
-whether we're on a path to good performance—now, they can just try
+<span class="sidenote"><label class="sidenote-label" for="sidenote-5">taking a stopwatch to its current performance</label><input class="sidenote-checkbox" id="sidenote-5" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 5.5rem"><span class="sidenote-delimiter">[note:</span>Happily, unlike 2012, we no longer have to ask people to reason about
+whether we’re on a path to good performance—now, they can just try
 Chapel and time it themselves.  Of course, there are still a few areas
-where Chapel's performance does not yet reflect its potential, so if
+where Chapel’s performance does not yet reflect its potential, so if
 users are disappointed, we encourage them to engage with us to
-understand the cause and check whether it's an area where further
+understand the cause and check whether it’s an area where further
 improvements are planned.<span class="sidenote-delimiter">]</span></span></span> and judging it based on
 today’s status).  This can be a hard sell since it requires more
 intellectual effort; yet users who bother with it typically agree that
@@ -232,10 +229,9 @@ a user could expect to happen.  This hypothesis was borne out as
 multiple HPF compilers began to emerge, and programs needed to be
 tuned for each one independently [3].  In Chapel, as in ZPL, we have
 strived to avoid this pitfall by being far more explicit about
-<span class="sidenote"><label class="sidenote-label" for="sidenote-6">how the language will be implemented</label><input class="sidenote-checkbox" id="sidenote-6" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 4.5rem"><span class="sidenote-delimiter">[note:</span>
-A great example of this is Chapel's <code>forall</code> loop, which
+<span class="sidenote"><label class="sidenote-label" for="sidenote-6">how the language will be implemented</label><input class="sidenote-checkbox" id="sidenote-6" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 4.5rem"><span class="sidenote-delimiter">[note:</span>A great example of this is Chapel’s <code>forall</code> loop, which
 many casual users assume relies on compiler smarts or
-auto-parallelization.  In reality, Chapel's <code>forall</code> loop
+auto-parallelization.  In reality, Chapel’s <code>forall</code> loop
 is just a stylized call to a parallel iterator written in the
 language, either as part of the standard library or by end-users.  As
 a result, its behavior can be reasoned about very
@@ -265,8 +261,7 @@ concurrency, as well as opportunities for nested parallel regions.
 For this reason, in Chapel’s design, we built our data-parallel
 features on a foundation of task-parallel and concurrent programming
 concepts in order to support
-<span class="sidenote"><label class="sidenote-label" for="sidenote-7">arbitrary mixing and nesting of different styles of parallelism</label><input class="sidenote-checkbox" id="sidenote-7" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-This also turned out to be invaluable for GPU computing, which I'll
+<span class="sidenote"><label class="sidenote-label" for="sidenote-7">arbitrary mixing and nesting of different styles of parallelism</label><input class="sidenote-checkbox" id="sidenote-7" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>This also turned out to be invaluable for GPU computing, which I’ll
 come back to later on.<span class="sidenote-delimiter">]</span></span></span> within a single program.
 This permits us to support the general case and optimize for the
 common case of data parallelism rather than only supporting the common
@@ -283,14 +278,13 @@ limitation by: (i) supporting a rich set of array types including
 multidimensional, sparse, associative, and unstructured arrays; (ii)
 permitting end users to implement local and distributed parallel
 arrays within Chapel itself [4]; and (iii) writing standard array distributions
-<span class="sidenote"><label class="sidenote-label" for="sidenote-8">using the same mechanism that an end-user would</label><input class="sidenote-checkbox" id="sidenote-8" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -4.5rem"><span class="sidenote-delimiter">[note:</span>
-This was arguably the biggest barrier to Chapel achieving better
+<span class="sidenote"><label class="sidenote-label" for="sidenote-8">using the same mechanism that an end-user would</label><input class="sidenote-checkbox" id="sidenote-8" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -4.5rem"><span class="sidenote-delimiter">[note:</span>This was arguably the biggest barrier to Chapel achieving better
 performance sooner.  Building array capabilities from scratch within
 the language itself and getting performance that could compete with
 all the longstanding languages whose arrays were built-in put us at a
 significant performance disadvantage.  It took us years to close the
 gap to an acceptable level, and that delay to achieving performance
-led to a lot of doubt and cynicism around Chapel in the 2010's, some
+led to a lot of doubt and cynicism around Chapel in the 2010’s, some
 of which persists to this day.  However, this approach was also an
 investment that has paid off—for example, the recently-added sparse
 features and optimizations <a href="../10myths-part1/#the-sparse-example">mentioned last month</a> were
@@ -484,9 +478,9 @@ time, we were focused exclusively on single-core processors,
 distributed-memory computing, and the vector and multithreaded
 processors of the Cray X1 and XMT.</p>
 <p>Chapel has remained relevant across all of these architectural changes
-because <span class="sidenote"><label class="sidenote-label" for="sidenote-13">parallelism</label><input class="sidenote-checkbox" id="sidenote-13" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -3.5rem"><span class="sidenote-delimiter">[note:</span> "What should run
-concurrently?"  <span class="sidenote-delimiter">]</span></span></span> and <span class="sidenote"><label class="sidenote-label" for="sidenote-14">locality</label><input class="sidenote-checkbox" id="sidenote-14" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 0.5rem"><span class="sidenote-delimiter">[note:</span> "Where should these computations run?"  "Where should these
-variables be allocated?"<span class="sidenote-delimiter">]</span></span></span> are so fundamental to scalable
+because <span class="sidenote"><label class="sidenote-label" for="sidenote-13">parallelism</label><input class="sidenote-checkbox" id="sidenote-13" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -3.5rem"><span class="sidenote-delimiter">[note:</span>“What should run
+concurrently?”<span class="sidenote-delimiter">]</span></span></span> and <span class="sidenote"><label class="sidenote-label" for="sidenote-14">locality</label><input class="sidenote-checkbox" id="sidenote-14" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 0.5rem"><span class="sidenote-delimiter">[note:</span>“Where should these computations run?”  “Where should these
+variables be allocated?”<span class="sidenote-delimiter">]</span></span></span> are so fundamental to scalable
 parallel computing.  As a result, the same core features designed for
 expressing parallelism and locality on the clusters, X1, and XMT of
 the early 2000’s did not have to change as multicore and GPU

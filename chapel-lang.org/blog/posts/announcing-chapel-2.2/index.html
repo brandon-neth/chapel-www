@@ -306,8 +306,8 @@ arrays.</p>
 patterns, like <code>A[i+1,j]</code>, and optimizes for the common case where
 these accesses don’t require communicating with other locales.  This
 optimization is enabled by the fact that stencil-distributed arrays
-store extra rows and columns of <span class="sidenote"><label class="sidenote-label" for="sidenote-0"><em>fluff</em></label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Also known as <i>ghost cells</i>, <i>halos</i>, or <i>overlap
-regions</i> in the literature.<span class="sidenote-delimiter">]</span></span></span> elements that cache
+store extra rows and columns of <span class="sidenote"><label class="sidenote-label" for="sidenote-0"><em>fluff</em></label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Also known as <em>ghost cells</em>, <em>halos</em>, or <em>overlap
+regions</em> in the literature.<span class="sidenote-delimiter">]</span></span></span> elements that cache
 neighboring locales’ values.  This eliminates the overhead that’s
 typically incurred when accessing a distributed array to determine
 whether the element is local or must be fetched from a remote
@@ -408,8 +408,7 @@ following example:</p>
 </div><p>Prior to this optimization, the declaration of <code>myTriple</code> would
 result in a new array allocation and a copy of <code>genTriple()</code>’s
 returned <code>trip</code> array into it.  However, with the new optimization,
-<code>myTriple</code> can simply re-use, or <em>steal</em>, <code>trip</code>’s buffer, <span class="sidenote"><label class="sidenote-label" for="sidenote-2">reducing both memory utilization and execution time</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-In fact, this optimization also eliminates a second array allocation
+<code>myTriple</code> can simply re-use, or <em>steal</em>, <code>trip</code>’s buffer, <span class="sidenote"><label class="sidenote-label" for="sidenote-2">reducing both memory utilization and execution time</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>In fact, this optimization also eliminates a second array allocation
 and copy for this program—used to store the array being returned by
 <code>genTriple()</code> into a temporary variable.  With this optimization,
 <code>trip</code> can similarly be stolen by that temporary array, further

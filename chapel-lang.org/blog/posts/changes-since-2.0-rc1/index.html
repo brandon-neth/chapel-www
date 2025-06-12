@@ -133,16 +133,15 @@ implemented using the more capable PCG algorithm. This type’s interface is ver
 similar, and it is still meant to represent a conceptual stream of random
 numbers that can be iterated over in parallel.  In many cases, switching to
 the new type involves
-<span class="sidenote"><label class="sidenote-label" for="sidenote-0">a very simple code change:</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-Beyond the obvious capitalization changes, the meaning of the type
+<span class="sidenote"><label class="sidenote-label" for="sidenote-0">a very simple code change:</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Beyond the obvious capitalization changes, the meaning of the type
 argument <code>real</code> also changes slightly. For <code>RandomStream</code> it meant
 that the stream would maintain enough internal state to generate values of
-<i>any</i> type with the same or smaller size as the stream's type. So in this
+<em>any</em> type with the same or smaller size as the stream’s type. So in this
 case, <code>rs</code> could produce random values of any numeric type with 64
 or fewer bits. With the new <code>randomStream</code>, it will only be able to
 generate <code>real</code> values. Another <code>randomStream</code> would need
 to be created to generate values of other numeric types. This change resulted
-in various simplifications to the interface. <span class="sidenote-delimiter">]</span></span></span></p>
+in various simplifications to the interface.<span class="sidenote-delimiter">]</span></span></span></p>
 <div class="highlight"><pre class="chroma" tabindex="0"><code class="language-Chapel" data-lang="Chapel"><span class="line"><span class="cl"><span class="kd">var</span><span class="w"> </span><span class="nx">rs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nx">RandomStream</span><span class="p">(</span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="nx">seed</span><span class="p">,</span><span class="w"> </span><span class="nx">parSafe</span><span class="o">=</span><span class="kc">false</span><span class="p">);</span><span class="w">  </span><span class="c1">// before 1.33
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">var</span><span class="w"> </span><span class="nx">rs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nx">randomStream</span><span class="p">(</span><span class="kt">real</span><span class="p">,</span><span class="w"> </span><span class="nx">seed</span><span class="p">);</span><span class="w">  </span><span class="c1">// in 1.33 (note the capitalization)
 </span></span></span></code></pre></div><p>One significant difference with switching to a record is that the new type has
@@ -205,18 +204,14 @@ the direction taken so far, as well as future goals for the module.</p>
 <a href="#default-task-intent-for-arrays">Default Task Intent For Arrays</a>
 </h4>
 <p>In 1.32, we made some big changes to the default
-<span class="sidenote"><label class="sidenote-label" for="sidenote-1">intent</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-Chapel uses intents to define how variables are passed to functions and
-parallel constructs. These are called <i>argument intents</i> for functions and
-<i>task intents</i> for parallel constructs. For example, a
+<span class="sidenote"><label class="sidenote-label" for="sidenote-1">intent</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Chapel uses intents to define how variables are passed to functions and
+parallel constructs. These are called <em>argument intents</em> for functions and
+<em>task intents</em> for parallel constructs. For example, a
 <code>const ref</code> argument intent causes a constant reference to the actual argument to be passed into the function, while an <code>in</code> task intent creates a
-task-private mutable copy of the original variable.
-
-See the primers on
-<a href="https://chapel-lang.org/docs/1.33/primers/procedures.html">procedures</a> and
-<a href="https://chapel-lang.org/docs/1.33/primers/taskParallel.html">task parallel constructs</a>
-for examples and more information.
-<span class="sidenote-delimiter">]</span></span></span>. This change meant that arrays, which previously had a
+task-private mutable copy of the original variable.<br/><br/>See the primers on
+<a href="https://chapel-lang.org/docs/1.33/primers/procedures.html" rel="noopener" target="_blank">procedures</a> and
+<a href="https://chapel-lang.org/docs/1.33/primers/taskParallel.html" rel="noopener" target="_blank">task parallel constructs</a>
+for examples and more information.<span class="sidenote-delimiter">]</span></span></span>. This change meant that arrays, which previously had a
 special intent, were now always passed by <code>const</code> to functions and tasks unless
 an explicit intent was requested. This same change was also made to record
 methods, removing the special intent for the record receiver <code>this</code>.</p>
@@ -300,23 +295,17 @@ that is not tracked by the lifetime checker.</p>
 default; however, some diligence is crucial for optimal use.</p>
 <p>Associative domains in Chapel have a <code>parSafe</code> setting that
 determines their behavior when
-<span class="sidenote"><label class="sidenote-label" for="sidenote-2">operated on by concurrent tasks.</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -26.5rem"><span class="sidenote-delimiter">[note:</span>
-<code>parSafe</code> stands for "parallel safety". Setting
+<span class="sidenote"><label class="sidenote-label" for="sidenote-2">operated on by concurrent tasks.</label><input class="sidenote-checkbox" id="sidenote-2" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -26.5rem"><span class="sidenote-delimiter">[note:</span><code>parSafe</code> stands for “parallel safety”. Setting
 <code>parSafe=true</code> allows for multiple tasks to modify
-an associative domain's index set concurrently without race conditions.
+an associative domain’s index set concurrently without race conditions.
 It is important to note that <code>parSafe=true</code> does not protect the
 user against all race conditions. For example, iterating over an associative
 domain while another task modifies it represents a race condition and the
-behavior is undefined. 
-See the
-<a href="https://chapel-lang.org/docs/1.33/language/spec/domains.html?highlight=parsafe#parallel-safety-with-respect-to-domains-and-arrays">
-documentation</a> on parallel safety for domains for examples and more
-information.
-
-<span class="sidenote-delimiter">]</span></span></span> The default of <code>parSafe=true</code> <span class="sidenote"><label class="sidenote-label" for="sidenote-3">added overhead</label><input class="sidenote-checkbox" id="sidenote-3" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 0.5rem"><span class="sidenote-delimiter">[note:</span> The setting <code>parSafe=true</code> adds
+behavior is undefined.<br/><br/>See the <a href="https://chapel-lang.org/docs/1.33/language/spec/domains.html?highlight=parsafe#parallel-safety-with-respect-to-domains-and-arrays" rel="noopener" target="_blank">documentation</a>
+on parallel safety for domains for examples and more information.<span class="sidenote-delimiter">]</span></span></span> The default of <code>parSafe=true</code> <span class="sidenote"><label class="sidenote-label" for="sidenote-3">added overhead</label><input class="sidenote-checkbox" id="sidenote-3" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: 0.5rem"><span class="sidenote-delimiter">[note:</span>The setting <code>parSafe=true</code> adds
 overhead because it uses locking on the underlying data structure each time the
 domain is modified. This overhead is unnecessary, for example, when the domain
-is operated upon by a single task. <span class="sidenote-delimiter">]</span></span></span>
+is operated upon by a single task.<span class="sidenote-delimiter">]</span></span></span>
 to the operations and made programs slower by default, even when such safety
 guarantees were not needed.
 Because of this we have changed their default from
@@ -379,8 +368,8 @@ functionality to an alternative, unstable serializer/deserializer in the new
 <code>ObjectSerialization</code> module, restoring the old, “unstructured” behavior to the
 binary serializer and deserializer.</p>
 <p>This means that the binary deserializer no longer supports reading strings and
-bytes — Chapel strings and bytes <span class="sidenote"><label class="sidenote-label" for="sidenote-4">do not include a null-terminator,</label><input class="sidenote-checkbox" id="sidenote-4" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span> This enables the string or bytes to
-contain null characters. <span class="sidenote-delimiter">]</span></span></span> so without a length there is no way
+bytes — Chapel strings and bytes <span class="sidenote"><label class="sidenote-label" for="sidenote-4">do not include a null-terminator,</label><input class="sidenote-checkbox" id="sidenote-4" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>This enables the string or bytes to
+contain null characters.<span class="sidenote-delimiter">]</span></span></span> so without a length there is no way
 to determine when the string or bytes value ends.  Instead, a method such as
 <code>fileReader.readBinary</code> should be used.</p>
 <h3 id="new-warnings">

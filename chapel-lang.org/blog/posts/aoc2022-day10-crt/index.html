@@ -198,13 +198,11 @@ The instructions we’re reading look like this:</p>
 </span></span></code></pre></div><p>In the world of our little processor, only one thing can change at any
 given step: the value of <code>X</code> can go up or down by a certain amount. We can therefore represent
 the effects of the <code>noop</code> and <code>addx</code> instructions as a
-<span class="sidenote"><label class="sidenote-label" for="sidenote-0">simple list of integers:</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-I think there's a curious analogy between the integers we create and
-CPU <a href="https://en.wikipedia.org/wiki/Micro-operation">micro-operations</a>.
+<span class="sidenote"><label class="sidenote-label" for="sidenote-0">simple list of integers:</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>I think there’s a curious analogy between the integers we create and
+CPU <a href="https://en.wikipedia.org/wiki/Micro-operation" rel="noopener" target="_blank">micro-operations</a>.
 Just like a CPU might break down complex instructions into smaller ones, we
 break individual operations like <code>noop</code> and <code>addx</code> into
-smaller pieces (changes to the register).
-<span class="sidenote-delimiter">]</span></span></span> each integer will indicate that one step took place, and that
+smaller pieces (changes to the register).<span class="sidenote-delimiter">]</span></span></span> each integer will indicate that one step took place, and that
 during that step, the register <code>X</code> changed by the amount stored in
 the integer. Let’s call such a change to <code>X</code> a <em>delta</em>. My solution defines
 an iterator that reads input from the console and yields deltas.</p>

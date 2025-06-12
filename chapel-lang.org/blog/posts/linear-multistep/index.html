@@ -75,13 +75,11 @@ those features is Chapel’s support for generics and type-level computation.
 In particular, Chapel lets you define functions that perform computations
 on types at compile-time. This allows one to specialize the behavior
 of a particular generic function depending on its type arguments. Since
-types are <span class="sidenote"><label class="sidenote-label" for="sidenote-0">only present at compile-time,</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-Certain types in Chapel actually have a runtime component. This is specifically
-true for arrays, where the array's domain — the indices it allows, and
+types are <span class="sidenote"><label class="sidenote-label" for="sidenote-0">only present at compile-time,</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Certain types in Chapel actually have a runtime component. This is specifically
+true for arrays, where the array’s domain — the indices it allows, and
 their distribution across various nodes — is a runtime value. This supports
 resizing and dynamic allocation of arrays, but it does muddy the waters
-a bit in terms of what "compile-time type computation" means.
-<span class="sidenote-delimiter">]</span></span></span>
+a bit in terms of what “compile-time type computation” means.<span class="sidenote-delimiter">]</span></span></span>
 there’s generally no runtime cost to operating on them. In other words:
 <strong>we can write functions that accept a type argument, which has no runtime
 costs and allows us to customize the behavior of the function.</strong></p>

@@ -91,11 +91,9 @@ making writing and reading Chapel code easier than ever.</p>
 <a href="https://chapel-lang.org/docs/2.0/tools/chpl-language-server/chpl-language-server.html" rel="noopener" target="_blank">Chapel Language Server (CLS)</a>.
 Although demonstrations throughout the article are made using VSCode, CLS
 itself is editor-agnostic. This means that you can configure
-<span class="sidenote"><label class="sidenote-label" for="sidenote-0">your editor of choice</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-The Chapel team currently actively supports VSCode and NeoVim, but any editor
+<span class="sidenote"><label class="sidenote-label" for="sidenote-0">your editor of choice</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>The Chapel team currently actively supports VSCode and NeoVim, but any editor
 that supports the Language Server Protocol plugins can use these same features.
-If you need support getting CLS in your favorite editor please let us know!
-<span class="sidenote-delimiter">]</span></span></span> to do many of the same things.</p>
+If you need support getting CLS in your favorite editor please let us know!<span class="sidenote-delimiter">]</span></span></span> to do many of the same things.</p>
 <h3 id="feature-highlights">
 <a href="#feature-highlights">Feature Highlights</a>
 </h3>
@@ -213,9 +211,7 @@ information for CLS, we can invoke:</p>
 <p>One thing to watch for in this demo is how fast it is. Arkouda is a large
 project at nearly 40,000 lines of Chapel code. You can see this when we jump to
 the definition of <code>NumPyDType</code>. The first time,
-<span class="sidenote"><label class="sidenote-label" for="sidenote-1">it takes a second.</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-These demos were done using a debug build of the compiler, causing this slight delay. When using a release build, this initial delay is greatly reduced.
-<span class="sidenote-delimiter">]</span></span></span>
+<span class="sidenote"><label class="sidenote-label" for="sidenote-1">it takes a second.</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>These demos were done using a debug build of the compiler, causing this slight delay. When using a release build, this initial delay is greatly reduced.<span class="sidenote-delimiter">]</span></span></span>
 The second time, it is instantaneous. This is because the language server is
 using the Dyno compiler library, which uses a query system to quickly respond
 to incremental changes in files by only recomputing what has actually changed.</p>

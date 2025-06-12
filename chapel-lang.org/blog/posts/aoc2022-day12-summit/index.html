@@ -408,11 +408,9 @@ place.</p>
 <p>More on <code>maxloc</code> can be found in <a href="../../posts/aoc2022-day06-packets/#putting-it-all-together">day 6’s post</a>
 or in the <a href="https://chapel-lang.org/docs/primers/reductions.html#maxloc-and-minloc-reductions" rel="noopener" target="_blank">documentation</a></p>
 <p>In both of these lines, I am applying the reduction to a promoted array
-expression. The first expression: <code>elevs == (S - a)</code> <span class="sidenote"><label class="sidenote-label" for="sidenote-0">creates</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>
-    Chapel is smart enough to avoid actually creating this array. Instead
-    it will provide it to the reduction as an iterator in order to save
-    memory.
-<span class="sidenote-delimiter">]</span></span></span> an array of boolean values where the only <code>true</code> entry
+expression. The first expression: <code>elevs == (S - a)</code> <span class="sidenote"><label class="sidenote-label" for="sidenote-0">creates</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>Chapel is smart enough to avoid actually creating this array. Instead
+it will provide it to the reduction as an iterator in order to save
+memory.<span class="sidenote-delimiter">]</span></span></span> an array of boolean values where the only <code>true</code> entry
 should be the location of <code>S</code>. Note that we are checking against <code>S - a</code>,
 rather than <code>S</code>, because we already subtracted the ASCII value of <code>a</code>
 from all entries in the elevation array.</p>

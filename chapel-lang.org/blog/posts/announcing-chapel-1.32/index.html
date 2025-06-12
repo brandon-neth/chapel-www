@@ -203,10 +203,10 @@ many problem domains where running a process per core could result
 in larger memory requirements or poor surface-to-volume effects due
 to the amount of <span class="sidenote"><label class="sidenote-label" for="sidenote-0">SPMD</label><input class="sidenote-checkbox" id="sidenote-0" type="checkbox"/><span class="sidenote-content sidenote-right" style="margin-top: -9.5rem"><span class="sidenote-delimiter">[note:</span>SPMD = Single Program, Multiple Data, a static and coarse-grained
 style of parallelism in which multiple copies of the same program
-are executed, e.g. one per processor core <span class="sidenote-delimiter">]</span></span></span>
+are executed, e.g. one per processor core<span class="sidenote-delimiter">]</span></span></span>
 parallelism.</p>
 <p>However, as modern compute nodes have begun to support multiple <span class="sidenote"><label class="sidenote-label" for="sidenote-1">NICs,</label><input class="sidenote-checkbox" id="sidenote-1" type="checkbox"/><span class="sidenote-content sidenote-right"><span class="sidenote-delimiter">[note:</span>NICs = Network Interface
-Chips, which permit processes to communicate with remote nodes <span class="sidenote-delimiter">]</span></span></span> this traditional approach has faced challenges.
+Chips, which permit processes to communicate with remote nodes<span class="sidenote-delimiter">]</span></span></span> this traditional approach has faced challenges.
 Specifically, it is unduly complicated to have a single locale (UNIX
 process) leverage multiple NICs effectively; yet using just one NIC
 leaves potential performance benefits on the floor by not exercising
