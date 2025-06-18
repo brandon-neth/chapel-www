@@ -1,3 +1,12 @@
+[lanl2025]
+  title = "Chapel's Batteries-Included Approach for Portable Parallel Programming"
+  authors = "Engin Kayraklioglu"
+  venue = "Los Alamos National Laboratory - Advances in Applied Computer Science Invited Speaker Series"
+  date = "June 18, 2025"
+  url = "EnginLANL2025.pdf"
+  description = "This talk demonstrates how Chapel can be used to program most parallel architectures from desktops to supercomputers using code examples, benchmark results, and user stories."
+  type = ["presentation"]
+
 [hips2025-keynote]
   title = "Reflections on 30 Years of HPC Programming: So many hardware advances, so little adoption of new languages"
   authors = "Brad Chamberlain"

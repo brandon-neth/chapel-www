@@ -27,6 +27,7 @@ keywords = ["TODO"]
 {{</publication-list>}}
 
 {{<publication-list "recent" "Other Recent Chapel Presentations">}}
+  {{<artifact-listing "lanl2025">}}
   {{<artifact-listing "hpsfcon2025">}}
   {{<artifact-listing "runtime-overview">}}
   {{<artifact-listing "hpsfapp">}}
