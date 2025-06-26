@@ -6,8 +6,15 @@
     <description>Recent content in Editorial on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/editorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>10 Myths About Scalable Parallel Programming Languages (Redux),  Part 3: New Languages vs. Language Extensions</title>
+      <link>https://chapel-lang.org/blog/posts/10myths-part3/</link>
+      <pubDate>Wed, 25 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/posts/10myths-part3/</guid>
+      <description>A third archival post from the 2012 IEEE TCSC blog series with a current reflection on it</description>
+    </item>
     <item>
       <title>10 Myths About Scalable Parallel Programming Languages (Redux),  Part 2: Past Failures and Future Attempts</title>
       <link>https://chapel-lang.org/blog/posts/10myths-part2/</link>
