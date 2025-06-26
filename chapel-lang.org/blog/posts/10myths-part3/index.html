@@ -485,7 +485,7 @@ professional career.  She later reprised this content in her CHIUW
 Ever</em></a>.<span class="sidenote-delimiter">]</span></span></span>
 means you can have specialized syntax that can make parallel
 algorithms cleaner, resulting in code that is easier to write, debug,
-read, and maintain.  It also means having a compiler that can performs
+read, and maintain.  It also means having a compiler that can perform
 semantic checks to help you avoid introducing errors and bugs; or that
 can perform optimizations, reducing the time and effort spent tuning
 your code manually.</p>
@@ -493,7 +493,7 @@ your code manually.</p>
 computing <em>can</em> be achieved without a dedicated programming language
 to express parallelism and locality; but wouldn’t scalable parallel
 programming be better if, as a community, we were able to create and
-adopt a programming language?  My sense is that we would look back on
+adopt such a language?  My sense is that we would look back on
 MPI+X programming and consider it to be the equivalent of
 assembly-level programming in the era of Fortran—something that is
 difficult to let go of due to all of the control it affords, yet which
@@ -508,9 +508,9 @@ assembly-level programming.</p>
 </h4>
 <p>Reading this article 13 years later, I feel as though I sometimes
 focused too much on new languages in general rather than on the
-specific benefits to parallel computing that can be gained by creating
-new languages.  As a very simple example, consider a basic loop
-iterating over a sequence of integers in C:</p>
+specific benefits that can be gained by creating new <em>parallel</em>
+languages.  As a very simple example, consider a basic loop iterating
+over a sequence of integers in C:</p>
 <div class="highlight"><pre class="chroma" tabindex="0"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">  <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
 </span></span></code></pre></div><p>The whole premise of this loop is that we have a single variable <code>i</code>
@@ -571,11 +571,11 @@ Yet, if we write the equivalent parallel loop in Chapel:</p>
 </span></span></span></code></pre></div><p>we will get an error because the language doesn’t permit scalar values
 like <code>sum</code> that are defined outside of a parallel loop to be modified
 within it.  To do so, the user must introduce additional
-synchronization, explicitly overrides this default safety feature, or
-switch to using a <code>+ reduce</code> expression or reduce intent.</p>
+synchronization, explicitly override this default safety feature, or
+switch to using a <code>+ reduce</code> expression or intent.</p>
 <p>These are just two simple examples, but they illustrate how designing
 a language with parallelism as a first-class concern can result in a
-cleaner, safer design than retroactively injecting parallelism into a
+cleaner, safer, simpler design than retroactively injecting parallelism into a
 language whose original design was sequential.  They also are
 representative of a much larger set of choices that we made when
 designing Chapel’s features for parallelism and locality in service of
@@ -623,7 +623,7 @@ energy efficiency are now as important to many commercial and non-HPC
 sectors as they have been to HPC for its lifetime.</p>
 <p>So when members of our community suggest that we cannot afford to
 create a language that is purpose-built for parallelism and
-scalability, to me it reflects a self-absorption that fails to
+scalability, to me it reflects a short-sightedness that fails to
 recognize the breadth of overlap with communities outside of
 traditional HPC who could similarly benefit from the same thing.  This
 is the perfect time to be doing outreach to HPC-adjacent fields and
