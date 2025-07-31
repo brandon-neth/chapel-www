@@ -6,6 +6,7 @@
 <meta content="#00cbff" name="theme-color"/>
 <meta content="An interview with the two principal developers of ChOp, the Chapel-based Optimization Project" name="description"/>
 <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" media="screen,print" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css" integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" rel="stylesheet"/>
 <style>.sidenote-checkbox { display: none; }</style>
 <style>.feather { width: 1rem; height: 1rem; }</style>
 <link href="../../scss/style.min.css" media="screen,print" rel="stylesheet"/>
@@ -343,11 +344,17 @@ of our Chapel-based codes across a wide range of platforms—from a
 simple laptop to (pre-)exascale supercomputers featured in the TOP500
 list (e.g., Frontier and LUMI)—including both NVIDIA and AMD GPU
 architectures. Remarkably, this has been achieved with minimal effort
-dedicated to portability. We have already scaled our applications to
+dedicated to portability.  We have already scaled our applications to
 more than 51,200 CPU cores and 1,024 GPU accelerators, leading to many
 outcomes in terms of solving hard problem instances, validating our
 approach at scale, and demonstrating the viability of PGAS-based
-designs on state-of-the-art heterogeneous platforms.</p>
+designs on state-of-the-art heterogeneous platforms. For example, we
+confirmed the optimality of some very hard flowshop scheduling problem
+instances in under two hours using CPUs only, which required the
+exploration of approximately <small><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mo>×</mo><msup><mn>10</mn><mn>15</mn></msup></mrow><annotation encoding="application/x-tex">95×10^{15}</annotation></semantics></math></span><span aria-hidden="true" class="katex-html"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">95</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">15</span></span></span></span></span></span></span></span></span></span></span></span></small> tree
+nodes. This is particularly notable, as such a result would have been
+inconceivable just a few years ago without relying on hundreds of GPU
+accelerators.</p>
 <h4 id="6-if-you-could-improve-chapel-with-a-finger-snap-what-would-you-do">
 <a href="#6-if-you-could-improve-chapel-with-a-finger-snap-what-would-you-do">6. If you could improve Chapel with a finger snap, what would you do?</a>
 </h4>
@@ -387,7 +394,7 @@ significant delays.</p>
 the many efforts dedicated to the Chapel ecosystem (such as
 <a href="https://chapel-lang.org/ChapelCon.html" rel="noopener" target="_blank">ChapelCon</a>, formerly CHIUW)
 are highly beneficial to the users. A concluding message for readers
-would be “Try it yourself!”.</p>
+would be “Try Chapel yourself!”.</p>
 <br/>
 <hr/>
 <br/>
