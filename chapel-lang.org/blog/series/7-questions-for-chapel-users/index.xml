@@ -6,8 +6,15 @@
     <description>Recent content in 7 Questions for Chapel Users on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/series/7-questions-for-chapel-users/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 Questions for Tiago Carneiro and Guillaume Helbecque: Combinatorial Optimization in Chapel</title>
+      <link>https://chapel-lang.org/blog/posts/7qs-chop/</link>
+      <pubDate>Wed, 30 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/posts/7qs-chop/</guid>
+      <description>An interview with the two principal developers of ChOp, the Chapel-based Optimization Project</description>
+    </item>
     <item>
       <title>7 Questions for Bill Reus: Interactive Supercomputing with Chapel for Cybersecurity</title>
       <link>https://chapel-lang.org/blog/posts/7qs-reus/</link>
