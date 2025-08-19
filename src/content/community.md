@@ -45,13 +45,18 @@ keywords = ["TODO"]
 
 [[LiveEvents]]
   name="Chapel project weekly meeting"
-  description="Our project's main weekly meeting, featuring news, status, demos, discussions, and office hours."
+  description="Our project's main weekly meeting, featuring news, status, demos, discussions, and office hours (**Tuesdays @ 10am PT**)"
   url="https://github.com/chapel-lang/chapel/discussions/categories/weekly-meeting-topics?discussions_q="
 
 [[LiveEvents]]
   name="Chapel deep-dives and demos"
-  description="A weekly meeting slot supporting in-depth discussions and demos"
+  description="A weekly meeting slot that can be scheduled for an in-depth discussion or demo (**Thursdays @ 10am PT**)"
   url="https://github.com/chapel-lang/chapel/discussions/27247"
+
+[[LiveEvents]]
+  name="Chapel teaching meet-up"
+  description="A monthly meeting for those interested in using Chapel in educational settings (**2nd Tuesday of each month @ 9am PT**)"
+  url="https://outlook.office365.com/calendar/published/cfd54391a94d41648a8c15e1ccf5d870@hpe.com/1eb05c67756a4576b540c8946faba28915354704168464865139/calendar.html"
 
 [[LiveEvents]]
   name="ChapelCon (formerly CHIUW)"
@@ -61,7 +66,7 @@ keywords = ["TODO"]
 
 +++
 
-Check out the [Chapel Community Calendar](https://outlook.office365.com/calendar/published/cfd54391a94d41648a8c15e1ccf5d870@hpe.com/1eb05c67756a4576b540c8946faba28915354704168464865139/calendar.html) ([Downloadable ICS](https://outlook.office365.com/owa/calendar/cfd54391a94d41648a8c15e1ccf5d870@hpe.com/1eb05c67756a4576b540c8946faba28915354704168464865139/calendar.ics)) for a published Outlook calendar of Chapel community events.
+Check out the [**Chapel Community Calendar**](https://outlook.office365.com/calendar/published/cfd54391a94d41648a8c15e1ccf5d870@hpe.com/1eb05c67756a4576b540c8946faba28915354704168464865139/calendar.html) ([Downloadable ICS](https://outlook.office365.com/owa/calendar/cfd54391a94d41648a8c15e1ccf5d870@hpe.com/1eb05c67756a4576b540c8946faba28915354704168464865139/calendar.ics)) for a published Outlook calendar of Chapel community events.
 {.content-paragraph}
 
 ## Written Q&A / Conversation
