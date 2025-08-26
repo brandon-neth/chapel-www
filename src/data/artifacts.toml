@@ -12,7 +12,7 @@
   authors = "Brad Chamberlain"
   venue = "HIPS 2025 keynote at IPDPS 2025"
   date = "June 3, 2025"
-  url = "presentations/ChamberlainHIPS2025-presented.pdf"
+  url = "/presentations/ChamberlainHIPS2025-presented.pdf"
   description = "This keynote uses the 30th instance of HIPS as an opportunity to reflect on the past 30 years of HPC programming language design and adoption (or lack thereof)"
   type = ["presentation"]
 
