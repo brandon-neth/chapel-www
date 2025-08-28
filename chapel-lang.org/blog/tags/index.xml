@@ -6,8 +6,29 @@
     <description>Recent content in Tags on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI/ML</title>
+      <link>https://chapel-lang.org/blog/tags/ai/ml/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/tags/ai/ml/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How-To</title>
+      <link>https://chapel-lang.org/blog/tags/how-to/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/tags/how-to/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>https://chapel-lang.org/blog/tags/tools/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/tags/tools/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Archival Posts / Reprints</title>
       <link>https://chapel-lang.org/blog/tags/archival-posts-/-reprints/</link>
@@ -86,13 +107,6 @@
       <description></description>
     </item>
     <item>
-      <title>Tools</title>
-      <link>https://chapel-lang.org/blog/tags/tools/</link>
-      <pubDate>Thu, 12 Jun 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/tags/tools/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Sparse Arrays</title>
       <link>https://chapel-lang.org/blog/tags/sparse-arrays/</link>
       <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
@@ -104,13 +118,6 @@
       <link>https://chapel-lang.org/blog/tags/earth-sciences/</link>
       <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/tags/earth-sciences/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>How-To</title>
-      <link>https://chapel-lang.org/blog/tags/how-to/</link>
-      <pubDate>Thu, 24 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/tags/how-to/</guid>
       <description></description>
     </item>
     <item>
@@ -216,13 +223,6 @@
       <link>https://chapel-lang.org/blog/tags/graph-analytics/</link>
       <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://chapel-lang.org/blog/tags/graph-analytics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AI/ML</title>
-      <link>https://chapel-lang.org/blog/tags/ai/ml/</link>
-      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://chapel-lang.org/blog/tags/ai/ml/</guid>
       <description></description>
     </item>
     <item>

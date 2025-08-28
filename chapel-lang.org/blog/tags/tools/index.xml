@@ -6,8 +6,15 @@
     <description>Recent content in Tools on Chapel Language Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experimenting with the Model Context Protocol and Chapel</title>
+      <link>https://chapel-lang.org/blog/posts/claude-mcp/</link>
+      <pubDate>Thu, 28 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://chapel-lang.org/blog/posts/claude-mcp/</guid>
+      <description>A report on developing MCP-based integrations for the Chapel programming language</description>
+    </item>
     <item>
       <title>Announcing Chapel 2.5!</title>
       <link>https://chapel-lang.org/blog/posts/announcing-chapel-2.5/</link>
