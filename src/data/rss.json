@@ -1,5 +1,18 @@
 [
   {
+    "title": "Experimenting with the Model Context Protocol and Chapel",
+    "date": "2025-08-28 00:00:00+00:00",
+    "url": "https://chapel-lang.org/blog/posts/claude-mcp/",
+    "description": "A report on developing MCP-based integrations for the Chapel programming language",
+    "authors": [
+      {
+        "name": "Daniel Fedorin",
+        "url": "https://chapel-lang.org/blog/authors/daniel-fedorin"
+      }
+    ],
+    "image": "img/news/conwaygif.gif"
+  },
+  {
     "title": "10 Myths About Scalable Parallel Programming Languages (Redux),  Part 5: Productivity and Magic Compilers",
     "date": "2025-08-20 00:00:00+00:00",
     "url": "https://chapel-lang.org/blog/posts/10myths-part5/",
