@@ -6,6 +6,8 @@ image: "bg.png"
 nav:
   - title: "Timeline"
     section: "timeline"
+  - title: "Keynote"
+    section: "keynote"
   - title: "Sessions"
     section: "sessions"
   - title: "Organization"
@@ -15,7 +17,10 @@ nav:
 ---
 
 {{< section "banner.md" >}}
-{{< section "summary-and-timeline.md" "white" >}}
+
+{{< section "summary.md" "white" >}}
+{{< section "keynote.md">}}
+{{< section "timeline.md" "white" >}}
 {{< section "days.md" >}}
 {{< section "session-details.md" "white" >}}
 {{< section "organization.md" "white" >}}
