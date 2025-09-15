@@ -68,21 +68,25 @@ Users of other HPE or Cray systems should download Chapel and build from source,
 title="With Linux Package Managers"
 id="linux"
 description="""
-We provide Chapel packages for several different Linux distributions, though they come with some performance caveats. They can be installed as follows:
+We provide Chapel packages for several different Linux distributions, though they come with some performance caveats. Each package comes bundled with
+a number of different supported Chapel configurations and Chapel development tools. The installed package will default to the preferred single-locale configuration. To select a different configuration, you can pass compiler flags, set environment variables, or create `chplconfig` files. See the
+[Chapel documentation](https://chapel-lang.org/docs/usingchapel/chplenv.html#setting-up-your-environment-for-chapel)
+for more information on these options.
+
+The packages can be installed as follows:
 1. Download the package for your system using one of the following links:
 {{<pkg-list "2.5.0">}}
 
 2. Check its SHA256 checksum using the values and instructions on the corresponding [GitHub release page](https://github.com/chapel-lang/chapel/releases/tag/2.5.0/).
 
-3. Install using the system package manager. 
+3. Install using the system package manager.
   - For RPM based distributions (Fedora, RHEL, etc), use: `dnf install ./<chapel package name>`
   - For Debian based distributions (Debian, Ubuntu, etc), use: `apt install ./<chapel package name>`
 
-
 Caveats:
-- Using these packages means that parts of the Chapel runtime may not be compiled optimally for your architecture (e.g. the BigInteger and Regex modules may result in degrade performance). Users looking for maximum performance that makes use of their specific hardware should consider building Chapel from source.
-- The GASNet multi-locale configuration is a portable implementation based on GASNet-EX/UDP, so won't take advantage of high-performance networks.
-- The SLURM/libfabric multi-locale configuration is experimental and may not work with all providers. It is known to work with the tcp and efa providers.
+- Using these packages means that parts of the Chapel runtime may not be compiled optimally for your architecture (e.g. the BigInteger and Regex modules may result in degraded performance). Users looking for maximum performance that makes use of their specific hardware should consider building Chapel from source.
+- The bundled GASNet multi-locale configuration is a portable implementation based on GASNet-EX/UDP, so won't take advantage of high-performance networks.
+- The bundled SLURM/libfabric multi-locale configuration is experimental and may not work with all providers. It is known to work with the tcp and efa providers.
 """
 +++
 
