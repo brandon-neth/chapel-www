@@ -15,7 +15,7 @@
     <lastmod>2024-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/series/10-myths-about-scalable-parallel-programming-languages-redux/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/series/navier-stokes-in-chapel/</loc>
     <lastmod>2024-11-14T00:00:00+00:00</lastmod>
@@ -57,18 +57,45 @@
     <lastmod>2022-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/posts/10myths-part6/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/tags/archival-posts-/-reprints/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/authors/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/tags/benchmarks/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/authors/brad-chamberlain/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/tags/editorial/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/tags/language-comparison/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/tags/performance/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/posts/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/series/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://chapel-lang.org/blog/tags/</loc>
+    <lastmod>2025-09-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/series/7-questions-for-chapel-users/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/posts/7qs-asgari/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/authors/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/authors/brad-chamberlain/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/tags/earth-sciences/</loc>
@@ -78,15 +105,6 @@
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/tags/interviews/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/posts/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/series/</loc>
-    <lastmod>2025-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/tags/</loc>
     <lastmod>2025-09-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/tags/user-experiences/</loc>
@@ -108,12 +126,6 @@
     <lastmod>2025-08-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/posts/10myths-part5/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/tags/archival-posts-/-reprints/</loc>
-    <lastmod>2025-08-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/tags/editorial/</loc>
     <lastmod>2025-08-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/posts/7qs-chop/</loc>
@@ -152,9 +164,6 @@
     <loc>https://chapel-lang.org/blog/authors/michael-ferguson/</loc>
     <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://chapel-lang.org/blog/tags/performance/</loc>
-    <lastmod>2025-06-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://chapel-lang.org/blog/tags/release-announcements/</loc>
     <lastmod>2025-06-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -181,9 +190,6 @@
   </url><url>
     <loc>https://chapel-lang.org/blog/authors/michelle-strout/</loc>
     <lastmod>2025-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/tags/language-comparison/</loc>
-    <lastmod>2025-04-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/posts/memory-safety/</loc>
     <lastmod>2025-04-10T00:00:00+00:00</lastmod>
@@ -288,9 +294,6 @@
     <lastmod>2024-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/authors/andy-stone/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://chapel-lang.org/blog/tags/benchmarks/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://chapel-lang.org/blog/posts/bns2/</loc>
