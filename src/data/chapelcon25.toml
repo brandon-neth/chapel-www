@@ -1,0 +1,284 @@
+[welcome1]
+  title="Welcome/Introduction"
+  authors="Brandon Neth"
+  description="Opening session to welcome participants and share the schedule for the day."
+  start="9:00"
+  end="9:10"
+
+[welcome3]
+  title="Welcome/Introduction"
+  authors="Brandon Neth"
+  description="Opening session to welcome participants and share the schedule for the day."
+  slides="https://www.google.com"
+  start="9:00"
+  end="9:10"
+
+[transformers]
+  title="Transformers from Scratch"
+  authors="Thitrin Sastarasadhit and Kenjiro Taura"
+  description=""
+  start="9:10"
+  end="9:30"
+  session="AI/ML"
+
+
+[chai]
+  title="ChAI: A Machine Learning Library in Chapel"
+  authors="	Iain Moncrief"
+  description=""
+  start="9:25"
+  end="9:45"
+
+[break3_1]
+  title="Break"
+  authors=""
+  description=""
+  start="9:45"
+  end="10:00"
+  
+[hipermotif]
+  title="HiPerMotif: Novel Parallel Subgraph Isomorphism in Large-Scale Property Graphs"
+  authors="Mohammad Dindoost, Bartosz Bryg, Ioannis Koutis, David Bader and Oliver Alvarado Rodriguez"
+  description=""
+  start="10:00"
+  end="10:10"
+
+[accelerating]
+ title="Accelerating Probabilistic Inference of Hypergraph Algorithms Using PGAS and Chapel"
+  authors="Rinor Ramli"
+  description=""
+  start="10:10"
+  end="10:30"
+
+[break3_2]
+  title="Break"
+  authors=""
+  description=""
+  start="10:30"
+  end="10:45"
+
+[keynote]
+  title="Keynote: ..."
+  authors="Chris Rackakous"
+  description="..."
+  start="10:45"
+  end="11:45"
+
+[break3_3]
+  title="Break"
+  authors=""
+  description=""
+  start="11:45"
+  end="12:00"
+
+[arkouda]
+  title="Arkouda Bulletin: A Year of Progress in Exploratory Data Analytics at Scale"
+  authors="Amanda Potts and Engin Kayraklıoğlu"
+  description=""
+  start="12:00"
+  end="12:30"
+
+[champs]
+  title="ChapelCon ’25: Recent Developments in the CHApel MultiPhysics Simulation Software"
+  authors="Anthony Chrun, Baptiste Arnould, Karim Zayni, Guillaume Auger, Maxime Blanchet, Eric Laurendeau and Justin Rigal"
+  description=""
+  start="12:30"
+  end="13:00"
+
+[break3_4]
+  title="Break"
+  authors=""
+  description=""
+  start="13:00"
+  end="13:15"
+
+[autodiff]
+  title="Automatic Differentiation in Chapel"
+  authors="Luca Ferranti"
+  description=""
+  start="13:15"
+  end="13:35"
+
+[multigpu]
+  title="A Portable Low-Level Multi-GPU Branch-and-Bound: A Comparison Against Chapel"
+  authors="Ivan Tagliaferro de Oliveira Tezoto, Guillaume Helbecque, Ezhilmathi Krishnasamy, Nouredine Melab and Gregoire Danoy"
+  description=""
+  start="13:35"
+  end="13:55"
+
+[cloud]
+  title="Running Chapel on the Cloud"
+  authors="Benson Muite"
+  description=""
+  start="13:55"
+  end="14:00"
+
+[discussion]
+  title="Open Community Discussion"
+  authors=""
+  description=""
+  start="14:00"
+  end="??"
+
+[welcome2]
+  title="Welcome"
+  authors=""
+  description=""
+  start="9:00"
+  end="9:05"
+
+[state]
+  title="State of the Project: Brad"
+  authors="Brad Chamberlain"
+  description=""
+  start="9:05"
+  end="9:35"
+
+[invited_lumi]
+  title="Invited: LUMI"
+  authors=""
+  description=""
+  start="9:35"
+  end="10:05"
+
+[break4_1]
+  title="Break"
+  authors=""
+  description=""
+  start="10:05"
+  end="10:20"
+
+[recursion]
+  title="Recursion and slicing impacts on performance in Chapel, C, and Fortran"
+  authors="Nelson Luís da Costa Dias"
+  description="A simple (serial) recursive summation over a 1-dimensional array (à là quicksort) was implemented in 3 languages (Chapel, C, Fortran) and 4 compiler variants (Chapel 2.5 with LLVM, gcc 13.3.0, clang 18.1.3, gfortran 13.3.0), and compared with a standard non-recursive summation. Two alternatives for the recursion were tested: (i) by passing array indices explicitly in the recursion (possible in all three languages) and (ii) by using array slicing (only possible in Chapel and Fortran). Performance varied widely. Clang and Chapel were faster for the standard non-recursive summation; C and Fortran were faster for recursion using indices; and Fortran was much faster than Chapel for recursion using array slices. The performance of Chapel slices is a known issue (https://chapel.discourse.group/t/ new-issue-improve-the-performance-of-slices-and-rank-change-operations/30503). It appears that for the standard summation and recursive summation using indices the performance is related to the backend, i.e. GCC (gfortran and gcc) versus LLVM (Chapel and clang)."
+  start="10:20"
+  end="10:30"
+
+[vectorlib]
+  title="Unlocking Portable and Performant Vector Programming with chpl Vector Library"
+  authors="Jade Abraham"
+  description="""
+When writing thread-parallel applications, users of Chapel can use high-level productivity 
+features like ‘forall’ and promotion to succinctly express their algorithms or use lower-level 
+features like ‘begin’to more directly control task creation. Chapel’s GPU support is similar, 
+where high-level promoted statements can become kernels, but explicit ‘foreach’ loops 
+can be used for greater control over the generated kernel. A missing piece to this is with 
+instruction level parallelism and vectorization. The Chapel compiler usually does a great 
+job at automatically vectorizing code, but when it fails there is no recourse. The next best 
+option is to interoperate with C or Fortran code to write the low-level operations. 
+In order to solve this problem, I have created CVL: chpl Vector Library. This library exposes 
+a vector type as a first class object which provides a unified set of operations across x86 
+and ARM. This provides Chapel developers direct control over the vectorization in their 
+applications. In this demo, I will showcase the design and implementation of the library, 
+including the tools used to maintain it. I will then demonstrate several benchmarks where 
+usage of CVL beats the Chapel compiler’s auto-vectorization. Lastly, I will discuss potential 
+improvements for the library going forward.
+"""
+  start="10:30"
+  end="10:50"
+
+[break4_2]
+  title="Break"
+  authors=""
+  description=""
+  start="10:50"
+  end="10:55"
+
+[typelevel]
+  title="Type-Level Programming in Chapel for Compile-Time Specialization"
+  authors="Daniel Fedorin"
+  description=""
+  start="10:55"
+  end="11:15"
+
+[pythonlike]
+  title="If it walks like Python and quacks like Python, it must be….Chapel?"
+  authors="Jade Abraham and Lydia Duncan"
+  description=""
+  start="11:15"
+  end="11:35"
+
+[formal]
+  title="Using Formal Methods to Discover a Bug in the Chapel Compiler"
+  authors="Daniel Fedorin"
+  description=""
+  start="11:35"
+  end="11:45"
+
+[julia]
+  title="Chapel Julia interoperability"
+  authors=""
+  description=""
+  start="11:45"
+  end="11:45"
+
+[break4_3]
+  title="Break"
+  authors=""
+  description=""
+  start="11:45"
+  end="12:00"
+
+[sorting]
+  title="Distributed-Memory Sorting in the Chapel Standard Library"
+  authors="	Michael Ferguson"
+  description=""
+  start="12:00"
+  end="12:20"
+
+[radix]
+  title="Comparing Distributed-Memory Programming Frameworks with Radix Sort"
+  authors="Shreyas Khandekar and Matt Drozt"
+  description=""
+  start="12:20"
+  end="12:40"
+
+[break4_4]
+  title="Break"
+  authors=""
+  description=""
+  start="12:40"
+  end="12:50"
+
+[invited_todd]
+  title="Invited: Todd?"
+  authors=""
+  description=""
+  start="12:50"
+  end="13:50"
+
+[break4_5]
+  title="Break"
+  authors=""
+  description=""
+  start="13:50"
+  end="14:00"
+
+[repartitioning]
+  title="Repartitioning for Performance: Flexible Data Movement in Chapel"
+  authors="Ryan Keck"
+  description=""
+  start="14:00"
+  end="14:10"
+
+[nvshmem]
+  title="Efficient Multi-GPU Communication with NVSHMEM in Chapel"
+  authors="Sosuke Hosokawa and Kenjiro Taura"
+  description=""
+  start="14:10"
+  end="14:20"
+
+[aggregation]
+  title="Towards A General Aggregation Framework in Chapel"
+  authors="Oliver Alvarado Rodriguez, Engin Kayraklioglu, Bartosz Bryg, Mohammad Dindoost, David Bader and Brad Chamberlain"
+  description=""
+  start="14:20"
+  end="14:40"
+
+[discussion2]
+  title="Open Community Discussion"
+  authors=""
+  description=""
+  start="14:40"
+  end="??"

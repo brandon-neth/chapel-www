@@ -21,6 +21,7 @@ nav:
 {{< section "summary.md" "white" >}}
 {{< section "keynote.md">}}
 {{< section "invited.md">}}
+{{< section "program.md">}}
 {{< section "days.md" "white">}}
 {{< section "timeline.md" "white" >}}
 {{< section "session-details.md" "white" >}}
