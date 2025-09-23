@@ -8,6 +8,8 @@ nav:
     section: "timeline"
   - title: "Keynote"
     section: "keynote"
+  - title: "Program"
+    section: "program"
   - title: "Sessions"
     section: "sessions"
   - title: "Organization"

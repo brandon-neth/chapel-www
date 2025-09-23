@@ -13,8 +13,8 @@
   <td>  
     
     <!-- Title line -->
-    <div class="session-title">
-    {{ .title }} 
+    <div class="session-title", id="{{ $var }}">
+    <a href="#{{ $var }}", style="color: black">{{ .title }}</a> 
     {{ if or (isset . "video") (isset . "slides") (isset . "extraLink")}}
       [
       {{ if isset . "video" }} <a href="{{ .video }}">Video</a> {{ end }}
@@ -33,9 +33,15 @@
     </div>
 
     <!-- Description line -->
-     <div class="session-description">
-    {{ .description }}
+    {{ if isset . "description" }}
+    <div class="session-description">
+      <details>
+        <summary>Description</summary>
+        {{ .description }}
+      </details>
     </div>
+    {{ end }}
+     
   </td>
 </tr>
 

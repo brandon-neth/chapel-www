@@ -1,7 +1,9 @@
 ---
+headless: true
 ---
+### Program
 
-# October 7: Tutorials, Day 1
+## October 7: Tutorials, Day 1
 
 
 {{< session-table >}}
@@ -15,10 +17,10 @@
 {{< chapelcon-session "freecode1" >}}
 {{< /session-table >}}
 
-# October 8: Tutorials, Day 2
+## October 8: Tutorials, Day 2
 
 {{< session-table >}}
-{{< chapelcon-session "welcome1" >}}
+{{< chapelcon-session "welcome2" >}}
 {{< chapelcon-session "tutorial-presentation2" >}}
 {{< chapelcon-session "performance-demo" >}}
 {{< chapelcon-session "serializer-demo" >}}
@@ -26,7 +28,7 @@
 {{< chapelcon-session "iterators-demo" >}}
 {{< /session-table >}}
 
-# October 9: Conference, Day 1
+## October 9: Conference, Day 1
 {{< session-table >}}
 {{< chapelcon-session "welcome3" >}}
 {{< chapelcon-session "transformers">}}
@@ -47,7 +49,7 @@
 {{< chapelcon-session "discussion" >}}
 
 {{< /session-table >}}
-# October 10: Conference, Day 2
+## October 10: Conference, Day 2
 
 {{< session-table >}}
 {{< chapelcon-session "welcome4" >}}

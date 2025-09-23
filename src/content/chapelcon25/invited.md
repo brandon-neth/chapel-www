@@ -1,11 +1,12 @@
 ---
+headless: true
 ---
 {{< div "banner wide" "keynote" >}}
 {{< sidebyside >}}
 {{< sidebysideelt >}}
 ### LUMI: The Supercomputer of the North
 #### LUMI, Invited Talk
-In this talk we will introduce LUMI, starting with a view on the consortium and how you can request resources, then focusing on its hardware (in detail, the LUMI-C and LUMI-G node architectures, and the network architecture). Then we will introduce the LUMI user support team, it's way of working and its duties.
+In this talk we will introduce LUMI, starting with a view on the consortium and how you can request resources, then focusing on its hardware (in detail, the LUMI-C and LUMI-G node architectures, and the network architecture). Then we will introduce the LUMI user support team, its way of working and its duties.
 
 Finally, we will provide a short demo on how to install and run a simple Chapel program
 {{< /sidebysideelt >}}
