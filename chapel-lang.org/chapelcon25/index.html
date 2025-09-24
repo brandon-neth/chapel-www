@@ -2,6 +2,7 @@
 <html lang="en-us">
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         body {
             background-image: url("repeated-bg.png");
@@ -17,23 +18,34 @@
         }
 
         .container {
-            max-width: 80rem;
+            max-width: 1280px;
             box-sizing: border-box;
             margin: auto;
+        }
+
+        @media (max-width: 1280px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .side-by-side {
+                flex-direction: column;
+            }
         }
 
         .banner {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 1em;
             border: 0.05em solid #fafafa;
-            border-radius: 0.15em;
+            border-radius: 0.4em;
             max-width: 40rem;
             box-sizing: border-box;
             box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 
             font-size: 1.2rem;
-            margin-bottom: 7rem;
-            margin-top: 7rem;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
         }
 
         .banner.wide {
@@ -46,9 +58,9 @@
         }
 
         .banner.wide img {
-            border-radius: 0.4rem;
+            border-radius: 50%;
             max-width: 10em;
-            padding-bottom: 0.0em;
+            margin-right: 1em;
         }
 
         h1 {
@@ -56,7 +68,7 @@
             margin-bottom: 0.25em;
         }
 
-        h2 {
+        .keynote h2 {
             font-size: 2.5rem;
             margin-top: 0;
             margin-bottom: 0.25em;
@@ -74,6 +86,10 @@
         }
         p {
             font-size: 1.3rem;
+        }
+
+        figure {
+            margin: 0;
         }
 
         li {
@@ -108,6 +124,7 @@
         }
 
         a.button {
+            display: inline-block;
             background-color: white;
             color: black;
             border: 0.1em solid rgba(0, 0, 0, 0.15);
@@ -116,6 +133,8 @@
             font-size: 1.2rem;
 
             transition: background-color 0.2s;
+            margin-right: 0.2em;
+            margin-bottom: 0.2em;
         }
 
         a.button:hover {
@@ -135,44 +154,48 @@
             padding: 2rem;
         }
 
+         
+        section.program h2 {
+            font-size: 1.8rem;
+        }
+
+        section.program h3 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
         .side-by-side {
             display: flex;
         }
 
         .element {
-            border: 0.075rem solid rgba(0, 0, 0, 0.15);
             border-radius: 0.4rem;
             padding: 2rem;
             flex-grow: 1;
             flex-basis: 0;
             margin: 1rem;
-            background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+            background-color: white;
         }
 
         .element.small {
             flex-grow: 0;
         }
 
-        .banner > .side-by-side > .element > figure {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
         .banner > .side-by-side {
             align-items: center;
         }
-        
+
         .banner > .side-by-side .element {
             border: none;
-            padding: 0;
+            box-shadow: none;
+            background-color: transparent;
+            padding: 0.25em;
+            margin-top: 0;
         }
 
         img {
-            border-radius: 0.2rem;
+            border-radius: 0.4rem;
         }
 
         .element:first-child {
@@ -244,29 +267,6 @@
             max-width: 800px;
         }
 
-        .side-by-side .element p {
-            padding: 0.5em;
-        }
-        .side-by-side .element h2 {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .side-by-side .element h3 {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .side-by-side .element h4 {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-
-        th {
-            text-align: right;
-            font-weight: bold;
-            font-size: 1.2em;
-            padding-right: 1em;
-        }
-
     </style>
   </head>
   <body>
@@ -288,7 +288,7 @@
               <a href="../">Chapel Website</a>
           </div>
       </nav>
-      <section >
+      <p><section >
     <div class="container">
         
           <div class="banner" >
@@ -304,7 +304,7 @@ free to attend and will be held virtually.</p>
         
     </div>
 </section>
-<p><section class="white">
+<section class="white">
     <div class="container">
         
           <p>ChapelCon &lsquo;25 welcomes anyone with computing challenges that demand performance, particularly through parallelism and scalability. ChapelCon &lsquo;25 brings together Chapel users, enthusiasts, researchers, and developers to exchange ideas, present their work, and forge new collaborations. Anyone interested in parallel programming, programming languages, or high performance computing is encouraged to attend. A wide range of sessions support all levels of experience, with Tutorials and Free Coding sessions for those looking to hone their skills, Office Hour sessions for those looking for help from Chapel developers, and Conference sessions for those looking to share and discuss their work. <strong>ChapelCon &lsquo;25 is free to attend and will be held virtually.</strong></p>
@@ -359,11 +359,11 @@ free to attend and will be held virtually.</p>
         
     </div>
 </section>
-<section >
+<section class="white program">
     <div class="container">
         
-          <h3 id="program">Program</h3>
-<h2 id="october-7-tutorials-day-1">October 7: Tutorials, Day 1</h2>
+          <h2 id="program">Program</h2>
+<h3 id="october-7-tutorials-day-1">October 7: Tutorials, Day 1</h3>
 <table class="session-table">
   <thead>
     <tr>
@@ -696,7 +696,7 @@ free to attend and will be held virtually.</p>
 
   </tbody>
 </table>
-<h2 id="october-8-tutorials-day-2">October 8: Tutorials, Day 2</h2>
+<h3 id="october-8-tutorials-day-2">October 8: Tutorials, Day 2</h3>
 <table class="session-table">
   <thead>
     <tr>
@@ -954,7 +954,7 @@ free to attend and will be held virtually.</p>
 
   </tbody>
 </table>
-<h2 id="october-9-conference-day-1">October 9: Conference, Day 1</h2>
+<h3 id="october-9-conference-day-1">October 9: Conference, Day 1</h3>
 <table class="session-table">
   <thead>
     <tr>
@@ -1647,7 +1647,7 @@ next steps.
 
   </tbody>
 </table>
-<h2 id="october-10-conference-day-2">October 10: Conference, Day 2</h2>
+<h3 id="october-10-conference-day-2">October 10: Conference, Day 2</h3>
 <table class="session-table">
   <thead>
     <tr>
@@ -2538,7 +2538,7 @@ for larger transfers compared to Chapel’s native copy operations.
         
     </div>
 </section>
-<section class="white">
+<section >
     <div class="container">
         
           <div class="side-by-side ">
