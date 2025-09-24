@@ -2,10 +2,14 @@
 title: "ChapelCon 2025"
 type: "chapelcon"
 layout: "single"
-image: "bg.png"
+image: "repeated-bg.png"
 nav:
   - title: "Timeline"
     section: "timeline"
+  - title: "Keynote"
+    section: "keynote"
+  - title: "Program"
+    section: "program"
   - title: "Sessions"
     section: "sessions"
   - title: "Organization"
@@ -15,8 +19,13 @@ nav:
 ---
 
 {{< section "banner.md" >}}
-{{< section "summary-and-timeline.md" "white" >}}
-{{< section "days.md" >}}
+
+{{< section "summary.md" "white" >}}
+{{< section "keynote.md">}}
+{{< section "invited.md">}}
+{{< section "program.md">}}
+{{< section "days.md" "white">}}
+{{< section "timeline.md" "white" >}}
 {{< section "session-details.md" "white" >}}
 {{< section "organization.md" "white" >}}
 {{< section "contact.md" "white" >}}

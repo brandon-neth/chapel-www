@@ -46,9 +46,9 @@
         }
 
         .banner.wide img {
-            border-radius: 50%;
+            border-radius: 0.4rem;
             max-width: 10em;
-            margin-right: 1em;
+            padding-bottom: 0.0em;
         }
 
         h1 {
@@ -141,7 +141,7 @@
 
         .element {
             border: 0.075rem solid rgba(0, 0, 0, 0.15);
-            border-radius: 0.2rem;
+            border-radius: 0.4rem;
             padding: 2rem;
             flex-grow: 1;
             flex-basis: 0;
@@ -154,10 +154,18 @@
             flex-grow: 0;
         }
 
+        .banner > .side-by-side > .element > figure {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
         .banner > .side-by-side {
             align-items: center;
         }
-
+        
         .banner > .side-by-side .element {
             border: none;
             padding: 0;
@@ -210,6 +218,53 @@
             height: 0.5em;
             border-radius: 50%;
             background-color: black;
+        }
+
+        .session-time {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-right: 1em;
+            vertical-align: top;
+            text-align: right;
+            min-width: 7em;
+        }
+        .session-title {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        .session-authors {
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+        }
+
+        .session-description {
+            font-size: 1.1em;
+            margin-bottom: 0.4em;
+            max-width: 800px;
+        }
+
+        .side-by-side .element p {
+            padding: 0.5em;
+        }
+        .side-by-side .element h2 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .side-by-side .element h3 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .side-by-side .element h4 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        th {
+            text-align: right;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-right: 1em;
         }
 
     </style>
