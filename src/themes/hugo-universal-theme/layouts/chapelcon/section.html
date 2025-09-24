@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
         body {
             background-image: url("{{ page.Resources.Get (page.Params.image) }}");
@@ -17,9 +18,20 @@
         }
 
         .container {
-            max-width: 80rem;
+            max-width: 1280px;
             box-sizing: border-box;
             margin: auto;
+        }
+
+        @media (max-width: 1280px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .side-by-side {
+                flex-direction: column;
+            }
         }
 
         .banner {
@@ -112,6 +124,7 @@
         }
 
         a.button {
+            display: inline-block;
             background-color: white;
             color: black;
             border: 0.1em solid rgba(0, 0, 0, 0.15);
@@ -121,6 +134,7 @@
 
             transition: background-color 0.2s;
             margin-right: 0.2em;
+            margin-bottom: 0.2em;
         }
 
         a.button:hover {
