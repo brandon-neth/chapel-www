@@ -104,7 +104,7 @@
 [transformers]
   title="Transformers from Scratch"
   authors="Thitrin Sastarasadhit and Kenjiro Taura"
-  description=""
+  description="Transformer models drive the current AI but require substantial computational resources to train. Chapel, a programming language designed for high-performance computing, offers an opportunity to explore efficient implementations of such models. In this talk, I present an implementation of a transformer model from scratch in Chapel and compare its performance with an equivalent from-scratch C++ implementation. PyTorch, a widely used framework for deep learning, is included as a reference. This talk highlights the strengths and limitations of Chapel for implementing modern AI models and its potential as a programming language for high-performance research."
   start="9:25"
   end="9:45"
   session="AI/ML"
@@ -428,7 +428,7 @@ validate the compiler’s behavior."""
 [sorting]
   title="Distributed-Memory Sorting in the Chapel Standard Library"
   authors="	Michael Ferguson"
-  description=""
+  description="Chapel 2.5 includes a new distributed-memory sort implementation. This talk will describe the interface for radix sorting, the new distributed sort algorithm, and discuss the performance of the new implementation."
   start="12:00"
   end="12:20"
 
@@ -502,7 +502,15 @@ for larger transfers compared to Chapel’s native copy operations.
 [aggregation]
   title="Towards A General Aggregation Framework in Chapel"
   authors="Oliver Alvarado Rodriguez, Engin Kayraklioglu, Bartosz Bryg, Mohammad Dindoost, David Bader and Brad Chamberlain"
-  description=""
+  description="""
+Distributed applications with fine-grained communication often suffer from performance bottlenecks. Chapel's CopyAggregation module addresses this for distributed array operations but doesn't support arbitrary remote operations. Building on Arkouda's pioneering aggregation concepts, this 20-minute talk presents a prototype for generalized destination aggregation, particularly addressing sparse matrix construction challenges.
+
+The first part analyzes Chapel's CopyAggregation module's capabilities and limitations, then introduces the generalized framework prototype. Implementation examples demonstrate aggregated array assignments and sparse matrix creation using CompressedSparseRow layouts with parallel safety mechanisms.
+
+The second part presents experimental results on both random recursive matrix (RMAT)  and uniformly-created sparse matrices. Comparative analysis across HPE Cray EX and Infiniband systems reveals performance impacts of fine-grained versus aggregated communication.
+
+The third part outlines a roadmap for developing a generalized aggregation framework for Chapel, discussing ecosystem integration and applications beyond sparse matrices. This presentation targets Chapel users, HPC researchers, and practitioners working with distributed sparse data structures, providing practical insights for improving performance in irregular, communication-intensive applications.
+"""
   start="14:20"
   end="14:40"
 
