@@ -322,7 +322,7 @@ free to attend and will be held virtually.</p>
 </figure>
 </div>
 <div class="element ">
-<h2 id="keynote-christopher-rackauckas">Keynote: Christopher Rackauckas</h2>
+<h2 id="keynote-christopher-rackauckas-mit">Keynote: Christopher Rackauckas, MIT</h2>
 <h3 id="the-software-engineering-of-julias-scientific-machine-learning-sciml">The Software Engineering of Julia&rsquo;s Scientific Machine Learning (SciML)</h3>
 <p>Scientific machine learning, denoted SciML, is the integration of machine learning into scientific computing. While it has become an academic discipline in its own right, one of the key drivers to the adoption of SciML has been the ongoing creation of readily-available software. In this talk I will introduce the key tenannts of SciML with a focus towards the implications for HPC software development. Showcases of methods such as universal differential equations and their successes for generating more accurate physical models from data will be intertwined with stories about the software architecture which has enabled the sustainable development of the Open Source SciML software ecosystem. The audience should leave with a deep understanding of how the trade-off between research software and reusable open source development can be managed in a way that is beneficial to both the research community and the broader scientific computing community.</p>
 </div>
@@ -339,7 +339,7 @@ free to attend and will be held virtually.</p>
     <div class="side-by-side ">
 <div class="element ">
 <h3 id="lumi-the-supercomputer-of-the-north">LUMI: The Supercomputer of the North</h3>
-<h4 id="emanuele-vitali-invited-talk">Emanuele Vitali, Invited Talk</h4>
+<h4 id="emanuele-vitali-lumi-invited-talk">Emanuele Vitali, LUMI, Invited Talk</h4>
 <p>In this talk we will introduce LUMI, starting with a view on the consortium and how you can request resources, then focusing on its hardware (in detail, the LUMI-C and LUMI-G node architectures, and the network architecture). Then we will introduce the LUMI user support team, its way of working and its duties.</p>
 <p>Finally, we will provide a short demo on how to install and run a simple Chapel program</p>
 </div>
@@ -350,7 +350,7 @@ free to attend and will be held virtually.</p>
     <div class="side-by-side ">
 <div class="element ">
 <h3 id="spack-the-communitys-road-to-the-hpsf-and-version-10">Spack: The Community’s Road to the HPSF and Version 1.0</h3>
-<h4 id="todd-gamblin-invited-talk">Todd Gamblin, Invited Talk</h4>
+<h4 id="todd-gamblin-llnl--hpsf-invited-talk">Todd Gamblin, LLNL &amp; HPSF, Invited Talk</h4>
 <p>The past year has been transformative for the twelve-year-old Spack project, starting with its inclusion in the High Performance Software Foundation (HPSF) and culminating in its 1.0 release. Spack v1.0, released in July, is the first version to offer a stable package API and to integrate true compiler dependencies into its core model—features developed over many years. This talk will cover how the Spack community evolved to this point and detail the decision-making process behind joining the HPSF and finally taking the plunge and going 1.0.</p>
 </div>
 </div>
@@ -1096,7 +1096,7 @@ datasets.
     <div class="session-description">
       <details>
         <summary>Description</summary>
-        
+        Transformer models drive the current AI but require substantial computational resources to train. Chapel, a programming language designed for high-performance computing, offers an opportunity to explore efficient implementations of such models. In this talk, I present an implementation of a transformer model from scratch in Chapel and compare its performance with an equivalent from-scratch C&#43;&#43; implementation. PyTorch, a widely used framework for deep learning, is included as a reference. This talk highlights the strengths and limitations of Chapel for implementing modern AI models and its potential as a programming language for high-performance research.
       </details>
     </div>
     
@@ -1601,7 +1601,7 @@ next steps.
     <div class="session-description">
       <details>
         <summary>Description</summary>
-        
+        A summary of experience distributing and testing Chapel on Fedora GNU/Linux and suggestions for integration within wider ecosystems.
       </details>
     </div>
     
@@ -2193,7 +2193,7 @@ validate the compiler’s behavior.
     <div class="session-description">
       <details>
         <summary>Description</summary>
-        
+        Chapel 2.5 includes a new distributed-memory sort implementation. This talk will describe the interface for radix sorting, the new distributed sort algorithm, and discuss the performance of the new implementation.
       </details>
     </div>
     
@@ -2490,7 +2490,14 @@ for larger transfers compared to Chapel’s native copy operations.
     <div class="session-description">
       <details>
         <summary>Description</summary>
-        
+        Distributed applications with fine-grained communication often suffer from performance bottlenecks. Chapel&#39;s CopyAggregation module addresses this for distributed array operations but doesn&#39;t support arbitrary remote operations. Building on Arkouda&#39;s pioneering aggregation concepts, this 20-minute talk presents a prototype for generalized destination aggregation, particularly addressing sparse matrix construction challenges.
+
+The first part analyzes Chapel&#39;s CopyAggregation module&#39;s capabilities and limitations, then introduces the generalized framework prototype. Implementation examples demonstrate aggregated array assignments and sparse matrix creation using CompressedSparseRow layouts with parallel safety mechanisms.
+
+The second part presents experimental results on both random recursive matrix (RMAT)  and uniformly-created sparse matrices. Comparative analysis across HPE Cray EX and Infiniband systems reveals performance impacts of fine-grained versus aggregated communication.
+
+The third part outlines a roadmap for developing a generalized aggregation framework for Chapel, discussing ecosystem integration and applications beyond sparse matrices. This presentation targets Chapel users, HPC researchers, and practitioners working with distributed sparse data structures, providing practical insights for improving performance in irregular, communication-intensive applications.
+
       </details>
     </div>
     
