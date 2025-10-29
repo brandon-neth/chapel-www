@@ -13,6 +13,7 @@
   start="9:10"
   end="9:40"
   slides="ChapelCon/2025/coding-day-intro-ChapelCon2025.pdf"
+  video="https://youtu.be/1HM8jMXAbdQ"
 
 [io-demo]
   title="IO Demo/Exercise Session"
@@ -74,6 +75,7 @@
   start="9:10"
   end="9:40"
   slides="ChapelCon/2025/coding-day-advanced-ChapelCon2025.pdf"
+  video="https://youtu.be/l2CEP0evG2Q"
   
 [performance-demo]
   title="Performance Debugging Demo/Exercise Session"
@@ -124,6 +126,7 @@
   end="9:45"
   session="AI/ML"
   slides="ChapelCon/2025/transfomers-from-scratch.pdf"
+  video="https://youtu.be/vhyXmYwARL4"
 
 
 [chai]
@@ -244,7 +247,7 @@ community.
   start="12:30"
   end="13:00"
   slides="ChapelCon/2025/champs-chapelcon25.pdf"
-  url="https://youtu.be/61v5CY9ytSI"
+  video="https://youtu.be/61v5CY9ytSI"
 
 [break3_4]
   title="Break"
@@ -511,6 +514,7 @@ programming frameworks: Chapel, MPI, OpenSHMEM, Conveyors, and Lamellar. """
   start="12:50"
   end="13:50"
   slides="ChapelCon/2025/spack-chapelcon-2025-10-09.pdf"
+  video="https://youtu.be/YuY4XmKxruE"
 
 [break4_5]
   title="Break"
@@ -553,6 +557,7 @@ for larger transfers compared to Chapel’s native copy operations.
   start="14:10"
   end="14:20"
   slides="ChapelCon/2025/chapelcon2025_sosuke_hosokawa.pdf"
+  video="https://youtu.be/34Raoq0CKD8"
 
 [aggregation]
   title="Towards A General Aggregation Framework in Chapel"
