@@ -36,7 +36,8 @@ Redirect /tutorials.html /tutorials/
 Redirect /overview.html /
 
 # redirect CHIUW page
-Redirect /CHIUW.html /ChapelCon.html
+Redirect /CHIUW.html /chapelcon
+Redirect /ChapelCon.html /chapelcon
 
 # redirect old docs links
 Redirect /docs/latest/ /docs/
@@ -59,3 +60,6 @@ Redirect /hello-datapar.html /docs/examples/hellos/hello3-datapar.html
 Redirect /hello-datapar-dist.html /docs/examples/hellos/hello4-datapar-dist.html
 Redirect /hello-taskpar.html /docs/examples/hellos/hello5-taskpar.html
 Redirect /hello-taskpar-dist.html /docs/examples/hellos/hello6-taskpar-dist.html
+
+# get involved
+Redirect /getinvolved.html /getinvolved
