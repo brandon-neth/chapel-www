@@ -17,7 +17,8 @@ Chapel community:
 - Follow us on [social media](/socials)
 - Subscribe to our [YouTube channel](https://www.youtube.com/@ChapelLanguage)
 - Like, repost, and amplify Chapel content you appreciate
-- Attend weekly project and/or deep-dive [meetings](https://github.com/chapel-lang/chapel/discussions/categories/weekly-meeting-topics)
+- Attend weekly project and/or deep-dive [meetings](/meetings)
+- Attend the monthly educators' [meeting](/meetings)
 - Ask questions on Chapel [discussion forums](/forums)
 
 
@@ -34,9 +35,9 @@ Chapel community:
   - mentioning it [on Discord](https://discord.gg/xu2xg45yqH)
   - doing a 5-minute demo in our [weekly project meeting](https://github.com/chapel-lang/chapel/discussions/categories/weekly-meeting-topics)
   - proposing a longer introduction in a [weekly deep-dive meeting](https://github.com/chapel-lang/chapel/discussions/27247)
-  - proposing and writing a [blog post](/blog)
+  - [proposing](https://github.com/chapel-lang/chapel-blog/#readme) and writing a [Chapel blog](/blog) post
   - submitting a talk to [ChapelCon](/chapelcon)
-  - contributing the code back as a [Mason package](docs/tools/mason/mason.html), example, or test
+  - contributing the code back as a [Mason package](/docs/tools/mason/mason.html), example, or test
  
 
 ### Help Improve Chapel
@@ -47,8 +48,10 @@ Chapel community:
 - Add, improve, or extend Chapel's [standard](/docs/modules/standard.html) or [package](/docs/modules/packages.html) library modules
 - Check open Chapel issues for ones labeled [good first issue](https://github.com/chapel-lang/chapel/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) or [easy / straightforward](https://github.com/chapel-lang/chapel/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22easy%20%2F%20straightforward%22)
 - Browse Chapel's [documentation for contributors](/docs/developer/)
-- Port Chapel to a new platform
+- Port Chapel to, or support it on, a new platform
 - Help improve the Chapel compiler and/or runtime
+- Compare and analyze Chapel performance with respect to other approaches
+- Conduct and publish original research relating to Chapel
 
 
 ### Help Fund Chapel
