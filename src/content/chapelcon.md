@@ -5,12 +5,10 @@ title = "ChapelCon"
 +++
 
 
-## ChapelCon (formerly CHIUW)
-
 ChapelCon is _the_ annual event for the Chapel community, featuring
 talks, tutorials, coding sessions, and office hours.  ChapelCon is
 open to anyone interested in Chapel or parallel programming.  In
-recent years, it has been held online and free to attend.
+recent years, it has been held online and has been free to attend.
 {.content-paragraph}
 
 * [**ChapelCon '25**](/chapelcon25): October 7–10, online, in a
@@ -19,8 +17,8 @@ recent years, it has been held online and free to attend.
   virtual format
 {.content-paragraph}
 
-ChapelCon was originally known as the CHIUW—the Chapel Implementers and
-Users Workshop—and was [renamed in 2024](/blog/posts/chapelcon24/).
+ChapelCon was originally known as CHIUW—the Chapel Implementers and
+Users Workshop—but was [renamed in 2024](/blog/posts/chapelcon24/).
 {.content-paragraph}
 
 * [**CHIUW 2023**](/CHIUW2023.html): June 1&ndash;2, online, in a

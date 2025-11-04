@@ -1,5 +1,5 @@
 +++
-title = "Q&A / Discussions"
+title = "Chapel Community Forums for Q&A / Discussion"
 
 [[WrittenConversation]]
   name="Stack Overflow"
@@ -45,8 +45,6 @@ title = "Q&A / Discussions"
 
 +++
 
-
-## Chapel Community Forums
 
 The following are places to ask questions, file issues, and/or
 interact with the Chapel community:

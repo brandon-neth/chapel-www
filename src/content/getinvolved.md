@@ -4,10 +4,10 @@ description = "Actions you can take to help support and grow the Chapel project"
 
 +++
 
-## Interested in supporting the Chapel project?
+## Interested in helping the Chapel project grow?
 
-Here are some of the ways you can get involved and help grow the
-Chapel community:
+Here are some ways to get involved and help nurture the Chapel
+community:
 {.content-paragraph}
 
 
@@ -18,19 +18,19 @@ Chapel community:
 - Subscribe to our [YouTube channel](https://www.youtube.com/@ChapelLanguage)
 - Like, repost, and amplify Chapel content you appreciate
 - Attend weekly project and/or deep-dive [meetings](/meetings)
-- Attend the monthly educators' [meeting](/meetings)
+- Attend the monthly educators [meeting](/meetings)
 - Ask questions on Chapel [discussion forums](/forums)
 - Invite a Chapel community member to...
-  - speak at a seminar you run
+  - speak at a seminar you're involved with
   - run a demonstration for your group
   - take part in an interview on your blog/podcast
-
+- Propose some other way to get involved
 
 ### Use Chapel
 
 - [Download and install](/download) Chapel
 - Compile and run sample codes:
-  - from the `$CHPL_HOME/examples/` directory
+  - from the [`examples/` directory](https://github.com/chapel-lang/chapel/tree/main/test/release/examples) of your installation
   - from the website's [front page](/)
   - from the examples [page](/examples) and [repo](https://github.com/chapel-lang/ChapelExamplesAndTeachingMaterials)
 - Pair-program with a Chapel developer to explore writing code patterns of interest
@@ -53,15 +53,14 @@ Chapel community:
 - Add, improve, or extend Chapel's [standard](/docs/modules/standard.html) or [package](/docs/modules/packages.html) library modules
 - Check open Chapel issues for ones labeled [good first issue](https://github.com/chapel-lang/chapel/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22good%20first%20issue%22) or [easy / straightforward](https://github.com/chapel-lang/chapel/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22easy%20%2F%20straightforward%22)
 - Browse Chapel's [documentation for contributors](/docs/developer/)
+- Compare, analyze, and improve Chapel performance relative to other approaches
+- Conduct and publish original research relating to Chapel
 - Port Chapel to, or support it on, a new platform
 - Help improve the Chapel compiler and/or runtime
-- Compare and analyze Chapel performance with respect to other approaches
-- Conduct and publish original research relating to Chapel
 
 
 ### Help Fund Chapel
 
 - Fund work you'd like to see done on, or in, Chapel through:
-  - Chapel development or support contracts
+  - development and/or support contracts
   - the Linux Foundation
-  - employers of Chapel developers

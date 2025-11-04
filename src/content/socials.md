@@ -1,10 +1,8 @@
 +++
-title = "Social Media"
+title = "Chapel Social Media"
 description = "Chapel Social Media Channels"
 
 +++
-
-## Chapel Social Media
 
 These are Chapel's official social media channels, which are also linked
 to in the footer of the Chapel website.<br>
@@ -26,12 +24,10 @@ with you on any of these channels that you use.
 * [**Reddit**](https://www.reddit.com/r/chapel/): This is an open reddit community that we post announcements to, similar to the channels above
 {.content-paragraph}
 
-### Videos
+### Video Platforms
 
 * [**YouTube**](https://www.youtube.com/@ChapelLanguage)
 {.content-paragraph}
-
-### Other Forums
 
 Beyond the channels above, we always appreciate seeing Chapel-related
 content on other community forums such as Reddit, HackerNews,
