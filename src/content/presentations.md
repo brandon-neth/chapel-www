@@ -1,6 +1,5 @@
 +++
 title = "Presentations"
-keywords = ["TODO"]
 +++
 
 # Presentations {#presentations}
@@ -27,7 +26,15 @@ keywords = ["TODO"]
 {{</publication-list>}}
 
 {{<publication-list "recent" "Other Recent Chapel Presentations">}}
+  {{<artifact-listing "slac-lssda2025">}}
+  {{<artifact-listing "radboud2025">}}
+  {{<artifact-listing "lumi2025">}}
+  {{<artifact-listing "clsac2025">}}
+  {{<artifact-listing "HiRSE2025">}}
+  {{<artifact-listing "galois2025">}}
+  {{<artifact-listing "hpsf-perf2025">}}
   {{<artifact-listing "lanl2025">}}
+  {{<artifact-listing "UofA2025">}}
   {{<artifact-listing "hpsfcon2025">}}
   {{<artifact-listing "runtime-overview">}}
   {{<artifact-listing "hpsfapp">}}

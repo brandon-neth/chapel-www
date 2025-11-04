@@ -1,3 +1,79 @@
+[slac-lssda2025]
+  title = "Interactive, HPC-scale Exploratory Data Analysis in Arkouda: Past Successes and Future Challenges"
+  authors = "Brad Chamberlain"
+  venue = "SLAC workshop on Productive, Performant Software for Large-Scale Scientific Data Analysis (LSSDA)"
+  date = "October 21, 2025"
+  url = "/presentations/Chamberlain-LSSDA-talk.pdf"
+  description = "This lightning talk briefly introduces scalable data analysis in Arkouda, as powered by Chapel."
+  extraLink = "/presentations/Chamberlain-LSSDA-panel.pdf"
+  extraLinkText = "Recap for panel"
+  type = ["presentation"]
+
+[westerhout2025]
+  title = "Applications of Novel Programming Languages and Compilation Techniques to Accelerating Quantum Many-body Science"
+  authors = "Tom Westerhout"
+  venue = "Radboud University, Ph.D. dissertation"
+  date = "October 17, 2025"
+  url = "https://repository.ubn.ru.nl/handle/2066/323998"
+  description = "This is Tom Westerhout's Ph.D. dissertation, which focuses on the use of modern computing technologies, including Chapel, on quantum many-body simulations."
+  type = ["paper"]
+
+[radboud2025]
+  title = "Productive Parallel Programming from the Desktop to the Supercomputer with Chapel"
+  authors = "Brad Chamberlain"
+  venue = "Radboud University, FNWI Colloquium"
+  date = "October 16, 2025"
+  url = "/presentations/ChapelForRadboud-presented.pdf"
+  description = "This is an introduction to Chapel for a broad scientific computing audience, focusing on high-level concepts and applications."
+  type = ["presentation"]
+
+[lumi2025]
+  title = "Scalable Parallel Programming with Chapel: From Multicore CPUs to GPU-Powered Supercomputers"
+  authors = "Engin Kayraklioglu"
+  venue = "LUMI User Coffee Breaks"
+  date = "October 15, 2025"
+  url = "/presentations/EnginLUMI2025.pdf"
+  description = ""
+  video = "https://lumi-supercomputer.github.io/LUMI-training-materials/User-Coffee-Breaks/20251015-user-coffee-break-Chapel/"
+  type = ["presentation"]
+
+[clsac2025]
+  title = "Reflections on 30 Years of HPC Programming Models (abridged)"
+  authors = "Brad Chamberlain"
+  venue = "CLSAC 2025 Random Access Talk"
+  date = "October 8, 2025"
+  url = "/presentations/Chamberlain-CLSAC2025-presented.pdf"
+  description = "This lightning talk recaps elements of Brad's HIPS 2025 keynote in a compressed, 8-minute format."
+  type = ["presentation"]
+
+[HiRSE2025]
+  title = "Writing Parallel Research Software in Chapel"
+  authors = "Brad Chamberlain"
+  venue = "HiRSE Summer of Programming Languages"
+  date = "September 3, 2025"
+  url = "/presentations/Chapel-SummerOfProgLang.pdf"
+  description = "This talk addresses the question 'Why use Chapel instead of other languages?', covering Chapel characteristics and resources in a bit more detail than most talks"
+  video = "https://youtu.be/Au6dZB-ud8o?si=1V2eV6yqMcikeXMO"
+  type = ["presentation"]
+
+[galois2025]
+  title = "Parallel Programming from Desktops to Supercomputers with Chapel"
+  authors = "Brad Chamberlain"
+  venue = "Galois Tech Talk"
+  date = "July 24, 2025"
+  url = "/presentations/ChapelForGalois-presented.pdf"
+  description = "This talk introduces Chapel by example and through key user applications before turning to Chapel on GPUs and a quick look at 20 years of HPC programming."
+  type = ["presentation"]
+
+[hpsf-perf2025]
+  title = "Chapel's Performance Tracking System"
+  authors = "Jade Abraham"
+  venue = "HPSF Benchmarking Working Group"
+  date = "July 10, 2025"
+  url = "/presentations/HPSF-perf-tracking.pdf"
+  description = "This talk introduced how Chapel tracks and triages performance over time as input to the HPSF benchmarking group."
+  type = ["presentation"]
+
 [lanl2025]
   title = "Chapel's Batteries-Included Approach for Portable Parallel Programming"
   authors = "Engin Kayraklioglu"
@@ -35,7 +111,7 @@
   description = "A quick introduction to Chapel and its synergies with the goals of the High Performance Software Foundation."
   video = "https://youtu.be/r4Ayf6Zt8O8?si=-TZi8xTfLtp1m_Se"
   type = ["presentation"]
-  
+
 [kaust25]
   title = "Chapel: Accessible Parallel Programming from the Desktop to the Supercomputer"
   authors = "Brad Chamberlain"
@@ -53,6 +129,24 @@
   date = "May 6, 2025"
   url = "MARBLChapel-CUG-May-2025.pdf"
   description = "A report on a collaboration between HPE and [C]Worthy in support of studying ocean Carbon Dioxide Removal (CDR) leveraging Chapel and its interoperability with Fortran."
+  type = ["presentation"]
+
+[rodriguez2025]
+  title = "On the Design of a Framework for Large-Scale Exploratory Graph Analytics"
+  authors = "Oliver Andres Alvarado Rodriguez"
+  venue = "NJIT Ph.D. dissertation"
+  date = "May 2025"
+  url = "https://www.proquest.com/docview/3237606780"
+  description = "This is Oliver's dissertation, which focuses on extending Arkouda to support graph analytics through Arachne."
+  type = ["paper"]
+
+[UofA2025]
+  title = "Slides for U of A Q&A"
+  authors = "Brad Chamberlain"
+  venue = "University of Arizona CSc 372 lecture"
+  date = "April 24, 2025"
+  url = "/presentations/ChapelSlidesForUofA-presented.pdf"
+  description = "A few slides to kick off a Q&A session in Michelle Strout's CSc 372 class at the University of Arizona."
   type = ["presentation"]
 
 [gtc2025]
@@ -93,10 +187,10 @@
   description = "A technical overview of Chapel for PL types covering language features, apps, optimizations, GPU features, and more"
   type = ["presentation"]
 
-[helbecque-thesis]
+[helbecque2025]
   title = "PGAS-based Parallel Branch-and-Bound for Ultra-Scale GPU-powered Supercomputers"
   authors = "Guillaume Helbecque"
-  venue = "PhD thesis, University of Luxembourg / University of Lille"
+  venue = "Ph.D. thesis, University of Luxembourg / University of Lille"
   date = "January 10, 2025"
   url = "https://hal.science/tel-04902137v1"
   slides = "/presentations/Helbecque-defense.pdf"
@@ -319,6 +413,15 @@
   url = "Bader-Charm++Keynote.pdf"
   description = "This keynote introduces Arachne, an open-source framework that enhances massive-scale graph analytics powered by Chapel and Arkouda."
   type = ["presentation"]
+
+[rolinger2023]
+  title = "Compiler Optimizations for Irregular Memory Access Patterns in the PGAS Programming Model"
+  authors = "Thomas Rolinger"
+  venue = "University of Maryland Ph.D. Dissertation"
+  date = "April 19, 2023"
+  url = "https://drum.lib.umd.edu/items/d87f5b87-6497-46de-ab49-f57a24e75a24"
+  description = "Thomas Rolinger's dissertation focuses on the use of static and dynamic analyses and optimizations to optimize communication in Chapel."
+  type = ["paper"]
 
 [ccpe23]
   title = "Parallel distributed productivity-aware tree-search using Chapel"
