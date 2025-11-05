@@ -36,7 +36,7 @@ disableKinds = ['taxonomy', 'term']
     name       = "Docs"
     identifier = "menu.docs"
     url        = "https://chapel-lang.org/docs"
-    weight     = 3
+    weight     = 2
 
 [[menu.main]]
     name       = "Quickstart Instructions"
@@ -110,7 +110,7 @@ disableKinds = ['taxonomy', 'term']
     name       = "Get Involved"
     identifier = "menu.getinvolved"
     url        = "/getinvolved"
-    weight     = 3
+    weight     = 7
 
 [[menu.main]]
     name       = "Examples"
