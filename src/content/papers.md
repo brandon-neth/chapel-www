@@ -1,9 +1,6 @@
 +++
 title = "Papers"
-keywords = ["TODO"]
 +++
-
-# Papers {#papers}
 
 {{<publication-list "featured" "Featured Publications">}}
   {{<artifact-listing "bachman-eco-ind">}}

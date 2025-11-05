@@ -2,8 +2,6 @@
 title = "Presentations"
 +++
 
-# Presentations {#presentations}
-
 {{<publication-list "featured" "Featured Chapel Presentations">}}
   {{<artifact-listing "kaust25">}}
   {{<artifact-listing "hips2025-keynote">}}
@@ -101,3 +99,6 @@ title = "Presentations"
   {{<artifact-listing "doe-exascale11">}}
   {{<artifact-listing "bmw10">}}
 {{</publication-list>}}
+
+
+### [Presentation Archives](/presentations-archived/)

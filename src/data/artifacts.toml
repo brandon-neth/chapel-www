@@ -28,12 +28,12 @@
   type = ["presentation"]
 
 [lumi2025]
-  title = "Scalable Parallel Programming with Chapel: From Multicore CPUs to GPU-Powered Supercomputers"
+  title = "Scalable Parallel Programming with Chapel: From Multicore CPUs to GPU-Powered Supercomputers — a.k.a What Chapel Users Get Done and How"
   authors = "Engin Kayraklioglu"
   venue = "LUMI User Coffee Breaks"
   date = "October 15, 2025"
   url = "/presentations/EnginLUMI2025.pdf"
-  description = ""
+  description = "This talk focuses on user accomplishments with Chapel. It then covers some unique features of the language and how they ease scaling from laptop to supercomputer."
   video = "https://lumi-supercomputer.github.io/LUMI-training-materials/User-Coffee-Breaks/20251015-user-coffee-break-Chapel/"
   type = ["presentation"]
 
@@ -689,7 +689,7 @@
   title = "The Cascade High Productivity Language"
   authors = "David Callahan, Bradford L. Chamberlain, Hans P. Zima"
   venue = "In 9th International Workshop on High-Level Parallel Programming Models and Supportive Environments (HIPS 2004), pages 52-60. IEEE Computer Society"
-  date = "April 2004"
+  date = "April 26, 2004"
   description = "This is the original Chapel paper which lays out some of our motivation and foundations for exploring the language. Note that the language has evolved significantly since this paper was published, but it remains an interesting historical artifact."
   url = "/publications/hips04.pdf"
   slides = "/publications/hips04-slides.pdf"
