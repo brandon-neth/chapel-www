@@ -296,6 +296,7 @@ next steps.
   description="A summary of experience distributing and testing Chapel on Fedora GNU/Linux and suggestions for integration within wider ecosystems."
   start="13:55"
   end="14:00"
+  slides="ChapelCon/2025/chapel-cloud.pdf"
   video="https://youtu.be/j5VL_tPM78Y"
 
 [discussion]
