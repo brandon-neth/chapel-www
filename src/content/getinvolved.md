@@ -43,15 +43,10 @@ community:
   - proposing a longer introduction in a [weekly deep-dive meeting](https://github.com/chapel-lang/chapel/discussions/27247)
   - [proposing](https://github.com/chapel-lang/chapel-blog/#readme) and writing a [Chapel blog](/blog) post
   - submitting a talk to [ChapelCon](/chapelcon)
-  - contributing the code back as a [Mason package](/docs/tools/mason/mason.html), [example](https://github.com/chapel-lang/ChapelExamplesAndTeachingMaterials), or [test](https://chapel-lang.org/docs/developer/bestPractices/TestSystem.html)
-
-<b>Note:</b> In order to contribute artifacts back to the Chapel
-GitHub repository in this last bullet or the next section, please
-familiarize yourself with the [Developer Certificate of
-Origin](/docs/developer/bestPractices/DCO.html)
+  - contributing the code back as a [Mason package](/docs/tools/mason/mason.html), [example](https://github.com/chapel-lang/ChapelExamplesAndTeachingMaterials), or [test](https://chapel-lang.org/docs/developer/bestPractices/TestSystem.html)[^1]
 
 
-### Help Improve Chapel
+### Help Improve Chapel[^1]
 
 - Improve or extend Chapel's [documentation](/docs) by editing [its sources](https://github.com/chapel-lang/chapel/tree/main/doc)
 - Improve the Chapel [website](https://github.com/chapel-lang/chapel-www)
@@ -69,3 +64,7 @@ Origin](/docs/developer/bestPractices/DCO.html)
 - Fund work you'd like to see done on, or in, Chapel through:
   - development and/or support contracts
   - the Linux Foundation
+
+[^1]: To contribute back to the Chapel GitHub repository, be sure to
+familiarize yourself with the [Developer Certificate of Origin
+(DCO)](/docs/developer/bestPractices/DCO.html)
