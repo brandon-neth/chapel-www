@@ -36,7 +36,7 @@ disableKinds = ['taxonomy', 'term']
     name       = "Docs"
     identifier = "menu.docs"
     url        = "https://chapel-lang.org/docs"
-    weight     = 3
+    weight     = 2
 
 [[menu.main]]
     name       = "Quickstart Instructions"
@@ -107,17 +107,54 @@ disableKinds = ['taxonomy', 'term']
     parent     = "menu.resources"
 
 [[menu.main]]
+    name       = "Get Involved"
+    identifier = "menu.getinvolved"
+    url        = "/getinvolved"
+    weight     = 7
+
+[[menu.main]]
     name       = "Examples"
     url        = "/examples"
-    weight     = 4
+    weight     = 5
     parent     = "menu.resources"
 
 
 [[menu.main]]
     name       = "Community"
-    identifier = "section.community"
+    identifier = "menu.community"
     url        = "/community"
     weight     = 6
+
+[[menu.main]]
+    name       = "Social Media"
+    url        = "/socials"
+    weight     = 5
+    parent     = "menu.community"
+
+[[menu.main]]
+    name       = "Q&A / Discussions"
+    url        = "/forums"
+    weight     = 2
+    parent     = "menu.community"
+
+[[menu.main]]
+    name       = "Community Meetings"
+    url        = "/meetings"
+    weight     = 3
+    parent     = "menu.community"
+
+[[menu.main]]
+    name       = "ChapelCon"
+    url        = "/chapelcon"
+    weight     = 4
+    parent     = "menu.community"
+
+[[menu.main]]
+    name       = "Calendar"
+    url        = "/calendar"
+    weight     = 5
+    parent     = "menu.community"
+
 
 [[menu.main]]
     name       = "Blog"

@@ -1,5 +1,4 @@
 https://chapel-lang.org/
-https://chapel-lang.org/ChapelCon.html
 https://chapel-lang.org/ChapelCon24.html
 https://chapel-lang.org/ChapelCon/2024/abraham.pdf
 https://chapel-lang.org/ChapelCon/2024/arkouda-tutorial.pdf
