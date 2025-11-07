@@ -24,6 +24,7 @@ title = "Papers"
   {{<artifact-listing "rodriguez2025">}}
   {{<artifact-listing "helbecque2025">}}
   {{<artifact-listing "rolinger2023">}}
+  {{<artifact-listing "zagorac2022">}}
 {{</publication-list>}}
 
 {{<publication-list "overviews" "Chapel Overviews and History">}}
