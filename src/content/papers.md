@@ -1,9 +1,6 @@
 +++
 title = "Papers"
-keywords = ["TODO"]
 +++
-
-# Papers {#papers}
 
 {{<publication-list "featured" "Featured Publications">}}
   {{<artifact-listing "bachman-eco-ind">}}
@@ -16,11 +13,18 @@ keywords = ["TODO"]
 {{</publication-list>}}
 
 {{<publication-list "recent" "Other Recent Publications">}}
-  {{<artifact-listing "helbecque-thesis">}}
   {{<artifact-listing "hpec24-deploy">}}
   {{<artifact-listing "iccs2024">}}
   {{<artifact-listing "pdco24">}}
   {{<artifact-listing "ipdps2024">}}
+{{</publication-list>}}
+
+{{<publication-list "dissertations" "Chapel-Related Ph.D. Dissertations">}}
+  {{<artifact-listing "westerhout2025">}}
+  {{<artifact-listing "rodriguez2025">}}
+  {{<artifact-listing "helbecque2025">}}
+  {{<artifact-listing "rolinger2023">}}
+  {{<artifact-listing "zagorac2022">}}
 {{</publication-list>}}
 
 {{<publication-list "overviews" "Chapel Overviews and History">}}
