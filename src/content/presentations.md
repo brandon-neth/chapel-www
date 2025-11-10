@@ -50,6 +50,7 @@ title = "Presentations"
 {{</publication-list>}}
 
 {{<publication-list "recent" "Other Recent Chapel Presentations">}}
+  {{<artifact-listing "seagl2025">}}
   {{<artifact-listing "galois2025">}}
   {{<artifact-listing "runtime-overview">}}
   {{<artifact-listing "hpsfapp">}}
