@@ -157,7 +157,7 @@ datasets."""
   start="9:05"
   end="9:25"
   slides="/ChapelCon/2025/chai.pdf"
-  video="https://youtu.be/bHCrfHNkW6E"
+  video="https://youtu.be/Y0YaLtZ-0lc"
 
 [break3_1]
   title="Break"
@@ -290,7 +290,7 @@ next steps.
   start="13:35"
   end="13:55"
   slides="/ChapelCon/2025/branch-and-bound.pdf"
-  video="https://youtu.be/psITBRGGXHo"
+  video="https://youtu.be/j1_So4vrx7Y"
 
 [cloud]
   title="Running Chapel on the Cloud"
@@ -322,7 +322,7 @@ next steps.
   start="9:05"
   end="9:35"
   slides="/ChapelCon/2025/ChapelCon25-SoP.pdf"
-  video="https://youtu.be/TU8inpSS16w"
+  video="https://youtu.be/g937R7zXRGQ"
   
 [invited_lumi]
   title="(Invited) LUMI: The Supercomputer of the North"
@@ -373,7 +373,7 @@ improvements for the library going forward.
   start="10:30"
   end="10:50"
   slides="/ChapelCon/2025/chapel-vector-library.pdf"
-  video="https://youtu.be/9zyjphsI2nA"
+  video="https://youtu.be/FeUL1WnhaiE"
 
 [break4_2]
   title="Break"
@@ -414,7 +414,7 @@ no runtime overhead.
   start="10:55"
   end="11:15"
   slides="/ChapelCon/2025/compile-time-programming-ChapelCon2025.pdf"
-  video="https://youtu.be/-x1zYQSuaT4"
+  video="https://youtu.be/zfPo0TIzPhQ"
 
 [pythonlike]
   title="If it walks like Python and quacks like Python, it must be….Chapel?"
@@ -439,7 +439,7 @@ this can be useful with libraries like numpy, scipy, and pandas."""
   start="11:15"
   end="11:35"
   slides="/ChapelCon/2025/PythonInteropTalk.pdf"
-  video="https://youtu.be/a4qMMD7OAVw"
+  video="https://youtu.be/yqmwWa2cRUU"
 
 [formal]
   title="Using Formal Methods to Discover a Bug in the Chapel Compiler"
@@ -465,7 +465,7 @@ validate the compiler’s behavior."""
   start="11:35"
   end="11:45"
   slides="/ChapelCon/2025/formal-methods-ChapelCon2025.pdf"
-  video="https://youtu.be/Tv04Tfj4plA"
+  video="https://youtu.be/RolFDzcBKyQ"
 
 [julia]
   title="Chapel Julia interoperability"
@@ -487,7 +487,7 @@ validate the compiler’s behavior."""
   start="12:00"
   end="12:20"
   slides="/ChapelCon/2025/chapelcon-2025-sort.pdf"
-  video="https://youtu.be/h-cefs6nGLc"
+  video="https://youtu.be/d9oiYfeC1yw"
 [radix]
   title="Comparing Distributed-Memory Programming Frameworks with Radix Sort"
   authors="Shreyas Khandekar and Matt Drozt"
@@ -503,7 +503,7 @@ programming frameworks: Chapel, MPI, OpenSHMEM, Conveyors, and Lamellar. """
   start="12:20"
   end="12:40"
   slides="/ChapelCon/2025/sort-comparison.pdf"
-  video="https://youtu.be/quLnZakIUi0"
+  video="https://youtu.be/F4F6xfw4em0"
 
 [break4_4]
   title="Break"
@@ -518,7 +518,7 @@ programming frameworks: Chapel, MPI, OpenSHMEM, Conveyors, and Lamellar. """
   start="12:50"
   end="13:50"
   slides="/ChapelCon/2025/spack-chapelcon-2025-10-09.pdf"
-  video="https://youtu.be/YuY4XmKxruE"
+  video="https://youtu.be/owj3cCVoc54"
 
 [break4_5]
   title="Break"
