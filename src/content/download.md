@@ -36,7 +36,7 @@ To get started with the Chapel Docker image:
 title="With Homebrew"
 id="homebrew"
 description="""
-[Homebrew](http://brew.sh/) users can install Chapel on Mac/Linux as follows:
+[Homebrew](https://brew.sh/) users can install Chapel on Mac/Linux as follows:
 
 1. Make sure your brew is up-to-date: `brew update`
 2. Install the Chapel formula: `brew install chapel`

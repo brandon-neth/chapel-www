@@ -547,7 +547,7 @@
   venue = "International Journal of High Performance Computing Applications, August 2007, 21(3): 291-312"
   date = "August 2007"
   description = "This is an early overview of Chapel's themes and main language concepts."
-  url = "http://hpc.sagepub.com/content/21/3/291.abstract"
+  url = "https://hpc.sagepub.com/content/21/3/291.abstract"
   type = ["paper"]
 
 [cug18]
@@ -595,7 +595,7 @@
   venue = "2nd Workshop on the LLVM Compiler Infrastructure in HPC (LLVM-HPC2)"
   date = "November 2015" 
   description = "This paper describes how LLVM passes can optimize communication in PGAS languages like Chapel. In particular, by representing potentially remote addresses using a distinct address space, existing LLVM optimization passes can be used to reduce communication"
-  url = "http://ahayashi.blogs.rice.edu/files/2013/07/Chapel_LLVM_camera_ready-q6usv4.pdf"
+  url = "https://ahayashi.blogs.rice.edu/files/2013/07/Chapel_LLVM_camera_ready-q6usv4.pdf"
   type = ["paper"]
 
 [pgas15]
