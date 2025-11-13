@@ -4,7 +4,7 @@ title = "Chapel Community Forums for Q&A / Discussion"
 [[WrittenConversation]]
   name="Stack Overflow"
   description="The ideal place to ask questions that would also benefit others (tagged `chapel`)"
-  url="http://stackoverflow.com/questions/tagged/chapel"
+  url="https://stackoverflow.com/questions/tagged/chapel"
 
 [[WrittenConversation]]
   name="GitHub Issues"
